@@ -1,16 +1,9 @@
 ## Sobre
-Esse repositório é criado para consumir a API de mapas do IBGE e entregar polígonos de todas as divisões geográficas oficiais (exceto bairros, que precisará ser implementada em _cross_ com o _geocoding_).
+Esse repositório é criado para consumir a API de malhas geográficas do IBGE disponível [aqui](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3) e entregar polígonos, objeto de uso na técnica de geolocalização, de todas as divisões geográficas oficiais.
 
-**Status**: Em desenvolvimento
+**Status**: Em desenvolvimento.
 
-### Pendências
-1. Trocar os _for loops_ para _apply_.
-2. Criar uma função _wrapper_ `get_polygons`.
-3. Criar o micro service (ms) que irá servir o método `get_polygons`. Deno? Pode compilar em binário, é mais simples de spawnar child process e não precisa do framework instalado no final.
-4. Criar o ms que irá receber o POST _request_ dos arquivos _aliasList_ e _doubleList_ de cada escopo.
-5. Criar a imagem do container em dois modos: 1. _cached_, no momento da _build_ ela chama a API do IBGE e salva todos os mapas; 2. _lean_, sem cache, armazena em produção, caso necessário.
-6. Fazer a imagem alpine _multi-arch_.
-
+Essa versão 3.0 da API vem com um _query_ _builder_ para agilizar o processo de chamada. Considerando que o IBGE se guia, na maioria das vezes, pelo código padrão estabelecidos por eles, o objetivo desse projeto é possibilitar a chamada pelo nome, ao estilo **Nominatim**.
 ___
 
 Copyright [Pedro Paulo Teixeira dos Santos] [name of copyright owner]

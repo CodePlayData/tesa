@@ -1,4 +1,5 @@
-BRAZIL,BRASIL,http://servicodados.ibge.gov.br/api/v2/malhas/?formato=application/vnd.geo+json
-BRASIL,BRASIL,http://servicodados.ibge.gov.br/api/v2/malhas/?formato=application/vnd.geo+json
-BR,BRASIL,http://servicodados.ibge.gov.br/api/v2/malhas/?formato=application/vnd.geo+json
-brasil,BRASIL,http://servicodados.ibge.gov.br/api/v2/malhas/?formato=application/vnd.geo+json
+Alias,Local,Link
+BRAZIL,BRASIL,https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima
+BRASIL,BRASIL,https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima
+BR,BRASIL,https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima
+brasil,BRASIL,https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima
