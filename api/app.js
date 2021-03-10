@@ -1,7 +1,7 @@
 import { Application } from "https://deno.land/x/oak/mod.ts"
 import { organ } from "https://raw.githubusercontent.com/denjucks/organ/master/mod.ts"
 import { oakCors } from "https://deno.land/x/cors/mod.ts"
-import { router } from "./src/routes.js";
+import { router } from "./routes.js";
 
 const app = new Application()
 
