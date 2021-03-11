@@ -1,14 +1,21 @@
+// all the application logic must be here.
 const 
-    getPlace = (ctx) => {
+    getPlace = ({ params, response }) => {
+        
         const 
-            { type, alias } = ctx.params,
+            { type, alias } = params,
             worker = new Worker(new URL("./worker.js", import.meta.url).href, { type: "module", deno: { namespace: true } })
-            worker.postMessage({ filename: "./alias_list.csv" })
-            
-        ctx.response.body = {
+            worker.postMessage({ 
+                filename: "./src/data/" + type + "_list.csv",
+                alias: alias
+            })
+            worker.onmessage = (e, response) => console.log(...e.data)
+        
+        response.body = {
             "type": type,
             "alias": alias
         }
+    
     },
     postDataset = (ctx) => {
         ctx.response.body = "postDataset"
