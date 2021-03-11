@@ -2,20 +2,14 @@
 const 
     getPlace = ({ params, response }) => {
         
-        const 
+        let 
             { type, alias } = params,
             worker = new Worker(new URL("./worker.js", import.meta.url).href, { type: "module", deno: { namespace: true } })
-            worker.postMessage({ 
-                filename: "./src/data/" + type + "_list.csv",
-                alias: alias
-            })
-            worker.onmessage = (e, response) => console.log(...e.data)
         
-        response.body = {
-            "type": type,
-            "alias": alias
-        }
-    
+	worker.postMessage({filename: "./" + type + "_list.csv", type, alias})
+  
+	    worker.addEventListener('message', (event, response) => console.log(event.data))
+
     },
     postDataset = (ctx) => {
         ctx.response.body = "postDataset"
