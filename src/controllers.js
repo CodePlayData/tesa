@@ -4,7 +4,6 @@ const
         
         let { type, alias } = params
         let worker = new Worker(new URL("./worker.js", import.meta.url).href, { type: "module", deno: { namespace: true } })
-        let data
 	
 	const decoder = new TextDecoder("utf-8")
 	
