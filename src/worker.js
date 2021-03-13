@@ -4,17 +4,17 @@ self.onmessage = async (e) => {
   try {
     const { filename, alias } = e.data;
     const content = await parseCsv(await Deno.readTextFile(filename), { skipFirstRow: true, separator: ";" })
-    const str2ab = (str) => {  
-      let buffer = new Uint16Array(str.length)   
-      for(let idx = 0, len = str.length; idx < len; ++idx) { buffer[idx] = str.charCodeAt(idx) }     
-      return buffer
-    }
-
+    const encoder = new TextEncoder()
     let result = []
-    let bufferedResult
+    let data
+    
     result.push(...content.filter(place => place.Alias === alias).map(place => place.Link))
-    bufferedResult = str2ab(...result)
-    postMessage([bufferedResult])
+    
+    data = encoder.encode(...result);
+    await Deno.writeFile("teste.txt", data)
+    
+    postMessage("o file teste.txt esta disponivel")
+
   } catch (error) {
     console.log(error.message)
   }   
