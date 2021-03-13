@@ -10,9 +10,8 @@ const
 	
 	worker.postMessage({ filename: "./" + type + "_list.csv", type, alias })
 	    
-	await worker.onMessage = async (e) => ({data: await Deno.readFile(e.data.filename)})
+	await worker.onMessage = async (e) => ( response.body = await decoder.decode(await Deno.readFile(e.data.filename)) )
 	
-	response.body = await decoder.decode(data)
   },
     postDataset = (ctx) => {
         ctx.response.body = "postDataset"
