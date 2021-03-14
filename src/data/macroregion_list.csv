@@ -1,6 +1,11 @@
 Alias;Place;Link
 Norte;NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/1?formato=application/vnd.geo+json&qualidade=maxima
+NORTE;NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/1?formato=application/vnd.geo+json&qualidade=maxima
 Nordeste;NORDESTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/2?formato=application/vnd.geo+json&qualidade=maxima
+NORDESTE;NORDESTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/2?formato=application/vnd.geo+json&qualidade=maxima
 Sul;SUL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/4?formato=application/vnd.geo+json&qualidade=maxima
+SUL;SUL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/4?formato=application/vnd.geo+json&qualidade=maxima
 Sudeste;SUDESTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/3?formato=application/vnd.geo+json&qualidade=maxima
+SUDESTE;SUDESTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/3?formato=application/vnd.geo+json&qualidade=maxima
 Centro-oeste;CENTRO-OESTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/5?formato=application/vnd.geo+json&qualidade=maxima
+CENTRO-OESTE;CENTRO-OESTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes/5?formato=application/vnd.geo+json&qualidade=maxima
