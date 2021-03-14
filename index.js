@@ -17,7 +17,7 @@ async function getCountryPolygon (alias) {
 
 async function getMacroregionPolygon (alias) {
     
-    const fetched_data = fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv")
+    const fetched_data = fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv")
     const raw_data = await fetched_data
     const raw_table = await raw_data.text()
     const country_list = await parseCsv(raw_table, { skipFirstRow: true, separator: ";" })
@@ -33,3 +33,4 @@ async function getMacroregionPolygon (alias) {
 
 
 getCountryPolygon('BR')
+getMacroregionPolygon('centro-oeste')
