@@ -1,11 +1,20 @@
-import { app } from './src/app.js';
-import "https://deno.land/x/dotenv/load.ts"
+import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
-// deno gets the env value like string, even if it's a number. To get things work would need to eval() it's content
-const port = Deno.env.get('PORT_SIGNIN') || 2000
+async function getCountryPolygon (alias) {
+    
+    const fetched_data = fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv")
+    const raw_data = await fetched_data
+    const raw_table = await raw_data.text()
+    const country_list = await parseCsv(raw_table, { skipFirstRow: true, separator: ";" })
+    const result = fetch(...country_list.filter(place => place.Alias === alias).map(place => place.Link)) 
 
-// adding a event listerner to the console log stays binds to the success of the listen function
-app.addEventListener("listen", ({ hostname, port, secure }) => { console.log( `Listening on: ${secure ? "https://" : "http://"}${hostname ?? "localhost"}:${port}`) })
+    let polygon
+    
+    polygon = await (await result).json()
+    console.log(polygon)
 
-// starting the serve and, like said before, eval the env variable.
-await app.listen({ port: eval(port) })
+}
+
+
+
+getCountryPolygon('BR')

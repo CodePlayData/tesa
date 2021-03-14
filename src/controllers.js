@@ -4,13 +4,23 @@ const
         
         let { type, alias } = params
         let worker = new Worker(new URL("./worker.js", import.meta.url).href, { type: "module", deno: { namespace: true } })
-	
-	const decoder = new TextDecoder("utf-8")
-	
-	worker.postMessage({ filename: "./" + type + "_list.csv", type, alias })
+        
+	    await  worker.addEventListener('message',  async (e) => {console.log(e.data)})
+        
+        async () => {
+                worker.postMessage({ filename: "./" + type + "_list.csv", type, alias })
+                console.log('\nData is already in the worker\n')
+
+                const decoder = new TextDecoder("utf-8");
+                const data = await Deno.readFile("teste.txt")
+                response.body = await decoder.decode(data)
+        }
+        
+
 	    
-	await worker.onMessage = async (e) => ( response.body = await decoder.decode(await Deno.readFile(e.data.filename)) )
-	
+	    
+ 
+
   },
     postDataset = (ctx) => {
         ctx.response.body = "postDataset"

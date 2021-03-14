@@ -13,7 +13,7 @@ self.onmessage = async (e) => {
     data = encoder.encode(...result);
     await Deno.writeFile("teste.txt", data)
     
-    postMessage("o file teste.txt esta disponivel")
+  self.postMessage({filename: "./teste.txt"})
 
   } catch (error) {
     console.log(error.message)
