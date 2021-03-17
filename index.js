@@ -146,11 +146,11 @@ async function getMicroRegions (alias) {
             await result)
             .json()
 
-    console.log(result)
+    console.log(polygon)
 }
 
 getCountryPolygon('BR')
 getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
 getMiddleRegions('norte fluminense')
-getMicroRegions('adamantina')
+getMicroRegions('afonso claudio')
