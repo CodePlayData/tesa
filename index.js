@@ -170,7 +170,7 @@ async function getCitiesRegions (alias) {
     const list = 
         await parseCsv(
             await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"))
+                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"))
                 .text(), { skipFirstRow: true, separator: ";" }
                 )
     
@@ -197,3 +197,4 @@ getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
 getMiddleRegions('norte fluminense')
 getMicroRegions('afonso claudio')
+getCitiesRegions('amparo(pb)')
