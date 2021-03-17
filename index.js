@@ -1,5 +1,23 @@
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
+
+async function getPolygon (alias, type) {
+    
+    let list_url
+    
+    switch(type) {
+        case "country": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+        case "macroregion": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+        case "states": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+        case "middleregions": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+        case "microregions": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+        case "cities": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+    }
+console.log(list_url)
+}
+
+
+/* 
 async function getCountryPolygon (alias) {
     
     const list = 
@@ -189,12 +207,14 @@ async function getCitiesRegions (alias) {
             .json()
 
     console.log(polygon)
-}
+} */
 
 
-getCountryPolygon('BR')
+/* getCountryPolygon('BR')
 getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
 getMiddleRegions('norte fluminense')
 getMicroRegions('afonso claudio')
-getCitiesRegions('amparo(pb)')
+getCitiesRegions('amparo(pb)') */
+
+getPolygon('abc', 'microregions')
