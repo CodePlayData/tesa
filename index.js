@@ -149,6 +149,7 @@ async function getMicroRegions (alias) {
     console.log(polygon)
 }
 
+
 getCountryPolygon('BR')
 getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
