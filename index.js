@@ -98,7 +98,8 @@ async function getMiddleRegions (alias) {
 
     console.log(polygon)
 }
+
 getCountryPolygon('BR')
 getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
-getMiddleRegions('norte fluminense')
+getMiddleRegions('SUL AMAZONENSE')
