@@ -8,102 +8,102 @@ Acre;ACRE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/12?formato=appl
 acre;ACRE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/12?formato=application/vnd.geo+json&qualidade=maxima
 AC;ACRE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/12?formato=application/vnd.geo+json&qualidade=maxima
 13;AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/13?formato=application/vnd.geo+json&qualidade=maxima
-14;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
-15;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
-16;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
-17;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
-21;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
-22;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
-23;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
-24;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
-25;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
-26;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
-27;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
-28;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
-29;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
-31;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
-32;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
-33;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
-35;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
-41;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
-42;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
-43;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
-50;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
-51;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
-52;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
-53;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
 Amazonas;AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/13?formato=application/vnd.geo+json&qualidade=maxima
-Roraima;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
-Pará;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
-Amapá;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
-Tocantins;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
-Maranhão;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
-Piauí;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
-Ceará;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
-Rio Grande do Norte;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
-Paraíba;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
-Pernambuco;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
-Alagoas;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
-Sergipe;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
-Bahia;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
-Minas Gerais;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
-Espírito Santo;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
-Rio de Janeiro;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
-São Paulo;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
-Paraná;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
-Santa Catarina;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
-Rio Grande do Sul;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
-Mato Grosso do Sul;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
-Mato Grosso;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
-Goiás;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
-Distrito Federal;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
 amazonas;AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/13?formato=application/vnd.geo+json&qualidade=maxima
-roraima;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
-pará;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
-amapá;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
-tocantins;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
-maranhão;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
-piauí;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
-ceará;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
-rio grande do norte;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
-paraíba;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
-pernambuco;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
-alagoas;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
-sergipe;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
-bahia;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
-minas gerais;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
-espírito santo;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
-rio de janeiro;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
-são paulo;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
-paraná;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
-santa catarina;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
-rio grande do sul;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
-mato grosso do sul;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
-mato grosso;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
-goiás;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
-distrito federal;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
 AM;AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/13?formato=application/vnd.geo+json&qualidade=maxima
+14;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
+Roraima;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
+roraima;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
 RR;RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/14?formato=application/vnd.geo+json&qualidade=maxima
+15;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
+Pará;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
+pará;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
 PA;PARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=application/vnd.geo+json&qualidade=maxima
+16;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
+Amapá;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
+amapá;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
 AP;AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/16?formato=application/vnd.geo+json&qualidade=maxima
+17;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
+Tocantins;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
+tocantins;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
 TO;TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/17?formato=application/vnd.geo+json&qualidade=maxima
+21;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
+Maranhão;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
+maranhão;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
 MA;MARANHAO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo+json&qualidade=maxima
+22;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
+Piauí;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
+piauí;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
 PI;PIAUI;https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo+json&qualidade=maxima
+23;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
+Ceará;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
+ceará;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
 CE;CEARA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=maxima
+24;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
+Rio Grande do Norte;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
+rio grande do norte;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
 RN;RIO GRANDE DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo+json&qualidade=maxima
+25;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
+Paraíba;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
+paraíba;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
 PB;PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&qualidade=maxima
+26;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
+Pernambuco;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
+pernambuco;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
 PE;PERNAMBUCO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo+json&qualidade=maxima
+27;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
+Alagoas;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
+alagoas;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
 AL;ALAGOAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo+json&qualidade=maxima
+28;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
+Sergipe;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
+sergipe;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
 SE;SERGIPE;https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo+json&qualidade=maxima
+29;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
+Bahia;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
+bahia;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
 BA;BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo+json&qualidade=maxima
+31;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
+Minas Gerais;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
+minas gerais;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
 MG;MINAS GERAIS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/31?formato=application/vnd.geo+json&qualidade=maxima
+32;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
+Espírito Santo;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
+espírito santo;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
 ES;ESPIRITO SANTO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/32?formato=application/vnd.geo+json&qualidade=maxima
+33;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
+Rio de Janeiro;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
+rio de janeiro;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
 RJ;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/33?formato=application/vnd.geo+json&qualidade=maxima
+35;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
+São Paulo;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
+são paulo;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
 SP;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/35?formato=application/vnd.geo+json&qualidade=maxima
+41;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
+Paraná;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
+paraná;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
 PR;PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/41?formato=application/vnd.geo+json&qualidade=maxima
+42;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
+Santa Catarina;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
+santa catarina;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
 SC;SANTA CATARINA;https://servicodados.ibge.gov.br/api/v3/malhas/estados/42?formato=application/vnd.geo+json&qualidade=maxima
+43;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
+Rio Grande do Sul;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
+rio grande do sul;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
 RS;RIO GRANDE DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/43?formato=application/vnd.geo+json&qualidade=maxima
+50;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
+Mato Grosso do Sul;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
+mato grosso do sul;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
 MS;MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/50?formato=application/vnd.geo+json&qualidade=maxima
+51;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
+Mato Grosso;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
+mato grosso;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
 MT;MATO GROSSO;https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json&qualidade=maxima
+52;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
+Goiás;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
+goiás;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
 GO;GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/estados/52?formato=application/vnd.geo+json&qualidade=maxima
+53;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
+Distrito Federal;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
+distrito federal;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
 DF;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/estados/53?formato=application/vnd.geo+json&qualidade=maxima
