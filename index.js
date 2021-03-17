@@ -11,6 +11,7 @@ async function getCountryPolygon (alias) {
     
     const result = 
         fetch(...list.filter(place => place.Alias === alias
+            .toUpperCase()
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ""))
             .map(place => place.Link))
@@ -37,6 +38,7 @@ async function getMacroregionPolygon (alias) {
     
     const result = 
         fetch(...list.filter(place => place.Alias === alias
+            .toUpperCase()
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ""))
             .map(place => place.Link))
@@ -63,7 +65,7 @@ async function getStatesPolygon (alias) {
     
     const result = 
         fetch(...list.filter(place => place.Alias === alias
-            
+            .toUpperCase()
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ""))
             .map(place => place.Link))
