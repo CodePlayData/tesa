@@ -1,412 +1,412 @@
-"";"Alias";"Place";"Link";"Code"
-"1";"MADEIRA-GUAPORE";"MADEIRA-GUAPORE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1101?formato=application/vnd.geo+json&qualidade=maxima";1101
-"2";"LESTE RONDONIENSE";"LESTE RONDONIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1102?formato=application/vnd.geo+json&qualidade=maxima";1102
-"3";"VALE DO JURUA";"VALE DO JURUA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1201?formato=application/vnd.geo+json&qualidade=maxima";1201
-"4";"VALE DO ACRE";"VALE DO ACRE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1202?formato=application/vnd.geo+json&qualidade=maxima";1202
-"5";"NORTE AMAZONENSE";"NORTE AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1301?formato=application/vnd.geo+json&qualidade=maxima";1301
-"6";"SUDOESTE AMAZONENSE";"SUDOESTE AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1302?formato=application/vnd.geo+json&qualidade=maxima";1302
-"7";"CENTRO AMAZONENSE";"CENTRO AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1303?formato=application/vnd.geo+json&qualidade=maxima";1303
-"8";"SUL AMAZONENSE";"SUL AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1304?formato=application/vnd.geo+json&qualidade=maxima";1304
-"9";"NORTE DE RORAIMA";"NORTE DE RORAIMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1401?formato=application/vnd.geo+json&qualidade=maxima";1401
-"10";"SUL DE RORAIMA";"SUL DE RORAIMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1402?formato=application/vnd.geo+json&qualidade=maxima";1402
-"11";"BAIXO AMAZONAS";"BAIXO AMAZONAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1501?formato=application/vnd.geo+json&qualidade=maxima";1501
-"12";"MARAJA";"MARAJA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1502?formato=application/vnd.geo+json&qualidade=maxima";1502
-"13";"METROPOLITANA DE BELEM";"METROPOLITANA DE BELEM";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1503?formato=application/vnd.geo+json&qualidade=maxima";1503
-"14";"NORDESTE PARAENSE";"NORDESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1504?formato=application/vnd.geo+json&qualidade=maxima";1504
-"15";"SUDOESTE PARAENSE";"SUDOESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1505?formato=application/vnd.geo+json&qualidade=maxima";1505
-"16";"SUDESTE PARAENSE";"SUDESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1506?formato=application/vnd.geo+json&qualidade=maxima";1506
-"17";"NORTE DO AMAPA";"NORTE DO AMAPA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1601?formato=application/vnd.geo+json&qualidade=maxima";1601
-"18";"SUL DO AMAPA";"SUL DO AMAPA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1602?formato=application/vnd.geo+json&qualidade=maxima";1602
-"19";"OCIDENTAL DO TOCANTINS";"OCIDENTAL DO TOCANTINS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1701?formato=application/vnd.geo+json&qualidade=maxima";1701
-"20";"ORIENTAL DO TOCANTINS";"ORIENTAL DO TOCANTINS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1702?formato=application/vnd.geo+json&qualidade=maxima";1702
-"21";"NORTE MARANHENSE";"NORTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2101?formato=application/vnd.geo+json&qualidade=maxima";2101
-"22";"OESTE MARANHENSE";"OESTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2102?formato=application/vnd.geo+json&qualidade=maxima";2102
-"23";"CENTRO MARANHENSE";"CENTRO MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2103?formato=application/vnd.geo+json&qualidade=maxima";2103
-"24";"LESTE MARANHENSE";"LESTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2104?formato=application/vnd.geo+json&qualidade=maxima";2104
-"25";"SUL MARANHENSE";"SUL MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2105?formato=application/vnd.geo+json&qualidade=maxima";2105
-"26";"NORTE PIAUIENSE";"NORTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2201?formato=application/vnd.geo+json&qualidade=maxima";2201
-"27";"CENTRO-NORTE PIAUIENSE";"CENTRO-NORTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2202?formato=application/vnd.geo+json&qualidade=maxima";2202
-"28";"SUDOESTE PIAUIENSE";"SUDOESTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2203?formato=application/vnd.geo+json&qualidade=maxima";2203
-"29";"SUDESTE PIAUIENSE";"SUDESTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2204?formato=application/vnd.geo+json&qualidade=maxima";2204
-"30";"NOROESTE CEARENSE";"NOROESTE CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2301?formato=application/vnd.geo+json&qualidade=maxima";2301
-"31";"NORTE CEARENSE";"NORTE CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2302?formato=application/vnd.geo+json&qualidade=maxima";2302
-"32";"METROPOLITANA DE FORTALEZA";"METROPOLITANA DE FORTALEZA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2303?formato=application/vnd.geo+json&qualidade=maxima";2303
-"33";"SERTOES CEARENSES";"SERTOES CEARENSES";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2304?formato=application/vnd.geo+json&qualidade=maxima";2304
-"34";"JAGUARIBE";"JAGUARIBE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2305?formato=application/vnd.geo+json&qualidade=maxima";2305
-"35";"CENTRO-SUL CEARENSE";"CENTRO-SUL CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2306?formato=application/vnd.geo+json&qualidade=maxima";2306
-"36";"SUL CEARENSE";"SUL CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2307?formato=application/vnd.geo+json&qualidade=maxima";2307
-"37";"OESTE PORTIGUAR";"OESTE PORTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2401?formato=application/vnd.geo+json&qualidade=maxima";2401
-"38";"CENTRAL POTIGUAR";"CENTRAL POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2402?formato=application/vnd.geo+json&qualidade=maxima";2402
-"39";"AGRESTE POTIGUAR";"AGRESTE POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2403?formato=application/vnd.geo+json&qualidade=maxima";2403
-"40";"LESTE POTIGUAR";"LESTE POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2404?formato=application/vnd.geo+json&qualidade=maxima";2404
-"41";"SERTAO PARAIBANO";"SERTAO PARAIBANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2501?formato=application/vnd.geo+json&qualidade=maxima";2501
-"42";"BORBOREMA";"BORBOREMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2502?formato=application/vnd.geo+json&qualidade=maxima";2502
-"43";"AGRESTE PARAIBANO";"AGRESTE PARAIBANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2503?formato=application/vnd.geo+json&qualidade=maxima";2503
-"44";"MATA PARAIBANA";"MATA PARAIBANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2504?formato=application/vnd.geo+json&qualidade=maxima";2504
-"45";"SERTAO PERNAMBUCANO";"SERTAO PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2601?formato=application/vnd.geo+json&qualidade=maxima";2601
-"46";"SAO FRANCISCO PERNAMBUCANO";"SAO FRANCISCO PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2602?formato=application/vnd.geo+json&qualidade=maxima";2602
-"47";"AGRESTE PERNAMBUCANO";"AGRESTE PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2603?formato=application/vnd.geo+json&qualidade=maxima";2603
-"48";"MATA PERNAMBUCANA";"MATA PERNAMBUCANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2604?formato=application/vnd.geo+json&qualidade=maxima";2604
-"49";"METROPOLITANA DE RECIFE";"METROPOLITANA DE RECIFE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2605?formato=application/vnd.geo+json&qualidade=maxima";2605
-"50";"SERTAO ALAGOANO";"SERTAO ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2701?formato=application/vnd.geo+json&qualidade=maxima";2701
-"51";"AGRESTE ALAGOANO";"AGRESTE ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2702?formato=application/vnd.geo+json&qualidade=maxima";2702
-"52";"LESTE ALAGOANO";"LESTE ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2703?formato=application/vnd.geo+json&qualidade=maxima";2703
-"53";"SERTAO SERGIPANO";"SERTAO SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2801?formato=application/vnd.geo+json&qualidade=maxima";2801
-"54";"AGRESTE SERGIPANO";"AGRESTE SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2802?formato=application/vnd.geo+json&qualidade=maxima";2802
-"55";"LESTE SERGIPANO";"LESTE SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2803?formato=application/vnd.geo+json&qualidade=maxima";2803
-"56";"EXTREMO OESTE BAIANO";"EXTREMO OESTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2901?formato=application/vnd.geo+json&qualidade=maxima";2901
-"57";"VALE SAO-FRANCISCANO DA BAHIA";"VALE SAO-FRANCISCANO DA BAHIA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2902?formato=application/vnd.geo+json&qualidade=maxima";2902
-"58";"CENTRO NORTE BAIANO";"CENTRO NORTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2903?formato=application/vnd.geo+json&qualidade=maxima";2903
-"59";"NORDESTE BAIANO";"NORDESTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2904?formato=application/vnd.geo+json&qualidade=maxima";2904
-"60";"METROPOLITANA DE SALVADOR";"METROPOLITANA DE SALVADOR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2905?formato=application/vnd.geo+json&qualidade=maxima";2905
-"61";"CENTRO SUL BAIANO";"CENTRO SUL BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2906?formato=application/vnd.geo+json&qualidade=maxima";2906
-"62";"SUL BAIANO";"SUL BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2907?formato=application/vnd.geo+json&qualidade=maxima";2907
-"63";"NOROESTE DE MINAS";"NOROESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3101?formato=application/vnd.geo+json&qualidade=maxima";3101
-"64";"NORTE DE MINAS";"NORTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3102?formato=application/vnd.geo+json&qualidade=maxima";3102
-"65";"JEQUITINHONHA";"JEQUITINHONHA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3103?formato=application/vnd.geo+json&qualidade=maxima";3103
-"66";"VALE DO MUCURI";"VALE DO MUCURI";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3104?formato=application/vnd.geo+json&qualidade=maxima";3104
-"67";"TRIANGULO MINEIRO/ALTO PARAIBA";"TRIANGULO MINEIRO/ALTO PARAIBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3105?formato=application/vnd.geo+json&qualidade=maxima";3105
-"68";"CENTRAL MINEIRA";"CENTRAL MINEIRA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3106?formato=application/vnd.geo+json&qualidade=maxima";3106
-"69";"METROPOLITANA DE BELO HORIZONTE";"METROPOLITANA DE BELO HORIZONTE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3107?formato=application/vnd.geo+json&qualidade=maxima";3107
-"70";"VALE DO RIO DOCE";"VALE DO RIO DOCE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3108?formato=application/vnd.geo+json&qualidade=maxima";3108
-"71";"OESTE DE MINAS";"OESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3109?formato=application/vnd.geo+json&qualidade=maxima";3109
-"72";"SUL/SUDESTE DE MINAS";"SUL/SUDESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3110?formato=application/vnd.geo+json&qualidade=maxima";3110
-"73";"CAMPO DAS VERTENTES";"CAMPO DAS VERTENTES";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3111?formato=application/vnd.geo+json&qualidade=maxima";3111
-"74";"ZONA DA MATA";"ZONA DA MATA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3112?formato=application/vnd.geo+json&qualidade=maxima";3112
-"75";"NOROESTE ESPIRITO-SANTENSE";"NOROESTE ESPIRITO-SANTENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3201?formato=application/vnd.geo+json&qualidade=maxima";3201
-"76";"LITORAL NORTE ESPIRITO-SANTENSE";"LITORAL NORTE ESPIRITO-SANTENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3202?formato=application/vnd.geo+json&qualidade=maxima";3202
-"77";"CENTRAL ESPIRITO-SANTANSE";"CENTRAL ESPIRITO-SANTANSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3203?formato=application/vnd.geo+json&qualidade=maxima";3203
-"78";"SUL ESPIRITO-SANTANSE";"SUL ESPIRITO-SANTANSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3204?formato=application/vnd.geo+json&qualidade=maxima";3204
-"79";"NOROESTE FLUMINENSE";"NOROESTE FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3301?formato=application/vnd.geo+json&qualidade=maxima";3301
-"80";"NORTE FLUMINENSE";"NORTE FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3302?formato=application/vnd.geo+json&qualidade=maxima";3302
-"81";"CENTRO FLUMINENSE";"CENTRO FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3303?formato=application/vnd.geo+json&qualidade=maxima";3303
-"82";"BAIXADAS";"BAIXADAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3304?formato=application/vnd.geo+json&qualidade=maxima";3304
-"83";"SUL FLUMINENSE";"SUL FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3305?formato=application/vnd.geo+json&qualidade=maxima";3305
-"84";"METROPOLITANA DO RIO DE JANEIRO";"METROPOLITANA DO RIO DE JANEIRO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3306?formato=application/vnd.geo+json&qualidade=maxima";3306
-"85";"SAO JOSE DO RIO PRETO";"SAO JOSE DO RIO PRETO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3501?formato=application/vnd.geo+json&qualidade=maxima";3501
-"86";"RIBEIRAO PRETO";"RIBEIRAO PRETO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3502?formato=application/vnd.geo+json&qualidade=maxima";3502
-"87";"ARACATUBA";"ARACATUBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3503?formato=application/vnd.geo+json&qualidade=maxima";3503
-"88";"BAURU";"BAURU";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3504?formato=application/vnd.geo+json&qualidade=maxima";3504
-"89";"ARARAQUARA";"ARARAQUARA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3505?formato=application/vnd.geo+json&qualidade=maxima";3505
-"90";"PIRACICABA";"PIRACICABA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3506?formato=application/vnd.geo+json&qualidade=maxima";3506
-"91";"CAMPINAS";"CAMPINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3507?formato=application/vnd.geo+json&qualidade=maxima";3507
-"92";"PRESIDENTE PRUDENTE";"PRESIDENTE PRUDENTE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3508?formato=application/vnd.geo+json&qualidade=maxima";3508
-"93";"MARILIA";"MARILIA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3509?formato=application/vnd.geo+json&qualidade=maxima";3509
-"94";"ASSIS";"ASSIS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3510?formato=application/vnd.geo+json&qualidade=maxima";3510
-"95";"ITAPETININGA";"ITAPETININGA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3511?formato=application/vnd.geo+json&qualidade=maxima";3511
-"96";"MACRO METROPOLITANA PAULISTA";"MACRO METROPOLITANA PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3512?formato=application/vnd.geo+json&qualidade=maxima";3512
-"97";"VALE DO PARAIBA PAULISTA";"VALE DO PARAIBA PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3513?formato=application/vnd.geo+json&qualidade=maxima";3513
-"98";"LITORAL SUL PAULISTA";"LITORAL SUL PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3514?formato=application/vnd.geo+json&qualidade=maxima";3514
-"99";"METROPOLITANA DE SAO PAULO";"METROPOLITANA DE SAO PAULO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3515?formato=application/vnd.geo+json&qualidade=maxima";3515
-"100";"NOROESTE PARANAENSE";"NOROESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4101?formato=application/vnd.geo+json&qualidade=maxima";4101
-"101";"CENTRAL OCIDENTAL PARANAENSE";"CENTRAL OCIDENTAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4102?formato=application/vnd.geo+json&qualidade=maxima";4102
-"102";"NORTE CENTRAL PARANAENSE";"NORTE CENTRAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4103?formato=application/vnd.geo+json&qualidade=maxima";4103
-"103";"NORTE PIONEIRO PARANAENSE";"NORTE PIONEIRO PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4104?formato=application/vnd.geo+json&qualidade=maxima";4104
-"104";"CENTRAL ORIENTAL PARANAENSE";"CENTRAL ORIENTAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4105?formato=application/vnd.geo+json&qualidade=maxima";4105
-"105";"OESTE PARANAENSE";"OESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4106?formato=application/vnd.geo+json&qualidade=maxima";4106
-"106";"SUDOESTE PARANAENSE";"SUDOESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4107?formato=application/vnd.geo+json&qualidade=maxima";4107
-"107";"CENTRO-SUL PARANAENSE";"CENTRO-SUL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4108?formato=application/vnd.geo+json&qualidade=maxima";4108
-"108";"SUDESTE PARANAENSE";"SUDESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4109?formato=application/vnd.geo+json&qualidade=maxima";4109
-"109";"METROPOLITANA DE CURITIBA";"METROPOLITANA DE CURITIBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4110?formato=application/vnd.geo+json&qualidade=maxima";4110
-"110";"OESTE CATARINENSE";"OESTE CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4201?formato=application/vnd.geo+json&qualidade=maxima";4201
-"111";"NORTE CATARINENSE";"NORTE CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4202?formato=application/vnd.geo+json&qualidade=maxima";4202
-"112";"SERRANA";"SERRANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4203?formato=application/vnd.geo+json&qualidade=maxima";4203
-"113";"VALE DO ITAJAI";"VALE DO ITAJAI";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4204?formato=application/vnd.geo+json&qualidade=maxima";4204
-"114";"GRANDE FLORIANOPOLIS";"GRANDE FLORIANOPOLIS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4205?formato=application/vnd.geo+json&qualidade=maxima";4205
-"115";"SUL CATARINENSE";"SUL CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4206?formato=application/vnd.geo+json&qualidade=maxima";4206
-"116";"NOROESTE RIO-GRANDENSE";"NOROESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4301?formato=application/vnd.geo+json&qualidade=maxima";4301
-"117";"NORDESTE RIO-GRANDENSE";"NORDESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4302?formato=application/vnd.geo+json&qualidade=maxima";4302
-"118";"CENTRO OCIDENTAL RIO-GRANDENSE";"CENTRO OCIDENTAL RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4303?formato=application/vnd.geo+json&qualidade=maxima";4303
-"119";"CENTRO ORIENTAL RIO-GRANDENSE";"CENTRO ORIENTAL RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4304?formato=application/vnd.geo+json&qualidade=maxima";4304
-"120";"METROPOLITANA DE PORTO ALEGRE";"METROPOLITANA DE PORTO ALEGRE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4305?formato=application/vnd.geo+json&qualidade=maxima";4305
-"121";"SUDOESTE RIO-GRANDENSE";"SUDOESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4306?formato=application/vnd.geo+json&qualidade=maxima";4306
-"122";"SUDESTE RIO-GRANDENSE";"SUDESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4307?formato=application/vnd.geo+json&qualidade=maxima";4307
-"123";"PANTANAIS SUL MATO-GROSSENSE";"PANTANAIS SUL MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5001?formato=application/vnd.geo+json&qualidade=maxima";5001
-"124";"CENTRO NORTE DE MATO GROSSO DO SUL";"CENTRO NORTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5002?formato=application/vnd.geo+json&qualidade=maxima";5002
-"125";"LESTE DE MATO GROSSO DO SUL";"LESTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5003?formato=application/vnd.geo+json&qualidade=maxima";5003
-"126";"SUDOESTE DE MATO GROSSO DO SUL";"SUDOESTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5004?formato=application/vnd.geo+json&qualidade=maxima";5004
-"127";"NORTE MATO-GROSSENSE";"NORTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5101?formato=application/vnd.geo+json&qualidade=maxima";5101
-"128";"NORDESTE MATO-GROSSENSE";"NORDESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5102?formato=application/vnd.geo+json&qualidade=maxima";5102
-"129";"SUDOESTE MATO-GROSSENSE";"SUDOESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5103?formato=application/vnd.geo+json&qualidade=maxima";5103
-"130";"CENTRO-SUL MATO-GROSSENSE";"CENTRO-SUL MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5104?formato=application/vnd.geo+json&qualidade=maxima";5104
-"131";"SUDESTE MATO-GROSSENSE";"SUDESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5105?formato=application/vnd.geo+json&qualidade=maxima";5105
-"132";"NOROESTE GOIANO";"NOROESTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5201?formato=application/vnd.geo+json&qualidade=maxima";5201
-"133";"NORTE GOIANO";"NORTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5202?formato=application/vnd.geo+json&qualidade=maxima";5202
-"134";"CENTRO GOIANO";"CENTRO GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5203?formato=application/vnd.geo+json&qualidade=maxima";5203
-"135";"LESTE GOIANO";"LESTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5204?formato=application/vnd.geo+json&qualidade=maxima";5204
-"136";"SUL GOIANO";"SUL GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5205?formato=application/vnd.geo+json&qualidade=maxima";5205
-"137";"DISTRITO FEDERAL";"DISTRITO FEDERAL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5301?formato=application/vnd.geo+json&qualidade=maxima";5301
-"138";"1101";"MADEIRA-GUAPORE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1101?formato=application/vnd.geo+json&qualidade=maxima";1101
-"139";"1102";"LESTE RONDONIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1102?formato=application/vnd.geo+json&qualidade=maxima";1102
-"140";"1201";"VALE DO JURUA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1201?formato=application/vnd.geo+json&qualidade=maxima";1201
-"141";"1202";"VALE DO ACRE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1202?formato=application/vnd.geo+json&qualidade=maxima";1202
-"142";"1301";"NORTE AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1301?formato=application/vnd.geo+json&qualidade=maxima";1301
-"143";"1302";"SUDOESTE AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1302?formato=application/vnd.geo+json&qualidade=maxima";1302
-"144";"1303";"CENTRO AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1303?formato=application/vnd.geo+json&qualidade=maxima";1303
-"145";"1304";"SUL AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1304?formato=application/vnd.geo+json&qualidade=maxima";1304
-"146";"1401";"NORTE DE RORAIMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1401?formato=application/vnd.geo+json&qualidade=maxima";1401
-"147";"1402";"SUL DE RORAIMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1402?formato=application/vnd.geo+json&qualidade=maxima";1402
-"148";"1501";"BAIXO AMAZONAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1501?formato=application/vnd.geo+json&qualidade=maxima";1501
-"149";"1502";"MARAJA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1502?formato=application/vnd.geo+json&qualidade=maxima";1502
-"150";"1503";"METROPOLITANA DE BELEM";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1503?formato=application/vnd.geo+json&qualidade=maxima";1503
-"151";"1504";"NORDESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1504?formato=application/vnd.geo+json&qualidade=maxima";1504
-"152";"1505";"SUDOESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1505?formato=application/vnd.geo+json&qualidade=maxima";1505
-"153";"1506";"SUDESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1506?formato=application/vnd.geo+json&qualidade=maxima";1506
-"154";"1601";"NORTE DO AMAPA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1601?formato=application/vnd.geo+json&qualidade=maxima";1601
-"155";"1602";"SUL DO AMAPA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1602?formato=application/vnd.geo+json&qualidade=maxima";1602
-"156";"1701";"OCIDENTAL DO TOCANTINS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1701?formato=application/vnd.geo+json&qualidade=maxima";1701
-"157";"1702";"ORIENTAL DO TOCANTINS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1702?formato=application/vnd.geo+json&qualidade=maxima";1702
-"158";"2101";"NORTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2101?formato=application/vnd.geo+json&qualidade=maxima";2101
-"159";"2102";"OESTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2102?formato=application/vnd.geo+json&qualidade=maxima";2102
-"160";"2103";"CENTRO MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2103?formato=application/vnd.geo+json&qualidade=maxima";2103
-"161";"2104";"LESTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2104?formato=application/vnd.geo+json&qualidade=maxima";2104
-"162";"2105";"SUL MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2105?formato=application/vnd.geo+json&qualidade=maxima";2105
-"163";"2201";"NORTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2201?formato=application/vnd.geo+json&qualidade=maxima";2201
-"164";"2202";"CENTRO-NORTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2202?formato=application/vnd.geo+json&qualidade=maxima";2202
-"165";"2203";"SUDOESTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2203?formato=application/vnd.geo+json&qualidade=maxima";2203
-"166";"2204";"SUDESTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2204?formato=application/vnd.geo+json&qualidade=maxima";2204
-"167";"2301";"NOROESTE CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2301?formato=application/vnd.geo+json&qualidade=maxima";2301
-"168";"2302";"NORTE CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2302?formato=application/vnd.geo+json&qualidade=maxima";2302
-"169";"2303";"METROPOLITANA DE FORTALEZA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2303?formato=application/vnd.geo+json&qualidade=maxima";2303
-"170";"2304";"SERTOES CEARENSES";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2304?formato=application/vnd.geo+json&qualidade=maxima";2304
-"171";"2305";"JAGUARIBE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2305?formato=application/vnd.geo+json&qualidade=maxima";2305
-"172";"2306";"CENTRO-SUL CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2306?formato=application/vnd.geo+json&qualidade=maxima";2306
-"173";"2307";"SUL CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2307?formato=application/vnd.geo+json&qualidade=maxima";2307
-"174";"2401";"OESTE PORTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2401?formato=application/vnd.geo+json&qualidade=maxima";2401
-"175";"2402";"CENTRAL POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2402?formato=application/vnd.geo+json&qualidade=maxima";2402
-"176";"2403";"AGRESTE POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2403?formato=application/vnd.geo+json&qualidade=maxima";2403
-"177";"2404";"LESTE POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2404?formato=application/vnd.geo+json&qualidade=maxima";2404
-"178";"2501";"SERTAO PARAIBANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2501?formato=application/vnd.geo+json&qualidade=maxima";2501
-"179";"2502";"BORBOREMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2502?formato=application/vnd.geo+json&qualidade=maxima";2502
-"180";"2503";"AGRESTE PARAIBANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2503?formato=application/vnd.geo+json&qualidade=maxima";2503
-"181";"2504";"MATA PARAIBANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2504?formato=application/vnd.geo+json&qualidade=maxima";2504
-"182";"2601";"SERTAO PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2601?formato=application/vnd.geo+json&qualidade=maxima";2601
-"183";"2602";"SAO FRANCISCO PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2602?formato=application/vnd.geo+json&qualidade=maxima";2602
-"184";"2603";"AGRESTE PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2603?formato=application/vnd.geo+json&qualidade=maxima";2603
-"185";"2604";"MATA PERNAMBUCANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2604?formato=application/vnd.geo+json&qualidade=maxima";2604
-"186";"2605";"METROPOLITANA DE RECIFE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2605?formato=application/vnd.geo+json&qualidade=maxima";2605
-"187";"2701";"SERTAO ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2701?formato=application/vnd.geo+json&qualidade=maxima";2701
-"188";"2702";"AGRESTE ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2702?formato=application/vnd.geo+json&qualidade=maxima";2702
-"189";"2703";"LESTE ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2703?formato=application/vnd.geo+json&qualidade=maxima";2703
-"190";"2801";"SERTAO SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2801?formato=application/vnd.geo+json&qualidade=maxima";2801
-"191";"2802";"AGRESTE SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2802?formato=application/vnd.geo+json&qualidade=maxima";2802
-"192";"2803";"LESTE SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2803?formato=application/vnd.geo+json&qualidade=maxima";2803
-"193";"2901";"EXTREMO OESTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2901?formato=application/vnd.geo+json&qualidade=maxima";2901
-"194";"2902";"VALE SAO-FRANCISCANO DA BAHIA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2902?formato=application/vnd.geo+json&qualidade=maxima";2902
-"195";"2903";"CENTRO NORTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2903?formato=application/vnd.geo+json&qualidade=maxima";2903
-"196";"2904";"NORDESTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2904?formato=application/vnd.geo+json&qualidade=maxima";2904
-"197";"2905";"METROPOLITANA DE SALVADOR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2905?formato=application/vnd.geo+json&qualidade=maxima";2905
-"198";"2906";"CENTRO SUL BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2906?formato=application/vnd.geo+json&qualidade=maxima";2906
-"199";"2907";"SUL BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2907?formato=application/vnd.geo+json&qualidade=maxima";2907
-"200";"3101";"NOROESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3101?formato=application/vnd.geo+json&qualidade=maxima";3101
-"201";"3102";"NORTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3102?formato=application/vnd.geo+json&qualidade=maxima";3102
-"202";"3103";"JEQUITINHONHA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3103?formato=application/vnd.geo+json&qualidade=maxima";3103
-"203";"3104";"VALE DO MUCURI";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3104?formato=application/vnd.geo+json&qualidade=maxima";3104
-"204";"3105";"TRIANGULO MINEIRO/ALTO PARAIBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3105?formato=application/vnd.geo+json&qualidade=maxima";3105
-"205";"3106";"CENTRAL MINEIRA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3106?formato=application/vnd.geo+json&qualidade=maxima";3106
-"206";"3107";"METROPOLITANA DE BELO HORIZONTE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3107?formato=application/vnd.geo+json&qualidade=maxima";3107
-"207";"3108";"VALE DO RIO DOCE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3108?formato=application/vnd.geo+json&qualidade=maxima";3108
-"208";"3109";"OESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3109?formato=application/vnd.geo+json&qualidade=maxima";3109
-"209";"3110";"SUL/SUDESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3110?formato=application/vnd.geo+json&qualidade=maxima";3110
-"210";"3111";"CAMPO DAS VERTENTES";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3111?formato=application/vnd.geo+json&qualidade=maxima";3111
-"211";"3112";"ZONA DA MATA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3112?formato=application/vnd.geo+json&qualidade=maxima";3112
-"212";"3201";"NOROESTE ESPIRITO-SANTENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3201?formato=application/vnd.geo+json&qualidade=maxima";3201
-"213";"3202";"LITORAL NORTE ESPIRITO-SANTENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3202?formato=application/vnd.geo+json&qualidade=maxima";3202
-"214";"3203";"CENTRAL ESPIRITO-SANTANSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3203?formato=application/vnd.geo+json&qualidade=maxima";3203
-"215";"3204";"SUL ESPIRITO-SANTANSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3204?formato=application/vnd.geo+json&qualidade=maxima";3204
-"216";"3301";"NOROESTE FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3301?formato=application/vnd.geo+json&qualidade=maxima";3301
-"217";"3302";"NORTE FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3302?formato=application/vnd.geo+json&qualidade=maxima";3302
-"218";"3303";"CENTRO FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3303?formato=application/vnd.geo+json&qualidade=maxima";3303
-"219";"3304";"BAIXADAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3304?formato=application/vnd.geo+json&qualidade=maxima";3304
-"220";"3305";"SUL FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3305?formato=application/vnd.geo+json&qualidade=maxima";3305
-"221";"3306";"METROPOLITANA DO RIO DE JANEIRO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3306?formato=application/vnd.geo+json&qualidade=maxima";3306
-"222";"3501";"SAO JOSE DO RIO PRETO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3501?formato=application/vnd.geo+json&qualidade=maxima";3501
-"223";"3502";"RIBEIRAO PRETO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3502?formato=application/vnd.geo+json&qualidade=maxima";3502
-"224";"3503";"ARACATUBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3503?formato=application/vnd.geo+json&qualidade=maxima";3503
-"225";"3504";"BAURU";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3504?formato=application/vnd.geo+json&qualidade=maxima";3504
-"226";"3505";"ARARAQUARA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3505?formato=application/vnd.geo+json&qualidade=maxima";3505
-"227";"3506";"PIRACICABA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3506?formato=application/vnd.geo+json&qualidade=maxima";3506
-"228";"3507";"CAMPINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3507?formato=application/vnd.geo+json&qualidade=maxima";3507
-"229";"3508";"PRESIDENTE PRUDENTE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3508?formato=application/vnd.geo+json&qualidade=maxima";3508
-"230";"3509";"MARILIA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3509?formato=application/vnd.geo+json&qualidade=maxima";3509
-"231";"3510";"ASSIS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3510?formato=application/vnd.geo+json&qualidade=maxima";3510
-"232";"3511";"ITAPETININGA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3511?formato=application/vnd.geo+json&qualidade=maxima";3511
-"233";"3512";"MACRO METROPOLITANA PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3512?formato=application/vnd.geo+json&qualidade=maxima";3512
-"234";"3513";"VALE DO PARAIBA PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3513?formato=application/vnd.geo+json&qualidade=maxima";3513
-"235";"3514";"LITORAL SUL PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3514?formato=application/vnd.geo+json&qualidade=maxima";3514
-"236";"3515";"METROPOLITANA DE SAO PAULO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3515?formato=application/vnd.geo+json&qualidade=maxima";3515
-"237";"4101";"NOROESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4101?formato=application/vnd.geo+json&qualidade=maxima";4101
-"238";"4102";"CENTRAL OCIDENTAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4102?formato=application/vnd.geo+json&qualidade=maxima";4102
-"239";"4103";"NORTE CENTRAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4103?formato=application/vnd.geo+json&qualidade=maxima";4103
-"240";"4104";"NORTE PIONEIRO PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4104?formato=application/vnd.geo+json&qualidade=maxima";4104
-"241";"4105";"CENTRAL ORIENTAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4105?formato=application/vnd.geo+json&qualidade=maxima";4105
-"242";"4106";"OESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4106?formato=application/vnd.geo+json&qualidade=maxima";4106
-"243";"4107";"SUDOESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4107?formato=application/vnd.geo+json&qualidade=maxima";4107
-"244";"4108";"CENTRO-SUL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4108?formato=application/vnd.geo+json&qualidade=maxima";4108
-"245";"4109";"SUDESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4109?formato=application/vnd.geo+json&qualidade=maxima";4109
-"246";"4110";"METROPOLITANA DE CURITIBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4110?formato=application/vnd.geo+json&qualidade=maxima";4110
-"247";"4201";"OESTE CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4201?formato=application/vnd.geo+json&qualidade=maxima";4201
-"248";"4202";"NORTE CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4202?formato=application/vnd.geo+json&qualidade=maxima";4202
-"249";"4203";"SERRANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4203?formato=application/vnd.geo+json&qualidade=maxima";4203
-"250";"4204";"VALE DO ITAJAI";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4204?formato=application/vnd.geo+json&qualidade=maxima";4204
-"251";"4205";"GRANDE FLORIANOPOLIS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4205?formato=application/vnd.geo+json&qualidade=maxima";4205
-"252";"4206";"SUL CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4206?formato=application/vnd.geo+json&qualidade=maxima";4206
-"253";"4301";"NOROESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4301?formato=application/vnd.geo+json&qualidade=maxima";4301
-"254";"4302";"NORDESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4302?formato=application/vnd.geo+json&qualidade=maxima";4302
-"255";"4303";"CENTRO OCIDENTAL RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4303?formato=application/vnd.geo+json&qualidade=maxima";4303
-"256";"4304";"CENTRO ORIENTAL RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4304?formato=application/vnd.geo+json&qualidade=maxima";4304
-"257";"4305";"METROPOLITANA DE PORTO ALEGRE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4305?formato=application/vnd.geo+json&qualidade=maxima";4305
-"258";"4306";"SUDOESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4306?formato=application/vnd.geo+json&qualidade=maxima";4306
-"259";"4307";"SUDESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4307?formato=application/vnd.geo+json&qualidade=maxima";4307
-"260";"5001";"PANTANAIS SUL MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5001?formato=application/vnd.geo+json&qualidade=maxima";5001
-"261";"5002";"CENTRO NORTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5002?formato=application/vnd.geo+json&qualidade=maxima";5002
-"262";"5003";"LESTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5003?formato=application/vnd.geo+json&qualidade=maxima";5003
-"263";"5004";"SUDOESTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5004?formato=application/vnd.geo+json&qualidade=maxima";5004
-"264";"5101";"NORTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5101?formato=application/vnd.geo+json&qualidade=maxima";5101
-"265";"5102";"NORDESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5102?formato=application/vnd.geo+json&qualidade=maxima";5102
-"266";"5103";"SUDOESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5103?formato=application/vnd.geo+json&qualidade=maxima";5103
-"267";"5104";"CENTRO-SUL MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5104?formato=application/vnd.geo+json&qualidade=maxima";5104
-"268";"5105";"SUDESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5105?formato=application/vnd.geo+json&qualidade=maxima";5105
-"269";"5201";"NOROESTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5201?formato=application/vnd.geo+json&qualidade=maxima";5201
-"270";"5202";"NORTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5202?formato=application/vnd.geo+json&qualidade=maxima";5202
-"271";"5203";"CENTRO GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5203?formato=application/vnd.geo+json&qualidade=maxima";5203
-"272";"5204";"LESTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5204?formato=application/vnd.geo+json&qualidade=maxima";5204
-"273";"5205";"SUL GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5205?formato=application/vnd.geo+json&qualidade=maxima";5205
-"274";"5301";"DISTRITO FEDERAL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5301?formato=application/vnd.geo+json&qualidade=maxima";5301
-"275";"Madeira-Guapore";"MADEIRA-GUAPORE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1101?formato=application/vnd.geo+json&qualidade=maxima";1101
-"276";"Leste Rondoniense";"LESTE RONDONIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1102?formato=application/vnd.geo+json&qualidade=maxima";1102
-"277";"Vale Do Jurua";"VALE DO JURUA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1201?formato=application/vnd.geo+json&qualidade=maxima";1201
-"278";"Vale Do Acre";"VALE DO ACRE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1202?formato=application/vnd.geo+json&qualidade=maxima";1202
-"279";"Norte Amazonense";"NORTE AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1301?formato=application/vnd.geo+json&qualidade=maxima";1301
-"280";"Sudoeste Amazonense";"SUDOESTE AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1302?formato=application/vnd.geo+json&qualidade=maxima";1302
-"281";"Centro Amazonense";"CENTRO AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1303?formato=application/vnd.geo+json&qualidade=maxima";1303
-"282";"Sul Amazonense";"SUL AMAZONENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1304?formato=application/vnd.geo+json&qualidade=maxima";1304
-"283";"Norte De Roraima";"NORTE DE RORAIMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1401?formato=application/vnd.geo+json&qualidade=maxima";1401
-"284";"Sul De Roraima";"SUL DE RORAIMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1402?formato=application/vnd.geo+json&qualidade=maxima";1402
-"285";"Baixo Amazonas";"BAIXO AMAZONAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1501?formato=application/vnd.geo+json&qualidade=maxima";1501
-"286";"Maraja";"MARAJA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1502?formato=application/vnd.geo+json&qualidade=maxima";1502
-"287";"Metropolitana De Belem";"METROPOLITANA DE BELEM";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1503?formato=application/vnd.geo+json&qualidade=maxima";1503
-"288";"Nordeste Paraense";"NORDESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1504?formato=application/vnd.geo+json&qualidade=maxima";1504
-"289";"Sudoeste Paraense";"SUDOESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1505?formato=application/vnd.geo+json&qualidade=maxima";1505
-"290";"Sudeste Paraense";"SUDESTE PARAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1506?formato=application/vnd.geo+json&qualidade=maxima";1506
-"291";"Norte Do Amapa";"NORTE DO AMAPA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1601?formato=application/vnd.geo+json&qualidade=maxima";1601
-"292";"Sul Do Amapa";"SUL DO AMAPA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1602?formato=application/vnd.geo+json&qualidade=maxima";1602
-"293";"Ocidental Do Tocantins";"OCIDENTAL DO TOCANTINS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1701?formato=application/vnd.geo+json&qualidade=maxima";1701
-"294";"Oriental Do Tocantins";"ORIENTAL DO TOCANTINS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1702?formato=application/vnd.geo+json&qualidade=maxima";1702
-"295";"Norte Maranhense";"NORTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2101?formato=application/vnd.geo+json&qualidade=maxima";2101
-"296";"Oeste Maranhense";"OESTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2102?formato=application/vnd.geo+json&qualidade=maxima";2102
-"297";"Centro Maranhense";"CENTRO MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2103?formato=application/vnd.geo+json&qualidade=maxima";2103
-"298";"Leste Maranhense";"LESTE MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2104?formato=application/vnd.geo+json&qualidade=maxima";2104
-"299";"Sul Maranhense";"SUL MARANHENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2105?formato=application/vnd.geo+json&qualidade=maxima";2105
-"300";"Norte Piauiense";"NORTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2201?formato=application/vnd.geo+json&qualidade=maxima";2201
-"301";"Centro-Norte Piauiense";"CENTRO-NORTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2202?formato=application/vnd.geo+json&qualidade=maxima";2202
-"302";"Sudoeste Piauiense";"SUDOESTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2203?formato=application/vnd.geo+json&qualidade=maxima";2203
-"303";"Sudeste Piauiense";"SUDESTE PIAUIENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2204?formato=application/vnd.geo+json&qualidade=maxima";2204
-"304";"Noroeste Cearense";"NOROESTE CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2301?formato=application/vnd.geo+json&qualidade=maxima";2301
-"305";"Norte Cearense";"NORTE CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2302?formato=application/vnd.geo+json&qualidade=maxima";2302
-"306";"Metropolitana De Fortaleza";"METROPOLITANA DE FORTALEZA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2303?formato=application/vnd.geo+json&qualidade=maxima";2303
-"307";"Sertoes Cearenses";"SERTOES CEARENSES";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2304?formato=application/vnd.geo+json&qualidade=maxima";2304
-"308";"Jaguaribe";"JAGUARIBE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2305?formato=application/vnd.geo+json&qualidade=maxima";2305
-"309";"Centro-Sul Cearense";"CENTRO-SUL CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2306?formato=application/vnd.geo+json&qualidade=maxima";2306
-"310";"Sul Cearense";"SUL CEARENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2307?formato=application/vnd.geo+json&qualidade=maxima";2307
-"311";"Oeste Portiguar";"OESTE PORTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2401?formato=application/vnd.geo+json&qualidade=maxima";2401
-"312";"Central Potiguar";"CENTRAL POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2402?formato=application/vnd.geo+json&qualidade=maxima";2402
-"313";"Agreste Potiguar";"AGRESTE POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2403?formato=application/vnd.geo+json&qualidade=maxima";2403
-"314";"Leste Potiguar";"LESTE POTIGUAR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2404?formato=application/vnd.geo+json&qualidade=maxima";2404
-"315";"Sertao Paraibano";"SERTAO PARAIBANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2501?formato=application/vnd.geo+json&qualidade=maxima";2501
-"316";"Borborema";"BORBOREMA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2502?formato=application/vnd.geo+json&qualidade=maxima";2502
-"317";"Agreste Paraibano";"AGRESTE PARAIBANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2503?formato=application/vnd.geo+json&qualidade=maxima";2503
-"318";"Mata Paraibana";"MATA PARAIBANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2504?formato=application/vnd.geo+json&qualidade=maxima";2504
-"319";"Sertao Pernambucano";"SERTAO PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2601?formato=application/vnd.geo+json&qualidade=maxima";2601
-"320";"Sao Francisco Pernambucano";"SAO FRANCISCO PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2602?formato=application/vnd.geo+json&qualidade=maxima";2602
-"321";"Agreste Pernambucano";"AGRESTE PERNAMBUCANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2603?formato=application/vnd.geo+json&qualidade=maxima";2603
-"322";"Mata Pernambucana";"MATA PERNAMBUCANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2604?formato=application/vnd.geo+json&qualidade=maxima";2604
-"323";"Metropolitana De Recife";"METROPOLITANA DE RECIFE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2605?formato=application/vnd.geo+json&qualidade=maxima";2605
-"324";"Sertao Alagoano";"SERTAO ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2701?formato=application/vnd.geo+json&qualidade=maxima";2701
-"325";"Agreste Alagoano";"AGRESTE ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2702?formato=application/vnd.geo+json&qualidade=maxima";2702
-"326";"Leste Alagoano";"LESTE ALAGOANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2703?formato=application/vnd.geo+json&qualidade=maxima";2703
-"327";"Sertao Sergipano";"SERTAO SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2801?formato=application/vnd.geo+json&qualidade=maxima";2801
-"328";"Agreste Sergipano";"AGRESTE SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2802?formato=application/vnd.geo+json&qualidade=maxima";2802
-"329";"Leste Sergipano";"LESTE SERGIPANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2803?formato=application/vnd.geo+json&qualidade=maxima";2803
-"330";"Extremo Oeste Baiano";"EXTREMO OESTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2901?formato=application/vnd.geo+json&qualidade=maxima";2901
-"331";"Vale Sao-Franciscano Da Bahia";"VALE SAO-FRANCISCANO DA BAHIA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2902?formato=application/vnd.geo+json&qualidade=maxima";2902
-"332";"Centro Norte Baiano";"CENTRO NORTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2903?formato=application/vnd.geo+json&qualidade=maxima";2903
-"333";"Nordeste Baiano";"NORDESTE BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2904?formato=application/vnd.geo+json&qualidade=maxima";2904
-"334";"Metropolitana De Salvador";"METROPOLITANA DE SALVADOR";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2905?formato=application/vnd.geo+json&qualidade=maxima";2905
-"335";"Centro Sul Baiano";"CENTRO SUL BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2906?formato=application/vnd.geo+json&qualidade=maxima";2906
-"336";"Sul Baiano";"SUL BAIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2907?formato=application/vnd.geo+json&qualidade=maxima";2907
-"337";"Noroeste De Minas";"NOROESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3101?formato=application/vnd.geo+json&qualidade=maxima";3101
-"338";"Norte De Minas";"NORTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3102?formato=application/vnd.geo+json&qualidade=maxima";3102
-"339";"Jequitinhonha";"JEQUITINHONHA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3103?formato=application/vnd.geo+json&qualidade=maxima";3103
-"340";"Vale Do Mucuri";"VALE DO MUCURI";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3104?formato=application/vnd.geo+json&qualidade=maxima";3104
-"341";"Triangulo Mineiro/Alto Paraiba";"TRIANGULO MINEIRO/ALTO PARAIBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3105?formato=application/vnd.geo+json&qualidade=maxima";3105
-"342";"Central Mineira";"CENTRAL MINEIRA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3106?formato=application/vnd.geo+json&qualidade=maxima";3106
-"343";"Metropolitana De Belo Horizonte";"METROPOLITANA DE BELO HORIZONTE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3107?formato=application/vnd.geo+json&qualidade=maxima";3107
-"344";"Vale Do Rio Doce";"VALE DO RIO DOCE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3108?formato=application/vnd.geo+json&qualidade=maxima";3108
-"345";"Oeste De Minas";"OESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3109?formato=application/vnd.geo+json&qualidade=maxima";3109
-"346";"Sul/Sudeste De Minas";"SUL/SUDESTE DE MINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3110?formato=application/vnd.geo+json&qualidade=maxima";3110
-"347";"Campo Das Vertentes";"CAMPO DAS VERTENTES";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3111?formato=application/vnd.geo+json&qualidade=maxima";3111
-"348";"Zona Da Mata";"ZONA DA MATA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3112?formato=application/vnd.geo+json&qualidade=maxima";3112
-"349";"Noroeste Espirito-Santense";"NOROESTE ESPIRITO-SANTENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3201?formato=application/vnd.geo+json&qualidade=maxima";3201
-"350";"Litoral Norte Espirito-Santense";"LITORAL NORTE ESPIRITO-SANTENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3202?formato=application/vnd.geo+json&qualidade=maxima";3202
-"351";"Central Espirito-Santanse";"CENTRAL ESPIRITO-SANTANSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3203?formato=application/vnd.geo+json&qualidade=maxima";3203
-"352";"Sul Espirito-Santanse";"SUL ESPIRITO-SANTANSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3204?formato=application/vnd.geo+json&qualidade=maxima";3204
-"353";"Noroeste Fluminense";"NOROESTE FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3301?formato=application/vnd.geo+json&qualidade=maxima";3301
-"354";"Norte Fluminense";"NORTE FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3302?formato=application/vnd.geo+json&qualidade=maxima";3302
-"355";"Centro Fluminense";"CENTRO FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3303?formato=application/vnd.geo+json&qualidade=maxima";3303
-"356";"Baixadas";"BAIXADAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3304?formato=application/vnd.geo+json&qualidade=maxima";3304
-"357";"Sul Fluminense";"SUL FLUMINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3305?formato=application/vnd.geo+json&qualidade=maxima";3305
-"358";"Metropolitana Do Rio De Janeiro";"METROPOLITANA DO RIO DE JANEIRO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3306?formato=application/vnd.geo+json&qualidade=maxima";3306
-"359";"Sao Jose Do Rio Preto";"SAO JOSE DO RIO PRETO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3501?formato=application/vnd.geo+json&qualidade=maxima";3501
-"360";"Ribeirao Preto";"RIBEIRAO PRETO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3502?formato=application/vnd.geo+json&qualidade=maxima";3502
-"361";"Aracatuba";"ARACATUBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3503?formato=application/vnd.geo+json&qualidade=maxima";3503
-"362";"Bauru";"BAURU";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3504?formato=application/vnd.geo+json&qualidade=maxima";3504
-"363";"Araraquara";"ARARAQUARA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3505?formato=application/vnd.geo+json&qualidade=maxima";3505
-"364";"Piracicaba";"PIRACICABA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3506?formato=application/vnd.geo+json&qualidade=maxima";3506
-"365";"Campinas";"CAMPINAS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3507?formato=application/vnd.geo+json&qualidade=maxima";3507
-"366";"Presidente Prudente";"PRESIDENTE PRUDENTE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3508?formato=application/vnd.geo+json&qualidade=maxima";3508
-"367";"Marilia";"MARILIA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3509?formato=application/vnd.geo+json&qualidade=maxima";3509
-"368";"Assis";"ASSIS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3510?formato=application/vnd.geo+json&qualidade=maxima";3510
-"369";"Itapetininga";"ITAPETININGA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3511?formato=application/vnd.geo+json&qualidade=maxima";3511
-"370";"Macro Metropolitana Paulista";"MACRO METROPOLITANA PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3512?formato=application/vnd.geo+json&qualidade=maxima";3512
-"371";"Vale Do Paraiba Paulista";"VALE DO PARAIBA PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3513?formato=application/vnd.geo+json&qualidade=maxima";3513
-"372";"Litoral Sul Paulista";"LITORAL SUL PAULISTA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3514?formato=application/vnd.geo+json&qualidade=maxima";3514
-"373";"Metropolitana De Sao Paulo";"METROPOLITANA DE SAO PAULO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3515?formato=application/vnd.geo+json&qualidade=maxima";3515
-"374";"Noroeste Paranaense";"NOROESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4101?formato=application/vnd.geo+json&qualidade=maxima";4101
-"375";"Central Ocidental Paranaense";"CENTRAL OCIDENTAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4102?formato=application/vnd.geo+json&qualidade=maxima";4102
-"376";"Norte Central Paranaense";"NORTE CENTRAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4103?formato=application/vnd.geo+json&qualidade=maxima";4103
-"377";"Norte Pioneiro Paranaense";"NORTE PIONEIRO PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4104?formato=application/vnd.geo+json&qualidade=maxima";4104
-"378";"Central Oriental Paranaense";"CENTRAL ORIENTAL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4105?formato=application/vnd.geo+json&qualidade=maxima";4105
-"379";"Oeste Paranaense";"OESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4106?formato=application/vnd.geo+json&qualidade=maxima";4106
-"380";"Sudoeste Paranaense";"SUDOESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4107?formato=application/vnd.geo+json&qualidade=maxima";4107
-"381";"Centro-Sul Paranaense";"CENTRO-SUL PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4108?formato=application/vnd.geo+json&qualidade=maxima";4108
-"382";"Sudeste Paranaense";"SUDESTE PARANAENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4109?formato=application/vnd.geo+json&qualidade=maxima";4109
-"383";"Metropolitana De Curitiba";"METROPOLITANA DE CURITIBA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4110?formato=application/vnd.geo+json&qualidade=maxima";4110
-"384";"Oeste Catarinense";"OESTE CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4201?formato=application/vnd.geo+json&qualidade=maxima";4201
-"385";"Norte Catarinense";"NORTE CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4202?formato=application/vnd.geo+json&qualidade=maxima";4202
-"386";"Serrana";"SERRANA";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4203?formato=application/vnd.geo+json&qualidade=maxima";4203
-"387";"Vale Do Itajai";"VALE DO ITAJAI";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4204?formato=application/vnd.geo+json&qualidade=maxima";4204
-"388";"Grande Florianopolis";"GRANDE FLORIANOPOLIS";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4205?formato=application/vnd.geo+json&qualidade=maxima";4205
-"389";"Sul Catarinense";"SUL CATARINENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4206?formato=application/vnd.geo+json&qualidade=maxima";4206
-"390";"Noroeste Rio-Grandense";"NOROESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4301?formato=application/vnd.geo+json&qualidade=maxima";4301
-"391";"Nordeste Rio-Grandense";"NORDESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4302?formato=application/vnd.geo+json&qualidade=maxima";4302
-"392";"Centro Ocidental Rio-Grandense";"CENTRO OCIDENTAL RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4303?formato=application/vnd.geo+json&qualidade=maxima";4303
-"393";"Centro Oriental Rio-Grandense";"CENTRO ORIENTAL RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4304?formato=application/vnd.geo+json&qualidade=maxima";4304
-"394";"Metropolitana De Porto Alegre";"METROPOLITANA DE PORTO ALEGRE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4305?formato=application/vnd.geo+json&qualidade=maxima";4305
-"395";"Sudoeste Rio-Grandense";"SUDOESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4306?formato=application/vnd.geo+json&qualidade=maxima";4306
-"396";"Sudeste Rio-Grandense";"SUDESTE RIO-GRANDENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4307?formato=application/vnd.geo+json&qualidade=maxima";4307
-"397";"Pantanais Sul Mato-Grossense";"PANTANAIS SUL MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5001?formato=application/vnd.geo+json&qualidade=maxima";5001
-"398";"Centro Norte De Mato Grosso Do Sul";"CENTRO NORTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5002?formato=application/vnd.geo+json&qualidade=maxima";5002
-"399";"Leste De Mato Grosso Do Sul";"LESTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5003?formato=application/vnd.geo+json&qualidade=maxima";5003
-"400";"Sudoeste De Mato Grosso Do Sul";"SUDOESTE DE MATO GROSSO DO SUL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5004?formato=application/vnd.geo+json&qualidade=maxima";5004
-"401";"Norte Mato-Grossense";"NORTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5101?formato=application/vnd.geo+json&qualidade=maxima";5101
-"402";"Nordeste Mato-Grossense";"NORDESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5102?formato=application/vnd.geo+json&qualidade=maxima";5102
-"403";"Sudoeste Mato-Grossense";"SUDOESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5103?formato=application/vnd.geo+json&qualidade=maxima";5103
-"404";"Centro-Sul Mato-Grossense";"CENTRO-SUL MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5104?formato=application/vnd.geo+json&qualidade=maxima";5104
-"405";"Sudeste Mato-Grossense";"SUDESTE MATO-GROSSENSE";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5105?formato=application/vnd.geo+json&qualidade=maxima";5105
-"406";"Noroeste Goiano";"NOROESTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5201?formato=application/vnd.geo+json&qualidade=maxima";5201
-"407";"Norte Goiano";"NORTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5202?formato=application/vnd.geo+json&qualidade=maxima";5202
-"408";"Centro Goiano";"CENTRO GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5203?formato=application/vnd.geo+json&qualidade=maxima";5203
-"409";"Leste Goiano";"LESTE GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5204?formato=application/vnd.geo+json&qualidade=maxima";5204
-"410";"Sul Goiano";"SUL GOIANO";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5205?formato=application/vnd.geo+json&qualidade=maxima";5205
-"411";"Distrito Federal";"DISTRITO FEDERAL";"https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5301?formato=application/vnd.geo+json&qualidade=maxima";5301
+Alias;Place;Link;Code
+MADEIRA-GUAPORE;MADEIRA-GUAPORE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1101?formato=application/vnd.geo+json&qualidade=maxima;1101
+LESTE RONDONIENSE;LESTE RONDONIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1102?formato=application/vnd.geo+json&qualidade=maxima;1102
+VALE DO JURUA;VALE DO JURUA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1201?formato=application/vnd.geo+json&qualidade=maxima;1201
+VALE DO ACRE;VALE DO ACRE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1202?formato=application/vnd.geo+json&qualidade=maxima;1202
+NORTE AMAZONENSE;NORTE AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1301?formato=application/vnd.geo+json&qualidade=maxima;1301
+SUDOESTE AMAZONENSE;SUDOESTE AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1302?formato=application/vnd.geo+json&qualidade=maxima;1302
+CENTRO AMAZONENSE;CENTRO AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1303?formato=application/vnd.geo+json&qualidade=maxima;1303
+SUL AMAZONENSE;SUL AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1304?formato=application/vnd.geo+json&qualidade=maxima;1304
+NORTE DE RORAIMA;NORTE DE RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1401?formato=application/vnd.geo+json&qualidade=maxima;1401
+SUL DE RORAIMA;SUL DE RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1402?formato=application/vnd.geo+json&qualidade=maxima;1402
+BAIXO AMAZONAS;BAIXO AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1501?formato=application/vnd.geo+json&qualidade=maxima;1501
+MARAJA;MARAJA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1502?formato=application/vnd.geo+json&qualidade=maxima;1502
+METROPOLITANA DE BELEM;METROPOLITANA DE BELEM;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1503?formato=application/vnd.geo+json&qualidade=maxima;1503
+NORDESTE PARAENSE;NORDESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1504?formato=application/vnd.geo+json&qualidade=maxima;1504
+SUDOESTE PARAENSE;SUDOESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1505?formato=application/vnd.geo+json&qualidade=maxima;1505
+SUDESTE PARAENSE;SUDESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1506?formato=application/vnd.geo+json&qualidade=maxima;1506
+NORTE DO AMAPA;NORTE DO AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1601?formato=application/vnd.geo+json&qualidade=maxima;1601
+SUL DO AMAPA;SUL DO AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1602?formato=application/vnd.geo+json&qualidade=maxima;1602
+OCIDENTAL DO TOCANTINS;OCIDENTAL DO TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1701?formato=application/vnd.geo+json&qualidade=maxima;1701
+ORIENTAL DO TOCANTINS;ORIENTAL DO TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1702?formato=application/vnd.geo+json&qualidade=maxima;1702
+NORTE MARANHENSE;NORTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2101?formato=application/vnd.geo+json&qualidade=maxima;2101
+OESTE MARANHENSE;OESTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2102?formato=application/vnd.geo+json&qualidade=maxima;2102
+CENTRO MARANHENSE;CENTRO MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2103?formato=application/vnd.geo+json&qualidade=maxima;2103
+LESTE MARANHENSE;LESTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2104?formato=application/vnd.geo+json&qualidade=maxima;2104
+SUL MARANHENSE;SUL MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2105?formato=application/vnd.geo+json&qualidade=maxima;2105
+NORTE PIAUIENSE;NORTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2201?formato=application/vnd.geo+json&qualidade=maxima;2201
+CENTRO-NORTE PIAUIENSE;CENTRO-NORTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2202?formato=application/vnd.geo+json&qualidade=maxima;2202
+SUDOESTE PIAUIENSE;SUDOESTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2203?formato=application/vnd.geo+json&qualidade=maxima;2203
+SUDESTE PIAUIENSE;SUDESTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2204?formato=application/vnd.geo+json&qualidade=maxima;2204
+NOROESTE CEARENSE;NOROESTE CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2301?formato=application/vnd.geo+json&qualidade=maxima;2301
+NORTE CEARENSE;NORTE CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2302?formato=application/vnd.geo+json&qualidade=maxima;2302
+METROPOLITANA DE FORTALEZA;METROPOLITANA DE FORTALEZA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2303?formato=application/vnd.geo+json&qualidade=maxima;2303
+SERTOES CEARENSES;SERTOES CEARENSES;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2304?formato=application/vnd.geo+json&qualidade=maxima;2304
+JAGUARIBE;JAGUARIBE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2305?formato=application/vnd.geo+json&qualidade=maxima;2305
+CENTRO-SUL CEARENSE;CENTRO-SUL CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2306?formato=application/vnd.geo+json&qualidade=maxima;2306
+SUL CEARENSE;SUL CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2307?formato=application/vnd.geo+json&qualidade=maxima;2307
+OESTE PORTIGUAR;OESTE PORTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2401?formato=application/vnd.geo+json&qualidade=maxima;2401
+CENTRAL POTIGUAR;CENTRAL POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2402?formato=application/vnd.geo+json&qualidade=maxima;2402
+AGRESTE POTIGUAR;AGRESTE POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2403?formato=application/vnd.geo+json&qualidade=maxima;2403
+LESTE POTIGUAR;LESTE POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2404?formato=application/vnd.geo+json&qualidade=maxima;2404
+SERTAO PARAIBANO;SERTAO PARAIBANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2501?formato=application/vnd.geo+json&qualidade=maxima;2501
+BORBOREMA;BORBOREMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2502?formato=application/vnd.geo+json&qualidade=maxima;2502
+AGRESTE PARAIBANO;AGRESTE PARAIBANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2503?formato=application/vnd.geo+json&qualidade=maxima;2503
+MATA PARAIBANA;MATA PARAIBANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2504?formato=application/vnd.geo+json&qualidade=maxima;2504
+SERTAO PERNAMBUCANO;SERTAO PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2601?formato=application/vnd.geo+json&qualidade=maxima;2601
+SAO FRANCISCO PERNAMBUCANO;SAO FRANCISCO PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2602?formato=application/vnd.geo+json&qualidade=maxima;2602
+AGRESTE PERNAMBUCANO;AGRESTE PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2603?formato=application/vnd.geo+json&qualidade=maxima;2603
+MATA PERNAMBUCANA;MATA PERNAMBUCANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2604?formato=application/vnd.geo+json&qualidade=maxima;2604
+METROPOLITANA DE RECIFE;METROPOLITANA DE RECIFE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2605?formato=application/vnd.geo+json&qualidade=maxima;2605
+SERTAO ALAGOANO;SERTAO ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2701?formato=application/vnd.geo+json&qualidade=maxima;2701
+AGRESTE ALAGOANO;AGRESTE ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2702?formato=application/vnd.geo+json&qualidade=maxima;2702
+LESTE ALAGOANO;LESTE ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2703?formato=application/vnd.geo+json&qualidade=maxima;2703
+SERTAO SERGIPANO;SERTAO SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2801?formato=application/vnd.geo+json&qualidade=maxima;2801
+AGRESTE SERGIPANO;AGRESTE SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2802?formato=application/vnd.geo+json&qualidade=maxima;2802
+LESTE SERGIPANO;LESTE SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2803?formato=application/vnd.geo+json&qualidade=maxima;2803
+EXTREMO OESTE BAIANO;EXTREMO OESTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2901?formato=application/vnd.geo+json&qualidade=maxima;2901
+VALE SAO-FRANCISCANO DA BAHIA;VALE SAO-FRANCISCANO DA BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2902?formato=application/vnd.geo+json&qualidade=maxima;2902
+CENTRO NORTE BAIANO;CENTRO NORTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2903?formato=application/vnd.geo+json&qualidade=maxima;2903
+NORDESTE BAIANO;NORDESTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2904?formato=application/vnd.geo+json&qualidade=maxima;2904
+METROPOLITANA DE SALVADOR;METROPOLITANA DE SALVADOR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2905?formato=application/vnd.geo+json&qualidade=maxima;2905
+CENTRO SUL BAIANO;CENTRO SUL BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2906?formato=application/vnd.geo+json&qualidade=maxima;2906
+SUL BAIANO;SUL BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2907?formato=application/vnd.geo+json&qualidade=maxima;2907
+NOROESTE DE MINAS;NOROESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3101?formato=application/vnd.geo+json&qualidade=maxima;3101
+NORTE DE MINAS;NORTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3102?formato=application/vnd.geo+json&qualidade=maxima;3102
+JEQUITINHONHA;JEQUITINHONHA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3103?formato=application/vnd.geo+json&qualidade=maxima;3103
+VALE DO MUCURI;VALE DO MUCURI;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3104?formato=application/vnd.geo+json&qualidade=maxima;3104
+TRIANGULO MINEIRO/ALTO PARAIBA;TRIANGULO MINEIRO/ALTO PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3105?formato=application/vnd.geo+json&qualidade=maxima;3105
+CENTRAL MINEIRA;CENTRAL MINEIRA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3106?formato=application/vnd.geo+json&qualidade=maxima;3106
+METROPOLITANA DE BELO HORIZONTE;METROPOLITANA DE BELO HORIZONTE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3107?formato=application/vnd.geo+json&qualidade=maxima;3107
+VALE DO RIO DOCE;VALE DO RIO DOCE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3108?formato=application/vnd.geo+json&qualidade=maxima;3108
+OESTE DE MINAS;OESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3109?formato=application/vnd.geo+json&qualidade=maxima;3109
+SUL/SUDESTE DE MINAS;SUL/SUDESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3110?formato=application/vnd.geo+json&qualidade=maxima;3110
+CAMPO DAS VERTENTES;CAMPO DAS VERTENTES;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3111?formato=application/vnd.geo+json&qualidade=maxima;3111
+ZONA DA MATA;ZONA DA MATA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3112?formato=application/vnd.geo+json&qualidade=maxima;3112
+NOROESTE ESPIRITO-SANTENSE;NOROESTE ESPIRITO-SANTENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3201?formato=application/vnd.geo+json&qualidade=maxima;3201
+LITORAL NORTE ESPIRITO-SANTENSE;LITORAL NORTE ESPIRITO-SANTENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3202?formato=application/vnd.geo+json&qualidade=maxima;3202
+CENTRAL ESPIRITO-SANTANSE;CENTRAL ESPIRITO-SANTANSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3203?formato=application/vnd.geo+json&qualidade=maxima;3203
+SUL ESPIRITO-SANTANSE;SUL ESPIRITO-SANTANSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3204?formato=application/vnd.geo+json&qualidade=maxima;3204
+NOROESTE FLUMINENSE;NOROESTE FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3301?formato=application/vnd.geo+json&qualidade=maxima;3301
+NORTE FLUMINENSE;NORTE FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3302?formato=application/vnd.geo+json&qualidade=maxima;3302
+CENTRO FLUMINENSE;CENTRO FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3303?formato=application/vnd.geo+json&qualidade=maxima;3303
+BAIXADAS;BAIXADAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3304?formato=application/vnd.geo+json&qualidade=maxima;3304
+SUL FLUMINENSE;SUL FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3305?formato=application/vnd.geo+json&qualidade=maxima;3305
+METROPOLITANA DO RIO DE JANEIRO;METROPOLITANA DO RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3306?formato=application/vnd.geo+json&qualidade=maxima;3306
+SAO JOSE DO RIO PRETO;SAO JOSE DO RIO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3501?formato=application/vnd.geo+json&qualidade=maxima;3501
+RIBEIRAO PRETO;RIBEIRAO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3502?formato=application/vnd.geo+json&qualidade=maxima;3502
+ARACATUBA;ARACATUBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3503?formato=application/vnd.geo+json&qualidade=maxima;3503
+BAURU;BAURU;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3504?formato=application/vnd.geo+json&qualidade=maxima;3504
+ARARAQUARA;ARARAQUARA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3505?formato=application/vnd.geo+json&qualidade=maxima;3505
+PIRACICABA;PIRACICABA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3506?formato=application/vnd.geo+json&qualidade=maxima;3506
+CAMPINAS;CAMPINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3507?formato=application/vnd.geo+json&qualidade=maxima;3507
+PRESIDENTE PRUDENTE;PRESIDENTE PRUDENTE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3508?formato=application/vnd.geo+json&qualidade=maxima;3508
+MARILIA;MARILIA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3509?formato=application/vnd.geo+json&qualidade=maxima;3509
+ASSIS;ASSIS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3510?formato=application/vnd.geo+json&qualidade=maxima;3510
+ITAPETININGA;ITAPETININGA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3511?formato=application/vnd.geo+json&qualidade=maxima;3511
+MACRO METROPOLITANA PAULISTA;MACRO METROPOLITANA PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3512?formato=application/vnd.geo+json&qualidade=maxima;3512
+VALE DO PARAIBA PAULISTA;VALE DO PARAIBA PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3513?formato=application/vnd.geo+json&qualidade=maxima;3513
+LITORAL SUL PAULISTA;LITORAL SUL PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3514?formato=application/vnd.geo+json&qualidade=maxima;3514
+METROPOLITANA DE SAO PAULO;METROPOLITANA DE SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3515?formato=application/vnd.geo+json&qualidade=maxima;3515
+NOROESTE PARANAENSE;NOROESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4101?formato=application/vnd.geo+json&qualidade=maxima;4101
+CENTRAL OCIDENTAL PARANAENSE;CENTRAL OCIDENTAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4102?formato=application/vnd.geo+json&qualidade=maxima;4102
+NORTE CENTRAL PARANAENSE;NORTE CENTRAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4103?formato=application/vnd.geo+json&qualidade=maxima;4103
+NORTE PIONEIRO PARANAENSE;NORTE PIONEIRO PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4104?formato=application/vnd.geo+json&qualidade=maxima;4104
+CENTRAL ORIENTAL PARANAENSE;CENTRAL ORIENTAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4105?formato=application/vnd.geo+json&qualidade=maxima;4105
+OESTE PARANAENSE;OESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4106?formato=application/vnd.geo+json&qualidade=maxima;4106
+SUDOESTE PARANAENSE;SUDOESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4107?formato=application/vnd.geo+json&qualidade=maxima;4107
+CENTRO-SUL PARANAENSE;CENTRO-SUL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4108?formato=application/vnd.geo+json&qualidade=maxima;4108
+SUDESTE PARANAENSE;SUDESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4109?formato=application/vnd.geo+json&qualidade=maxima;4109
+METROPOLITANA DE CURITIBA;METROPOLITANA DE CURITIBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4110?formato=application/vnd.geo+json&qualidade=maxima;4110
+OESTE CATARINENSE;OESTE CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4201?formato=application/vnd.geo+json&qualidade=maxima;4201
+NORTE CATARINENSE;NORTE CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4202?formato=application/vnd.geo+json&qualidade=maxima;4202
+SERRANA;SERRANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4203?formato=application/vnd.geo+json&qualidade=maxima;4203
+VALE DO ITAJAI;VALE DO ITAJAI;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4204?formato=application/vnd.geo+json&qualidade=maxima;4204
+GRANDE FLORIANOPOLIS;GRANDE FLORIANOPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4205?formato=application/vnd.geo+json&qualidade=maxima;4205
+SUL CATARINENSE;SUL CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4206?formato=application/vnd.geo+json&qualidade=maxima;4206
+NOROESTE RIO-GRANDENSE;NOROESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4301?formato=application/vnd.geo+json&qualidade=maxima;4301
+NORDESTE RIO-GRANDENSE;NORDESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4302?formato=application/vnd.geo+json&qualidade=maxima;4302
+CENTRO OCIDENTAL RIO-GRANDENSE;CENTRO OCIDENTAL RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4303?formato=application/vnd.geo+json&qualidade=maxima;4303
+CENTRO ORIENTAL RIO-GRANDENSE;CENTRO ORIENTAL RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4304?formato=application/vnd.geo+json&qualidade=maxima;4304
+METROPOLITANA DE PORTO ALEGRE;METROPOLITANA DE PORTO ALEGRE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4305?formato=application/vnd.geo+json&qualidade=maxima;4305
+SUDOESTE RIO-GRANDENSE;SUDOESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4306?formato=application/vnd.geo+json&qualidade=maxima;4306
+SUDESTE RIO-GRANDENSE;SUDESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4307?formato=application/vnd.geo+json&qualidade=maxima;4307
+PANTANAIS SUL MATO-GROSSENSE;PANTANAIS SUL MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5001?formato=application/vnd.geo+json&qualidade=maxima;5001
+CENTRO NORTE DE MATO GROSSO DO SUL;CENTRO NORTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5002?formato=application/vnd.geo+json&qualidade=maxima;5002
+LESTE DE MATO GROSSO DO SUL;LESTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5003?formato=application/vnd.geo+json&qualidade=maxima;5003
+SUDOESTE DE MATO GROSSO DO SUL;SUDOESTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5004?formato=application/vnd.geo+json&qualidade=maxima;5004
+NORTE MATO-GROSSENSE;NORTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5101?formato=application/vnd.geo+json&qualidade=maxima;5101
+NORDESTE MATO-GROSSENSE;NORDESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5102?formato=application/vnd.geo+json&qualidade=maxima;5102
+SUDOESTE MATO-GROSSENSE;SUDOESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5103?formato=application/vnd.geo+json&qualidade=maxima;5103
+CENTRO-SUL MATO-GROSSENSE;CENTRO-SUL MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5104?formato=application/vnd.geo+json&qualidade=maxima;5104
+SUDESTE MATO-GROSSENSE;SUDESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5105?formato=application/vnd.geo+json&qualidade=maxima;5105
+NOROESTE GOIANO;NOROESTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5201?formato=application/vnd.geo+json&qualidade=maxima;5201
+NORTE GOIANO;NORTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5202?formato=application/vnd.geo+json&qualidade=maxima;5202
+CENTRO GOIANO;CENTRO GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5203?formato=application/vnd.geo+json&qualidade=maxima;5203
+LESTE GOIANO;LESTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5204?formato=application/vnd.geo+json&qualidade=maxima;5204
+SUL GOIANO;SUL GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5205?formato=application/vnd.geo+json&qualidade=maxima;5205
+DISTRITO FEDERAL;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5301?formato=application/vnd.geo+json&qualidade=maxima;5301
+1101;MADEIRA-GUAPORE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1101?formato=application/vnd.geo+json&qualidade=maxima;1101
+1102;LESTE RONDONIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1102?formato=application/vnd.geo+json&qualidade=maxima;1102
+1201;VALE DO JURUA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1201?formato=application/vnd.geo+json&qualidade=maxima;1201
+1202;VALE DO ACRE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1202?formato=application/vnd.geo+json&qualidade=maxima;1202
+1301;NORTE AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1301?formato=application/vnd.geo+json&qualidade=maxima;1301
+1302;SUDOESTE AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1302?formato=application/vnd.geo+json&qualidade=maxima;1302
+1303;CENTRO AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1303?formato=application/vnd.geo+json&qualidade=maxima;1303
+1304;SUL AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1304?formato=application/vnd.geo+json&qualidade=maxima;1304
+1401;NORTE DE RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1401?formato=application/vnd.geo+json&qualidade=maxima;1401
+1402;SUL DE RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1402?formato=application/vnd.geo+json&qualidade=maxima;1402
+1501;BAIXO AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1501?formato=application/vnd.geo+json&qualidade=maxima;1501
+1502;MARAJA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1502?formato=application/vnd.geo+json&qualidade=maxima;1502
+1503;METROPOLITANA DE BELEM;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1503?formato=application/vnd.geo+json&qualidade=maxima;1503
+1504;NORDESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1504?formato=application/vnd.geo+json&qualidade=maxima;1504
+1505;SUDOESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1505?formato=application/vnd.geo+json&qualidade=maxima;1505
+1506;SUDESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1506?formato=application/vnd.geo+json&qualidade=maxima;1506
+1601;NORTE DO AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1601?formato=application/vnd.geo+json&qualidade=maxima;1601
+1602;SUL DO AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1602?formato=application/vnd.geo+json&qualidade=maxima;1602
+1701;OCIDENTAL DO TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1701?formato=application/vnd.geo+json&qualidade=maxima;1701
+1702;ORIENTAL DO TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1702?formato=application/vnd.geo+json&qualidade=maxima;1702
+2101;NORTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2101?formato=application/vnd.geo+json&qualidade=maxima;2101
+2102;OESTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2102?formato=application/vnd.geo+json&qualidade=maxima;2102
+2103;CENTRO MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2103?formato=application/vnd.geo+json&qualidade=maxima;2103
+2104;LESTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2104?formato=application/vnd.geo+json&qualidade=maxima;2104
+2105;SUL MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2105?formato=application/vnd.geo+json&qualidade=maxima;2105
+2201;NORTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2201?formato=application/vnd.geo+json&qualidade=maxima;2201
+2202;CENTRO-NORTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2202?formato=application/vnd.geo+json&qualidade=maxima;2202
+2203;SUDOESTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2203?formato=application/vnd.geo+json&qualidade=maxima;2203
+2204;SUDESTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2204?formato=application/vnd.geo+json&qualidade=maxima;2204
+2301;NOROESTE CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2301?formato=application/vnd.geo+json&qualidade=maxima;2301
+2302;NORTE CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2302?formato=application/vnd.geo+json&qualidade=maxima;2302
+2303;METROPOLITANA DE FORTALEZA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2303?formato=application/vnd.geo+json&qualidade=maxima;2303
+2304;SERTOES CEARENSES;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2304?formato=application/vnd.geo+json&qualidade=maxima;2304
+2305;JAGUARIBE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2305?formato=application/vnd.geo+json&qualidade=maxima;2305
+2306;CENTRO-SUL CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2306?formato=application/vnd.geo+json&qualidade=maxima;2306
+2307;SUL CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2307?formato=application/vnd.geo+json&qualidade=maxima;2307
+2401;OESTE PORTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2401?formato=application/vnd.geo+json&qualidade=maxima;2401
+2402;CENTRAL POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2402?formato=application/vnd.geo+json&qualidade=maxima;2402
+2403;AGRESTE POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2403?formato=application/vnd.geo+json&qualidade=maxima;2403
+2404;LESTE POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2404?formato=application/vnd.geo+json&qualidade=maxima;2404
+2501;SERTAO PARAIBANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2501?formato=application/vnd.geo+json&qualidade=maxima;2501
+2502;BORBOREMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2502?formato=application/vnd.geo+json&qualidade=maxima;2502
+2503;AGRESTE PARAIBANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2503?formato=application/vnd.geo+json&qualidade=maxima;2503
+2504;MATA PARAIBANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2504?formato=application/vnd.geo+json&qualidade=maxima;2504
+2601;SERTAO PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2601?formato=application/vnd.geo+json&qualidade=maxima;2601
+2602;SAO FRANCISCO PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2602?formato=application/vnd.geo+json&qualidade=maxima;2602
+2603;AGRESTE PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2603?formato=application/vnd.geo+json&qualidade=maxima;2603
+2604;MATA PERNAMBUCANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2604?formato=application/vnd.geo+json&qualidade=maxima;2604
+2605;METROPOLITANA DE RECIFE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2605?formato=application/vnd.geo+json&qualidade=maxima;2605
+2701;SERTAO ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2701?formato=application/vnd.geo+json&qualidade=maxima;2701
+2702;AGRESTE ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2702?formato=application/vnd.geo+json&qualidade=maxima;2702
+2703;LESTE ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2703?formato=application/vnd.geo+json&qualidade=maxima;2703
+2801;SERTAO SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2801?formato=application/vnd.geo+json&qualidade=maxima;2801
+2802;AGRESTE SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2802?formato=application/vnd.geo+json&qualidade=maxima;2802
+2803;LESTE SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2803?formato=application/vnd.geo+json&qualidade=maxima;2803
+2901;EXTREMO OESTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2901?formato=application/vnd.geo+json&qualidade=maxima;2901
+2902;VALE SAO-FRANCISCANO DA BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2902?formato=application/vnd.geo+json&qualidade=maxima;2902
+2903;CENTRO NORTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2903?formato=application/vnd.geo+json&qualidade=maxima;2903
+2904;NORDESTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2904?formato=application/vnd.geo+json&qualidade=maxima;2904
+2905;METROPOLITANA DE SALVADOR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2905?formato=application/vnd.geo+json&qualidade=maxima;2905
+2906;CENTRO SUL BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2906?formato=application/vnd.geo+json&qualidade=maxima;2906
+2907;SUL BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2907?formato=application/vnd.geo+json&qualidade=maxima;2907
+3101;NOROESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3101?formato=application/vnd.geo+json&qualidade=maxima;3101
+3102;NORTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3102?formato=application/vnd.geo+json&qualidade=maxima;3102
+3103;JEQUITINHONHA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3103?formato=application/vnd.geo+json&qualidade=maxima;3103
+3104;VALE DO MUCURI;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3104?formato=application/vnd.geo+json&qualidade=maxima;3104
+3105;TRIANGULO MINEIRO/ALTO PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3105?formato=application/vnd.geo+json&qualidade=maxima;3105
+3106;CENTRAL MINEIRA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3106?formato=application/vnd.geo+json&qualidade=maxima;3106
+3107;METROPOLITANA DE BELO HORIZONTE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3107?formato=application/vnd.geo+json&qualidade=maxima;3107
+3108;VALE DO RIO DOCE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3108?formato=application/vnd.geo+json&qualidade=maxima;3108
+3109;OESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3109?formato=application/vnd.geo+json&qualidade=maxima;3109
+3110;SUL/SUDESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3110?formato=application/vnd.geo+json&qualidade=maxima;3110
+3111;CAMPO DAS VERTENTES;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3111?formato=application/vnd.geo+json&qualidade=maxima;3111
+3112;ZONA DA MATA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3112?formato=application/vnd.geo+json&qualidade=maxima;3112
+3201;NOROESTE ESPIRITO-SANTENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3201?formato=application/vnd.geo+json&qualidade=maxima;3201
+3202;LITORAL NORTE ESPIRITO-SANTENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3202?formato=application/vnd.geo+json&qualidade=maxima;3202
+3203;CENTRAL ESPIRITO-SANTANSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3203?formato=application/vnd.geo+json&qualidade=maxima;3203
+3204;SUL ESPIRITO-SANTANSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3204?formato=application/vnd.geo+json&qualidade=maxima;3204
+3301;NOROESTE FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3301?formato=application/vnd.geo+json&qualidade=maxima;3301
+3302;NORTE FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3302?formato=application/vnd.geo+json&qualidade=maxima;3302
+3303;CENTRO FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3303?formato=application/vnd.geo+json&qualidade=maxima;3303
+3304;BAIXADAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3304?formato=application/vnd.geo+json&qualidade=maxima;3304
+3305;SUL FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3305?formato=application/vnd.geo+json&qualidade=maxima;3305
+3306;METROPOLITANA DO RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3306?formato=application/vnd.geo+json&qualidade=maxima;3306
+3501;SAO JOSE DO RIO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3501?formato=application/vnd.geo+json&qualidade=maxima;3501
+3502;RIBEIRAO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3502?formato=application/vnd.geo+json&qualidade=maxima;3502
+3503;ARACATUBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3503?formato=application/vnd.geo+json&qualidade=maxima;3503
+3504;BAURU;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3504?formato=application/vnd.geo+json&qualidade=maxima;3504
+3505;ARARAQUARA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3505?formato=application/vnd.geo+json&qualidade=maxima;3505
+3506;PIRACICABA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3506?formato=application/vnd.geo+json&qualidade=maxima;3506
+3507;CAMPINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3507?formato=application/vnd.geo+json&qualidade=maxima;3507
+3508;PRESIDENTE PRUDENTE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3508?formato=application/vnd.geo+json&qualidade=maxima;3508
+3509;MARILIA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3509?formato=application/vnd.geo+json&qualidade=maxima;3509
+3510;ASSIS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3510?formato=application/vnd.geo+json&qualidade=maxima;3510
+3511;ITAPETININGA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3511?formato=application/vnd.geo+json&qualidade=maxima;3511
+3512;MACRO METROPOLITANA PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3512?formato=application/vnd.geo+json&qualidade=maxima;3512
+3513;VALE DO PARAIBA PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3513?formato=application/vnd.geo+json&qualidade=maxima;3513
+3514;LITORAL SUL PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3514?formato=application/vnd.geo+json&qualidade=maxima;3514
+3515;METROPOLITANA DE SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3515?formato=application/vnd.geo+json&qualidade=maxima;3515
+4101;NOROESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4101?formato=application/vnd.geo+json&qualidade=maxima;4101
+4102;CENTRAL OCIDENTAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4102?formato=application/vnd.geo+json&qualidade=maxima;4102
+4103;NORTE CENTRAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4103?formato=application/vnd.geo+json&qualidade=maxima;4103
+4104;NORTE PIONEIRO PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4104?formato=application/vnd.geo+json&qualidade=maxima;4104
+4105;CENTRAL ORIENTAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4105?formato=application/vnd.geo+json&qualidade=maxima;4105
+4106;OESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4106?formato=application/vnd.geo+json&qualidade=maxima;4106
+4107;SUDOESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4107?formato=application/vnd.geo+json&qualidade=maxima;4107
+4108;CENTRO-SUL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4108?formato=application/vnd.geo+json&qualidade=maxima;4108
+4109;SUDESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4109?formato=application/vnd.geo+json&qualidade=maxima;4109
+4110;METROPOLITANA DE CURITIBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4110?formato=application/vnd.geo+json&qualidade=maxima;4110
+4201;OESTE CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4201?formato=application/vnd.geo+json&qualidade=maxima;4201
+4202;NORTE CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4202?formato=application/vnd.geo+json&qualidade=maxima;4202
+4203;SERRANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4203?formato=application/vnd.geo+json&qualidade=maxima;4203
+4204;VALE DO ITAJAI;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4204?formato=application/vnd.geo+json&qualidade=maxima;4204
+4205;GRANDE FLORIANOPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4205?formato=application/vnd.geo+json&qualidade=maxima;4205
+4206;SUL CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4206?formato=application/vnd.geo+json&qualidade=maxima;4206
+4301;NOROESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4301?formato=application/vnd.geo+json&qualidade=maxima;4301
+4302;NORDESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4302?formato=application/vnd.geo+json&qualidade=maxima;4302
+4303;CENTRO OCIDENTAL RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4303?formato=application/vnd.geo+json&qualidade=maxima;4303
+4304;CENTRO ORIENTAL RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4304?formato=application/vnd.geo+json&qualidade=maxima;4304
+4305;METROPOLITANA DE PORTO ALEGRE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4305?formato=application/vnd.geo+json&qualidade=maxima;4305
+4306;SUDOESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4306?formato=application/vnd.geo+json&qualidade=maxima;4306
+4307;SUDESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4307?formato=application/vnd.geo+json&qualidade=maxima;4307
+5001;PANTANAIS SUL MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5001?formato=application/vnd.geo+json&qualidade=maxima;5001
+5002;CENTRO NORTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5002?formato=application/vnd.geo+json&qualidade=maxima;5002
+5003;LESTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5003?formato=application/vnd.geo+json&qualidade=maxima;5003
+5004;SUDOESTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5004?formato=application/vnd.geo+json&qualidade=maxima;5004
+5101;NORTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5101?formato=application/vnd.geo+json&qualidade=maxima;5101
+5102;NORDESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5102?formato=application/vnd.geo+json&qualidade=maxima;5102
+5103;SUDOESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5103?formato=application/vnd.geo+json&qualidade=maxima;5103
+5104;CENTRO-SUL MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5104?formato=application/vnd.geo+json&qualidade=maxima;5104
+5105;SUDESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5105?formato=application/vnd.geo+json&qualidade=maxima;5105
+5201;NOROESTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5201?formato=application/vnd.geo+json&qualidade=maxima;5201
+5202;NORTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5202?formato=application/vnd.geo+json&qualidade=maxima;5202
+5203;CENTRO GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5203?formato=application/vnd.geo+json&qualidade=maxima;5203
+5204;LESTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5204?formato=application/vnd.geo+json&qualidade=maxima;5204
+5205;SUL GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5205?formato=application/vnd.geo+json&qualidade=maxima;5205
+5301;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5301?formato=application/vnd.geo+json&qualidade=maxima;5301
+Madeira-Guapore;MADEIRA-GUAPORE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1101?formato=application/vnd.geo+json&qualidade=maxima;1101
+Leste Rondoniense;LESTE RONDONIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1102?formato=application/vnd.geo+json&qualidade=maxima;1102
+Vale Do Jurua;VALE DO JURUA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1201?formato=application/vnd.geo+json&qualidade=maxima;1201
+Vale Do Acre;VALE DO ACRE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1202?formato=application/vnd.geo+json&qualidade=maxima;1202
+Norte Amazonense;NORTE AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1301?formato=application/vnd.geo+json&qualidade=maxima;1301
+Sudoeste Amazonense;SUDOESTE AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1302?formato=application/vnd.geo+json&qualidade=maxima;1302
+Centro Amazonense;CENTRO AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1303?formato=application/vnd.geo+json&qualidade=maxima;1303
+Sul Amazonense;SUL AMAZONENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1304?formato=application/vnd.geo+json&qualidade=maxima;1304
+Norte De Roraima;NORTE DE RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1401?formato=application/vnd.geo+json&qualidade=maxima;1401
+Sul De Roraima;SUL DE RORAIMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1402?formato=application/vnd.geo+json&qualidade=maxima;1402
+Baixo Amazonas;BAIXO AMAZONAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1501?formato=application/vnd.geo+json&qualidade=maxima;1501
+Maraja;MARAJA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1502?formato=application/vnd.geo+json&qualidade=maxima;1502
+Metropolitana De Belem;METROPOLITANA DE BELEM;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1503?formato=application/vnd.geo+json&qualidade=maxima;1503
+Nordeste Paraense;NORDESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1504?formato=application/vnd.geo+json&qualidade=maxima;1504
+Sudoeste Paraense;SUDOESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1505?formato=application/vnd.geo+json&qualidade=maxima;1505
+Sudeste Paraense;SUDESTE PARAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1506?formato=application/vnd.geo+json&qualidade=maxima;1506
+Norte Do Amapa;NORTE DO AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1601?formato=application/vnd.geo+json&qualidade=maxima;1601
+Sul Do Amapa;SUL DO AMAPA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1602?formato=application/vnd.geo+json&qualidade=maxima;1602
+Ocidental Do Tocantins;OCIDENTAL DO TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1701?formato=application/vnd.geo+json&qualidade=maxima;1701
+Oriental Do Tocantins;ORIENTAL DO TOCANTINS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/1702?formato=application/vnd.geo+json&qualidade=maxima;1702
+Norte Maranhense;NORTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2101?formato=application/vnd.geo+json&qualidade=maxima;2101
+Oeste Maranhense;OESTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2102?formato=application/vnd.geo+json&qualidade=maxima;2102
+Centro Maranhense;CENTRO MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2103?formato=application/vnd.geo+json&qualidade=maxima;2103
+Leste Maranhense;LESTE MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2104?formato=application/vnd.geo+json&qualidade=maxima;2104
+Sul Maranhense;SUL MARANHENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2105?formato=application/vnd.geo+json&qualidade=maxima;2105
+Norte Piauiense;NORTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2201?formato=application/vnd.geo+json&qualidade=maxima;2201
+Centro-Norte Piauiense;CENTRO-NORTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2202?formato=application/vnd.geo+json&qualidade=maxima;2202
+Sudoeste Piauiense;SUDOESTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2203?formato=application/vnd.geo+json&qualidade=maxima;2203
+Sudeste Piauiense;SUDESTE PIAUIENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2204?formato=application/vnd.geo+json&qualidade=maxima;2204
+Noroeste Cearense;NOROESTE CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2301?formato=application/vnd.geo+json&qualidade=maxima;2301
+Norte Cearense;NORTE CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2302?formato=application/vnd.geo+json&qualidade=maxima;2302
+Metropolitana De Fortaleza;METROPOLITANA DE FORTALEZA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2303?formato=application/vnd.geo+json&qualidade=maxima;2303
+Sertoes Cearenses;SERTOES CEARENSES;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2304?formato=application/vnd.geo+json&qualidade=maxima;2304
+Jaguaribe;JAGUARIBE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2305?formato=application/vnd.geo+json&qualidade=maxima;2305
+Centro-Sul Cearense;CENTRO-SUL CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2306?formato=application/vnd.geo+json&qualidade=maxima;2306
+Sul Cearense;SUL CEARENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2307?formato=application/vnd.geo+json&qualidade=maxima;2307
+Oeste Portiguar;OESTE PORTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2401?formato=application/vnd.geo+json&qualidade=maxima;2401
+Central Potiguar;CENTRAL POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2402?formato=application/vnd.geo+json&qualidade=maxima;2402
+Agreste Potiguar;AGRESTE POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2403?formato=application/vnd.geo+json&qualidade=maxima;2403
+Leste Potiguar;LESTE POTIGUAR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2404?formato=application/vnd.geo+json&qualidade=maxima;2404
+Sertao Paraibano;SERTAO PARAIBANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2501?formato=application/vnd.geo+json&qualidade=maxima;2501
+Borborema;BORBOREMA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2502?formato=application/vnd.geo+json&qualidade=maxima;2502
+Agreste Paraibano;AGRESTE PARAIBANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2503?formato=application/vnd.geo+json&qualidade=maxima;2503
+Mata Paraibana;MATA PARAIBANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2504?formato=application/vnd.geo+json&qualidade=maxima;2504
+Sertao Pernambucano;SERTAO PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2601?formato=application/vnd.geo+json&qualidade=maxima;2601
+Sao Francisco Pernambucano;SAO FRANCISCO PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2602?formato=application/vnd.geo+json&qualidade=maxima;2602
+Agreste Pernambucano;AGRESTE PERNAMBUCANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2603?formato=application/vnd.geo+json&qualidade=maxima;2603
+Mata Pernambucana;MATA PERNAMBUCANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2604?formato=application/vnd.geo+json&qualidade=maxima;2604
+Metropolitana De Recife;METROPOLITANA DE RECIFE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2605?formato=application/vnd.geo+json&qualidade=maxima;2605
+Sertao Alagoano;SERTAO ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2701?formato=application/vnd.geo+json&qualidade=maxima;2701
+Agreste Alagoano;AGRESTE ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2702?formato=application/vnd.geo+json&qualidade=maxima;2702
+Leste Alagoano;LESTE ALAGOANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2703?formato=application/vnd.geo+json&qualidade=maxima;2703
+Sertao Sergipano;SERTAO SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2801?formato=application/vnd.geo+json&qualidade=maxima;2801
+Agreste Sergipano;AGRESTE SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2802?formato=application/vnd.geo+json&qualidade=maxima;2802
+Leste Sergipano;LESTE SERGIPANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2803?formato=application/vnd.geo+json&qualidade=maxima;2803
+Extremo Oeste Baiano;EXTREMO OESTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2901?formato=application/vnd.geo+json&qualidade=maxima;2901
+Vale Sao-Franciscano Da Bahia;VALE SAO-FRANCISCANO DA BAHIA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2902?formato=application/vnd.geo+json&qualidade=maxima;2902
+Centro Norte Baiano;CENTRO NORTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2903?formato=application/vnd.geo+json&qualidade=maxima;2903
+Nordeste Baiano;NORDESTE BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2904?formato=application/vnd.geo+json&qualidade=maxima;2904
+Metropolitana De Salvador;METROPOLITANA DE SALVADOR;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2905?formato=application/vnd.geo+json&qualidade=maxima;2905
+Centro Sul Baiano;CENTRO SUL BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2906?formato=application/vnd.geo+json&qualidade=maxima;2906
+Sul Baiano;SUL BAIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/2907?formato=application/vnd.geo+json&qualidade=maxima;2907
+Noroeste De Minas;NOROESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3101?formato=application/vnd.geo+json&qualidade=maxima;3101
+Norte De Minas;NORTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3102?formato=application/vnd.geo+json&qualidade=maxima;3102
+Jequitinhonha;JEQUITINHONHA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3103?formato=application/vnd.geo+json&qualidade=maxima;3103
+Vale Do Mucuri;VALE DO MUCURI;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3104?formato=application/vnd.geo+json&qualidade=maxima;3104
+Triangulo Mineiro/Alto Paraiba;TRIANGULO MINEIRO/ALTO PARAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3105?formato=application/vnd.geo+json&qualidade=maxima;3105
+Central Mineira;CENTRAL MINEIRA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3106?formato=application/vnd.geo+json&qualidade=maxima;3106
+Metropolitana De Belo Horizonte;METROPOLITANA DE BELO HORIZONTE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3107?formato=application/vnd.geo+json&qualidade=maxima;3107
+Vale Do Rio Doce;VALE DO RIO DOCE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3108?formato=application/vnd.geo+json&qualidade=maxima;3108
+Oeste De Minas;OESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3109?formato=application/vnd.geo+json&qualidade=maxima;3109
+Sul/Sudeste De Minas;SUL/SUDESTE DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3110?formato=application/vnd.geo+json&qualidade=maxima;3110
+Campo Das Vertentes;CAMPO DAS VERTENTES;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3111?formato=application/vnd.geo+json&qualidade=maxima;3111
+Zona Da Mata;ZONA DA MATA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3112?formato=application/vnd.geo+json&qualidade=maxima;3112
+Noroeste Espirito-Santense;NOROESTE ESPIRITO-SANTENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3201?formato=application/vnd.geo+json&qualidade=maxima;3201
+Litoral Norte Espirito-Santense;LITORAL NORTE ESPIRITO-SANTENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3202?formato=application/vnd.geo+json&qualidade=maxima;3202
+Central Espirito-Santanse;CENTRAL ESPIRITO-SANTANSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3203?formato=application/vnd.geo+json&qualidade=maxima;3203
+Sul Espirito-Santanse;SUL ESPIRITO-SANTANSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3204?formato=application/vnd.geo+json&qualidade=maxima;3204
+Noroeste Fluminense;NOROESTE FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3301?formato=application/vnd.geo+json&qualidade=maxima;3301
+Norte Fluminense;NORTE FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3302?formato=application/vnd.geo+json&qualidade=maxima;3302
+Centro Fluminense;CENTRO FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3303?formato=application/vnd.geo+json&qualidade=maxima;3303
+Baixadas;BAIXADAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3304?formato=application/vnd.geo+json&qualidade=maxima;3304
+Sul Fluminense;SUL FLUMINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3305?formato=application/vnd.geo+json&qualidade=maxima;3305
+Metropolitana Do Rio De Janeiro;METROPOLITANA DO RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3306?formato=application/vnd.geo+json&qualidade=maxima;3306
+Sao Jose Do Rio Preto;SAO JOSE DO RIO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3501?formato=application/vnd.geo+json&qualidade=maxima;3501
+Ribeirao Preto;RIBEIRAO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3502?formato=application/vnd.geo+json&qualidade=maxima;3502
+Aracatuba;ARACATUBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3503?formato=application/vnd.geo+json&qualidade=maxima;3503
+Bauru;BAURU;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3504?formato=application/vnd.geo+json&qualidade=maxima;3504
+Araraquara;ARARAQUARA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3505?formato=application/vnd.geo+json&qualidade=maxima;3505
+Piracicaba;PIRACICABA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3506?formato=application/vnd.geo+json&qualidade=maxima;3506
+Campinas;CAMPINAS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3507?formato=application/vnd.geo+json&qualidade=maxima;3507
+Presidente Prudente;PRESIDENTE PRUDENTE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3508?formato=application/vnd.geo+json&qualidade=maxima;3508
+Marilia;MARILIA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3509?formato=application/vnd.geo+json&qualidade=maxima;3509
+Assis;ASSIS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3510?formato=application/vnd.geo+json&qualidade=maxima;3510
+Itapetininga;ITAPETININGA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3511?formato=application/vnd.geo+json&qualidade=maxima;3511
+Macro Metropolitana Paulista;MACRO METROPOLITANA PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3512?formato=application/vnd.geo+json&qualidade=maxima;3512
+Vale Do Paraiba Paulista;VALE DO PARAIBA PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3513?formato=application/vnd.geo+json&qualidade=maxima;3513
+Litoral Sul Paulista;LITORAL SUL PAULISTA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3514?formato=application/vnd.geo+json&qualidade=maxima;3514
+Metropolitana De Sao Paulo;METROPOLITANA DE SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/3515?formato=application/vnd.geo+json&qualidade=maxima;3515
+Noroeste Paranaense;NOROESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4101?formato=application/vnd.geo+json&qualidade=maxima;4101
+Central Ocidental Paranaense;CENTRAL OCIDENTAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4102?formato=application/vnd.geo+json&qualidade=maxima;4102
+Norte Central Paranaense;NORTE CENTRAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4103?formato=application/vnd.geo+json&qualidade=maxima;4103
+Norte Pioneiro Paranaense;NORTE PIONEIRO PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4104?formato=application/vnd.geo+json&qualidade=maxima;4104
+Central Oriental Paranaense;CENTRAL ORIENTAL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4105?formato=application/vnd.geo+json&qualidade=maxima;4105
+Oeste Paranaense;OESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4106?formato=application/vnd.geo+json&qualidade=maxima;4106
+Sudoeste Paranaense;SUDOESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4107?formato=application/vnd.geo+json&qualidade=maxima;4107
+Centro-Sul Paranaense;CENTRO-SUL PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4108?formato=application/vnd.geo+json&qualidade=maxima;4108
+Sudeste Paranaense;SUDESTE PARANAENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4109?formato=application/vnd.geo+json&qualidade=maxima;4109
+Metropolitana De Curitiba;METROPOLITANA DE CURITIBA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4110?formato=application/vnd.geo+json&qualidade=maxima;4110
+Oeste Catarinense;OESTE CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4201?formato=application/vnd.geo+json&qualidade=maxima;4201
+Norte Catarinense;NORTE CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4202?formato=application/vnd.geo+json&qualidade=maxima;4202
+Serrana;SERRANA;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4203?formato=application/vnd.geo+json&qualidade=maxima;4203
+Vale Do Itajai;VALE DO ITAJAI;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4204?formato=application/vnd.geo+json&qualidade=maxima;4204
+Grande Florianopolis;GRANDE FLORIANOPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4205?formato=application/vnd.geo+json&qualidade=maxima;4205
+Sul Catarinense;SUL CATARINENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4206?formato=application/vnd.geo+json&qualidade=maxima;4206
+Noroeste Rio-Grandense;NOROESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4301?formato=application/vnd.geo+json&qualidade=maxima;4301
+Nordeste Rio-Grandense;NORDESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4302?formato=application/vnd.geo+json&qualidade=maxima;4302
+Centro Ocidental Rio-Grandense;CENTRO OCIDENTAL RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4303?formato=application/vnd.geo+json&qualidade=maxima;4303
+Centro Oriental Rio-Grandense;CENTRO ORIENTAL RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4304?formato=application/vnd.geo+json&qualidade=maxima;4304
+Metropolitana De Porto Alegre;METROPOLITANA DE PORTO ALEGRE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4305?formato=application/vnd.geo+json&qualidade=maxima;4305
+Sudoeste Rio-Grandense;SUDOESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4306?formato=application/vnd.geo+json&qualidade=maxima;4306
+Sudeste Rio-Grandense;SUDESTE RIO-GRANDENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/4307?formato=application/vnd.geo+json&qualidade=maxima;4307
+Pantanais Sul Mato-Grossense;PANTANAIS SUL MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5001?formato=application/vnd.geo+json&qualidade=maxima;5001
+Centro Norte De Mato Grosso Do Sul;CENTRO NORTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5002?formato=application/vnd.geo+json&qualidade=maxima;5002
+Leste De Mato Grosso Do Sul;LESTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5003?formato=application/vnd.geo+json&qualidade=maxima;5003
+Sudoeste De Mato Grosso Do Sul;SUDOESTE DE MATO GROSSO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5004?formato=application/vnd.geo+json&qualidade=maxima;5004
+Norte Mato-Grossense;NORTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5101?formato=application/vnd.geo+json&qualidade=maxima;5101
+Nordeste Mato-Grossense;NORDESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5102?formato=application/vnd.geo+json&qualidade=maxima;5102
+Sudoeste Mato-Grossense;SUDOESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5103?formato=application/vnd.geo+json&qualidade=maxima;5103
+Centro-Sul Mato-Grossense;CENTRO-SUL MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5104?formato=application/vnd.geo+json&qualidade=maxima;5104
+Sudeste Mato-Grossense;SUDESTE MATO-GROSSENSE;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5105?formato=application/vnd.geo+json&qualidade=maxima;5105
+Noroeste Goiano;NOROESTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5201?formato=application/vnd.geo+json&qualidade=maxima;5201
+Norte Goiano;NORTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5202?formato=application/vnd.geo+json&qualidade=maxima;5202
+Centro Goiano;CENTRO GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5203?formato=application/vnd.geo+json&qualidade=maxima;5203
+Leste Goiano;LESTE GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5204?formato=application/vnd.geo+json&qualidade=maxima;5204
+Sul Goiano;SUL GOIANO;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5205?formato=application/vnd.geo+json&qualidade=maxima;5205
+Distrito Federal;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/mesorregioes/5301?formato=application/vnd.geo+json&qualidade=maxima;5301

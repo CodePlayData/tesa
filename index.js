@@ -75,6 +75,30 @@ async function getStatesPolygon (alias) {
 
 }
 
+async function getMiddleRegions (alias) {
+    
+    const list = 
+        await parseCsv(
+            await (
+                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"))
+                .text(), { skipFirstRow: true, separator: ";" }
+                )
+    
+    const result = 
+        fetch(...list.filter(place => place.Alias === alias.normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, ""))
+            .map(place => place.Link))
+
+    let polygon
+    
+    polygon = 
+        await (
+            await result)
+            .json()
+
+    console.log(polygon)
+}
 getCountryPolygon('BR')
 getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
+getMiddleRegions('norte fluminense')
