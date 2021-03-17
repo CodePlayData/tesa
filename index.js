@@ -109,10 +109,26 @@ async function getMiddleRegions (alias) {
 
 async function getMicroRegions (alias) {
     
+    const doubles_list = 
+        await parseCsv(
+            await (
+                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"))
+                .text(), { skipFirstRow: true, separator: ";" }
+                )
+
+    const doubles= 
+        doubles_list.filter(place => place.Alias === alias
+            .toUpperCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, ""))
+            .map(place => [place.Opt1, place.Opt2])
+
+    console.log(...doubles)
+    
     const list = 
         await parseCsv(
             await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"))
+                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"))
                 .text(), { skipFirstRow: true, separator: ";" }
                 )
     
@@ -130,10 +146,11 @@ async function getMicroRegions (alias) {
             await result)
             .json()
 
-    console.log(polygon)
+    console.log(result)
 }
 
 getCountryPolygon('BR')
 getMacroregionPolygon('centro-oeste')
 getStatesPolygon('mato grosso')
 getMiddleRegions('norte fluminense')
+getMicroRegions('adamantina')
