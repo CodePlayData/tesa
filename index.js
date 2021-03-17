@@ -3,218 +3,96 @@ import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
 async function getPolygon (alias, type) {
     
-    let list_url
+    let url
+    let doubles_url
+    let polygon
+
+    switch (type) {
+        case "microregions":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            break
     
-    switch(type) {
-        case "country": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
-        case "macroregion": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
-        case "states": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
-        case "middleregions": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
-        case "microregions": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
-        case "cities": list_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+        case "cities":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            break
     }
-console.log(list_url)
-}
 
+    switch(type) {
+        case "country": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            break
+        case "macroregion": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            break
+        case "states": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            break
+        case "middleregions": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            break
+        case "microregions": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            break
+        case "cities": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            break
+    }
 
-/* 
-async function getCountryPolygon (alias) {
-    
-    const list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-    
-    const result = 
-        fetch(...list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => place.Link))
+    if (type === "microregions" || type === "cities") {
+        
+        const doubles_list = 
+            await parseCsv(
+                await (
+                    await fetch(doubles_url))
+                    .text(), { skipFirstRow: true, separator: ";" }
+                    )
 
-    let polygon
-    
-    polygon = 
-        await (
-            await result)
-            .json()
-
-    console.log(polygon)
-
-}
-
-async function getMacroregionPolygon (alias) {
-    
-    const list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-    
-    const result = 
-        fetch(...list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => place.Link))
-
-    let polygon
-    
-    polygon = 
-        await (
-            await result)
-            .json()
+        const doubles= 
+            doubles_list.filter(place => place.Alias === alias
+                .toUpperCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, ""))
+                .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5])
             
-    console.log(polygon)
+            if (doubles.length > 0) {
+                console.log("Você escolheu um nome que é repetido nessa categoria geográfica, experimente trocar para:", ...doubles)   
+                return            
+            }      
+    }
 
+    try {
+        const list = 
+            await parseCsv(
+                await (
+                    await fetch(url))
+                    .text(), { skipFirstRow: true, separator: ";" }
+                    )
+    
+        const result = 
+            fetch(...list.filter(place => place.Alias === alias
+                .toUpperCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, ""))
+                .map(place => place.Link))
+    
+        polygon = 
+            await (
+                await result)
+                .json()
+
+        console.log('found!')
+        return(polygon)
+
+    } catch (error) {
+        console.log(error.message)
+        return
+    }
 }
 
-async function getStatesPolygon (alias) {
-    
-    const list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-    
-    const result = 
-        fetch(...list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => place.Link))
-
-    let polygon
-    
-    polygon = 
-        await (
-            await result)
-            .json()
-
-    console.log(polygon)
-
-}
-
-async function getMiddleRegions (alias) {
-    
-    const list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-    
-    const result = 
-        fetch(...list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => place.Link))
-
-    let polygon
-    
-    polygon = 
-        await (
-            await result)
-            .json()
-
-    console.log(polygon)
-}
-
-async function getMicroRegions (alias) {
-    
-    const doubles_list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-
-    const doubles= 
-        doubles_list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => [place.Opt1, place.Opt2])
-
-    console.log(...doubles)
-    
-    const list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-    
-    const result = 
-        fetch(...list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => place.Link))
-
-    let polygon
-    
-    polygon = 
-        await (
-            await result)
-            .json()
-
-    console.log(polygon)
-}
-
-async function getCitiesRegions (alias) {
-    
-    const doubles_list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-
-    const doubles= 
-        doubles_list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => [place.Opt1, place.Opt2])
-
-    console.log(...doubles)
-    
-    const list = 
-        await parseCsv(
-            await (
-                await fetch("https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"))
-                .text(), { skipFirstRow: true, separator: ";" }
-                )
-    
-    const result = 
-        fetch(...list.filter(place => place.Alias === alias
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ""))
-            .map(place => place.Link))
-
-    let polygon
-    
-    polygon = 
-        await (
-            await result)
-            .json()
-
-    console.log(polygon)
-} */
-
-
-/* getCountryPolygon('BR')
-getMacroregionPolygon('centro-oeste')
-getStatesPolygon('mato grosso')
-getMiddleRegions('norte fluminense')
-getMicroRegions('afonso claudio')
-getCitiesRegions('amparo(pb)') */
-
-getPolygon('abc', 'microregions')
+getPolygon('BR', 'country')
+getPolygon('centro-oeste', 'macroregion')
+getPolygon('mato grosso', 'states')
+getPolygon('norte fluminense', 'middleregions')
+getPolygon('afonso claudio', 'microregions')
+getPolygon('amparo(pb)', 'cities')
+getPolygon('amparo', 'cities') //return a exception
