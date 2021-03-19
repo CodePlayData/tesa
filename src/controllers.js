@@ -89,10 +89,6 @@ async function getPolygon (alias, type) {
     }
 }
 
-getPolygon('BR', 'country')
-getPolygon('centro-oeste', 'macroregion')
-getPolygon('mato grosso', 'states')
-getPolygon('norte fluminense', 'middleregions')
-getPolygon('afonso claudio', 'microregions')
-getPolygon('amparo(pb)', 'cities')
-getPolygon('amparo', 'cities') //return a exception
+export {
+    getPolygon
+}
