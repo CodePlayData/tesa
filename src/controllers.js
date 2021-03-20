@@ -1,7 +1,7 @@
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
 
-async function getPolygon (alias, type) {
+async function getOnePolygon (alias, type) {
     
     let url
     let doubles_url
@@ -55,7 +55,7 @@ async function getPolygon (alias, type) {
                 .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5])
             
             if (doubles.length > 0) {
-                console.log("Você escolheu um nome que é repetido nessa categoria geográfica, experimente trocar para:", ...doubles)   
+                console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:", ...doubles)   
                 return            
             }      
     }
@@ -89,6 +89,48 @@ async function getPolygon (alias, type) {
     }
 }
 
+async function getManyPolygons (request) {
+    
+    let url
+    let doubles_url
+    let polygons
+    let { type, aliases } = request
+
+
+    switch (type) {
+        case "microregions":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            break
+    
+        case "cities":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            break
+    }
+
+    if (type === "microregions" || type === "cities") {
+        
+        const doubles_list = 
+            await parseCsv(
+                await (
+                    await fetch(doubles_url))
+                    .text(), { skipFirstRow: true, separator: ";" }
+                    )
+
+        let doubles =
+        aliases.map(i=> doubles_list.filter(place => place.Alias === i
+            .toUpperCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, ""))
+            .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5]))
+        
+        let results = []
+        doubles.map(i => i.map(o => results.push(...o)))
+        console.log(results.length)
+    }
+}
+
 export {
-    getPolygon
+    getOnePolygon,
+    getManyPolygons
+
 }
