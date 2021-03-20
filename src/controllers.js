@@ -95,7 +95,7 @@ async function getManyPolygons (request) {
     let doubles_url
     let polygons
     let { type, aliases } = request
-
+    let doubles_results = []
 
     switch (type) {
         case "microregions":
@@ -116,16 +116,20 @@ async function getManyPolygons (request) {
                     .text(), { skipFirstRow: true, separator: ";" }
                     )
 
-        let doubles =
+    let doubles =
         aliases.map(i=> doubles_list.filter(place => place.Alias === i
             .toUpperCase()
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ""))
             .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5]))
         
-        let results = []
-        doubles.map(i => i.map(o => results.push(...o)))
-        console.log(results.length)
+    
+        doubles.map(i => i.map(o => doubles_results.push(...o)))
+    
+        if (doubles_results.length > 0) {
+            console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:", ...doubles_results)   
+            return            
+        }     
     }
 }
 

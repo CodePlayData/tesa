@@ -1,7 +1,7 @@
 import { assertEquals } from "https://deno.land/std@0.90.0/testing/asserts.ts"
 import { getOnePolygon, getManyPolygons } from './src/controllers.js'
 
-/* Deno.test({
+Deno.test({
     name: "country-test", 
     fn: async () => {
         let polygon = await getOnePolygon('BR', 'country')
@@ -55,12 +55,13 @@ Deno.test({
         let polygon = await getOnePolygon('amparo', 'cities')
         assertEquals(undefined, polygon)
     } 
-}) */
+})
 
-let request = {
-    "type": "cities",
-    "aliases": ["MIGUELOPOLIS", "MESSIAS", "ESTANCIA"]
-}
-
-getManyPolygons(request)
+Deno.test({
+    name: "city-error-test", 
+    fn: async () => {
+        let polygon = await getManyPolygons({ type: "cities", aliases: ["ALAGOINHA", "ALVORADA", "AMPARO"] })
+        assertEquals(undefined, polygon)
+    } 
+})
 
