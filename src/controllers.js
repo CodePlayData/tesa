@@ -7,6 +7,7 @@ async function getOnePolygon (alias, type) {
     let doubles_url
     let polygon
 
+    // defining the url that will get the double list
     switch (type) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
@@ -17,6 +18,7 @@ async function getOnePolygon (alias, type) {
             break
     }
 
+    // defining the url that will get the alias list
     switch(type) {
         case "country": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
@@ -38,6 +40,7 @@ async function getOnePolygon (alias, type) {
             break
     }
 
+    // check if there is any doubled names in microregions or cities
     if (type === "microregions" || type === "cities") {
         
         const doubles_list = 
