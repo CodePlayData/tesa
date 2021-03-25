@@ -199,7 +199,7 @@ async function getManyPolygons (request) {
         
         unique_codes = [...new Set(place_codes)]
         
-        let major_polygons = await Promise.all( unique_codes.map( async (i) => {
+        const major_polygons = await Promise.all( unique_codes.map( async (i) => {
             
                 code = eval(i)
                 
@@ -223,10 +223,12 @@ async function getManyPolygons (request) {
                 }
             
                 
-             return await (await fetch(base_url)).text()
+             return JSON.parse( await (await fetch(base_url)).text() )
                 
             })
         )
+        
+        
         
         console.log(major_polygons)
         
