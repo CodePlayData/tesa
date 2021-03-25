@@ -91,13 +91,16 @@ async function getOnePolygon (alias, type) {
 
 async function getManyPolygons (request) {
     
-    let url
-    let doubles_url
-    let polygons
     let { type, aliases } = request
+    let url
+    let code
+    let doubles_url
+    let base_url
     let doubles_results = []
     let place_codes = []
+    let major_polygons = []
 
+    // defining the url that will get the double list
     switch (type) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
@@ -108,6 +111,7 @@ async function getManyPolygons (request) {
             break
     }
 
+    // defining the url that will get the alias list
     switch(type) {
         case "country": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
@@ -129,6 +133,26 @@ async function getManyPolygons (request) {
             break
     }
 
+    // defining the url that will get the polygons
+    switch(type) {
+        case "macroregion": 
+            base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao"
+            break
+        case "states": 
+            base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=UF"
+            break
+        case "middleregions": 
+            base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=mesorregiao`
+            break
+        case "microregions": 
+            base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
+            break
+        case "cities": 
+            base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
+            break
+    }
+
+    // check if there is any doubled names in microregions or cities
     if (type === "microregions" || type === "cities") {
         
         const doubles_list = 
@@ -154,14 +178,20 @@ async function getManyPolygons (request) {
         }     
     }
 
+    // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27.
+    if (type === "macroregion" || type === "states") {
+        console.log("download dos poligonos por uma url só")
+    }
+
     try {
+        // get the alias list 
         const list = 
             await parseCsv(
                 await (
                     await fetch(url))
                     .text(), { skipFirstRow: true, separator: ";" }
                     )
-    
+        // filter the list to the items in aliases array of the request and getting the code to insert in the urls in case not macroregion and states
         const result = 
             aliases.map(i=> list.filter(place => place.Alias === i
                 .toUpperCase()
@@ -169,9 +199,10 @@ async function getManyPolygons (request) {
                 .replace(/[\u0300-\u036f]/g, ""))
                 .map(place => place.Code))
     
-        result.map(i => place_codes.push(...i))
+        result.map(i => place_codes.push(i.toString().substring(0, 2)))
 
-        console.log(place_codes)
+        place_urls = [...new Set(place_codes)]
+        console.log(place_urls)
 
     } catch (error) {
         console.log(error.message)
