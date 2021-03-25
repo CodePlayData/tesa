@@ -181,7 +181,6 @@ async function getManyPolygons (request) {
         return
     }
 }
-}
 
 export {
     getOnePolygon,
