@@ -93,6 +93,7 @@ async function getOnePolygon (alias, type) {
 }
 
 async function getManyPolygons (request) {
+
     
     let { type, aliases } = request
     let url
@@ -101,7 +102,8 @@ async function getManyPolygons (request) {
     let base_url
     let doubles_results = []
     let place_codes = []
-    let major_polygons = []
+    let unique_codes = []
+
 
     // defining the url that will get the double list
     switch (type) {
@@ -113,6 +115,7 @@ async function getManyPolygons (request) {
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
     }
+
 
     // defining the url that will get the alias list
     switch(type) {
@@ -136,24 +139,9 @@ async function getManyPolygons (request) {
             break
     }
 
-    // defining the url that will get the polygons
-    switch(type) {
-        case "macroregion": 
-            base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao"
-            break
-        case "states": 
-            base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=UF"
-            break
-        case "middleregions": 
-            base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=mesorregiao`
-            break
-        case "microregions": 
-            base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
-            break
-        case "cities": 
-            base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
-            break
-    }
+
+    
+
 
     // check if there is any doubled names in microregions or cities
     if (type === "microregions" || type === "cities") {
@@ -181,12 +169,15 @@ async function getManyPolygons (request) {
         }     
     }
 
+
     // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27.
     if (type === "macroregion" || type === "states") {
         console.log("download dos poligonos por uma url só")
     }
 
     try {
+    
+    
         // get the alias list 
         const list = 
             await parseCsv(
@@ -194,7 +185,9 @@ async function getManyPolygons (request) {
                     await fetch(url))
                     .text(), { skipFirstRow: true, separator: ";" }
                     )
-        // filter the list to the items in aliases array of the request and getting the code to insert in the urls in case not macroregion and states
+    
+                    
+        // filter the alias list to the items in aliases array of the request and getting the code to insert in the urls in case not macroregion and states
         const result = 
             aliases.map(i=> list.filter(place => place.Alias === i
                 .toUpperCase()
@@ -203,9 +196,40 @@ async function getManyPolygons (request) {
                 .map(place => place.Code))
     
         result.map(i => place_codes.push(i.toString().substring(0, 2)))
-
-        place_urls = [...new Set(place_codes)]
-        console.log(place_urls)
+        
+        unique_codes = [...new Set(place_codes)]
+        
+        let major_polygons = await Promise.all( unique_codes.map( async (i) => {
+            
+                code = eval(i)
+                
+                // defining the url that will get the polygons
+                switch(type) {
+                    case "macroregion": 
+                        base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao"
+                        break
+                    case "states": 
+                        base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=UF"
+                        break
+                    case "middleregions": 
+                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=mesorregiao`
+                        break
+                    case "microregions": 
+                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
+                        break
+                    case "cities": 
+                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
+                        break
+                }
+            
+                
+             return await (await fetch(base_url)).text()
+                
+            })
+        )
+        
+        console.log(major_polygons)
+        
 
     } catch (error) {
         console.log(error.message)
@@ -216,5 +240,4 @@ async function getManyPolygons (request) {
 export {
     getOnePolygon,
     getManyPolygons
-
 }
