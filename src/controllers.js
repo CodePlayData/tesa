@@ -96,6 +96,7 @@ async function getManyPolygons (request) {
     let polygons
     let { type, aliases } = request
     let doubles_results = []
+    let place_codes = []
 
     switch (type) {
         case "microregions":
@@ -162,19 +163,15 @@ async function getManyPolygons (request) {
                     )
     
         const result = 
-            fetch(...list.filter(place => place.Alias === alias
+            aliases.map(i=> list.filter(place => place.Alias === i
                 .toUpperCase()
                 .normalize('NFD')
                 .replace(/[\u0300-\u036f]/g, ""))
-                .map(place => place.Link))
+                .map(place => place.Code))
     
-        polygon = 
-            await (
-                await result)
-                .json()
+        result.map(i => place_codes.push(...i))
 
-        console.log(polygon)
-        return(polygon)
+        console.log(place_codes)
 
     } catch (error) {
         console.log(error.message)
