@@ -103,6 +103,7 @@ async function getManyPolygons (request) {
     let doubles_results = []
     let place_codes = []
     let unique_codes = []
+    let polygons
 
 
     // defining the url that will get the double list
@@ -193,8 +194,9 @@ async function getManyPolygons (request) {
                 .toUpperCase()
                 .normalize('NFD')
                 .replace(/[\u0300-\u036f]/g, ""))
-                .map(place => place.Code))
+                .map(place => place.Code)).flat()
     
+        //ajeitei o flat no result pode quebrar aqui
         result.map(i => place_codes.push(i.toString().substring(0, 2)))
         
         unique_codes = [...new Set(place_codes)]
@@ -228,10 +230,12 @@ async function getManyPolygons (request) {
             })
         )
         
+       
         
+        polygons = [...result.map(i => major_polygons.map(o=> o.features.filter(u => u.properties.codarea === i) )).flat().flat()]
         
-        console.log(major_polygons)
-        
+        console.log('found!')
+        return(polygons)
 
     } catch (error) {
         console.log(error.message)
