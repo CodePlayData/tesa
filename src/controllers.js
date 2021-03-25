@@ -107,6 +107,27 @@ async function getManyPolygons (request) {
             break
     }
 
+    switch(type) {
+        case "country": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            break
+        case "macroregion": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            break
+        case "states": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            break
+        case "middleregions": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            break
+        case "microregions": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            break
+        case "cities": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            break
+    }
+
     if (type === "microregions" || type === "cities") {
         
         const doubles_list = 
@@ -131,6 +152,35 @@ async function getManyPolygons (request) {
             return            
         }     
     }
+
+    try {
+        const list = 
+            await parseCsv(
+                await (
+                    await fetch(url))
+                    .text(), { skipFirstRow: true, separator: ";" }
+                    )
+    
+        const result = 
+            fetch(...list.filter(place => place.Alias === alias
+                .toUpperCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, ""))
+                .map(place => place.Link))
+    
+        polygon = 
+            await (
+                await result)
+                .json()
+
+        console.log('found!')
+        return(polygon)
+
+    } catch (error) {
+        console.log(error.message)
+        return
+    }
+}
 }
 
 export {
