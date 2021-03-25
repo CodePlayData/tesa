@@ -173,7 +173,7 @@ async function getManyPolygons (request) {
                 await result)
                 .json()
 
-        console.log('found!')
+        console.log(polygon)
         return(polygon)
 
     } catch (error) {

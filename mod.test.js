@@ -60,7 +60,7 @@ Deno.test({
 Deno.test({
     name: "getManyCitiesErrorTest", 
     fn: async () => {
-        let polygon = await getManyPolygons({ type: "cities", aliases: ["ALAGOINHA", "ALVORADA", "AMPARO"] })
+        let polygon = await getManyPolygons({ type: "cities", aliases: ["ESTEIO", "ESTIVA"] })
         assertEquals(undefined, polygon)
     } 
 })
