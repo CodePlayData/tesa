@@ -58,7 +58,8 @@ async function getOnePolygon (alias, type) {
                 .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5])
             
             if (doubles.length > 0) {
-                console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:", ...doubles)   
+                console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
+                doubles.flat().map(i => console.log(String(i)))   
                 return            
             }      
     }
