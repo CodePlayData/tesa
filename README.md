@@ -27,7 +27,7 @@ deno compile --output ./dist/bin/tesa(em caso de windowns adicionar .exe) mod.js
 ```
 ___
 
-Copyright [Pedro Paulo Teixeira dos Santos] [name of copyright owner]
+Copyright Pedro Paulo Teixeira dos Santos
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
