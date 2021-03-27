@@ -29,4 +29,4 @@ jobs:
           deno-version: ${{ matrix.deno }}
       - run: |
           deno --version
-          deno run https://deno.land/std/examples/welcome.ts
+          deno test --allow-net mod.test.js
