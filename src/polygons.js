@@ -1,7 +1,7 @@
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
-export {
-    getOnePolygon: async (alias, type) => {
+
+async function getOnePolygon (alias, type) {
     
     let url
     let doubles_url
@@ -90,9 +90,10 @@ export {
     } catch (error) {
         console.log(error.message)
         return
-        }
-    },
-    getManyPolygons: async (request) => {
+    }
+}
+
+async function getManyPolygons (request) {
 
     
     let { type, aliases } = request
@@ -275,6 +276,10 @@ export {
     } catch (error) {
         console.log(error.message)
         return
-        }
     }
+}
+
+export {
+    getOnePolygon,
+    getManyPolygons
 }
