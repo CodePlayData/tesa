@@ -1,5 +1,5 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
-import { getOnePolygon, getManyPolygons } from './src/controllers.js'
+import { getOnePolygon, getManyPolygons } from './mod.js'
 
 Deno.test({
     name: "getOneCountryTest", 
@@ -163,6 +163,49 @@ Deno.test({
         } 
 })
 
+Deno.test({
+    name: "getManyStatesTest", 
+    fn: async () => {
+        let polygon = await getManyPolygons({ type: "states", aliases: ["RIO DE JANEIRO", "SAO PAULO"] })
+        
+        assertObjectMatch( 
+            polygon[0],
+            { properties: {
+                codarea: "33"
+                }
+            })
+            
+        assertObjectMatch( 
+            polygon[1],
+            { properties: {
+                codarea: "35"
+                }
+            })
+
+        } 
+})
+
+Deno.test({
+    name: "getManyMacrosTest", 
+    fn: async () => {
+        let polygon = await getManyPolygons({ type: "macroregion", aliases: ["NORTE", "SUL"] })
+        
+        assertObjectMatch( 
+            polygon[0],
+            { properties: {
+                codarea: "1"
+                }
+            })
+            
+        assertObjectMatch( 
+            polygon[1],
+            { properties: {
+                codarea: "4"
+                }
+            })
+
+        } 
+})
 
 // DOUBLES ERROR TESTS >> Tem que corrigir com flat() a saida de todos eles.
 

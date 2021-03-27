@@ -166,15 +166,50 @@ async function getManyPolygons (request) {
         doubles.map(i => i.map(o => doubles_results.push(...o)))
     
         if (doubles_results.length > 0) {
-            console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:", ...doubles_results)   
-            return            
+            console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
+            doubles_results.flat().map(i => console.log(String(i)))   
+            return      
         }     
     }
 
 
     // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27.
     if (type === "macroregion" || type === "states") {
-        console.log("download dos poligonos por uma url só")
+        switch(type) {
+            case "macroregion": 
+                base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao"
+                break
+            case "states": 
+                base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=UF"
+                break
+            case "middleregions": 
+                base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=mesorregiao`
+                break
+            case "microregions": 
+                base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
+                break
+            case "cities": 
+                base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
+                break
+        }
+        
+        const states_json = JSON.parse(await (await fetch(base_url)).text())
+        const list = 
+            await parseCsv(
+                await (
+                    await fetch(url))
+                    .text(), { skipFirstRow: true, separator: ";" }
+                    )
+        const result = 
+            aliases.map(i=> list.filter(place => place.Alias === i
+                .toUpperCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, ""))
+                .map(place => place.Code)).flat()
+        result.map(i => place_codes.push(i.toString().substring(0, 2)))
+        unique_codes = [...new Set(place_codes)]
+        polygons = [...result.map(i => states_json.features.filter(o => o.properties.codarea === i) ).flat()]
+        return (polygons)
     }
 
     try {
