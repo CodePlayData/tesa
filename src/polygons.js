@@ -274,5 +274,6 @@ async function getManyPolygons (request) {
 
 export {
     getOnePolygon,
-    getManyPolygons
+    getManyPolygons,
+    belongsWith
 }
