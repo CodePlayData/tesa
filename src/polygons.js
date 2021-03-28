@@ -1,4 +1,16 @@
+/* These funcions are the most atomics possible and can be used in High Order Functions, for example: if some one wants to perform a hierarchical geolocation, wich means, 
+to get all polygons that determined point belongs, they can parse the address in country (if necessary), macroregion, states, middleware and microregions and city, to perform a
+a download of all these polygons, put them in order and then insert the location of point as the lowest level. Of course to do that you have to known beforehand these locations.*/ 
+
+
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
+
+
+async function belongsWith (alias, type) { 
+
+    console.log("pega o código do polígono que a pessoa quiser, parseia ele e retorna info de todos os outros níveis acima".)
+    
+} 
 
 
 async function getOnePolygon (alias, type) {
