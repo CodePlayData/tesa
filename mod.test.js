@@ -1,5 +1,33 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
-import { getOnePolygon, getManyPolygons } from './mod.js'
+import { getOnePolygon, getManyPolygons, belongsTo } from './mod.js'
+
+Deno.test({
+    name: "belongsCity" ,
+    fn: async () => {
+        let metaData = await belongsTo('amparo(pb)', 'cities')
+    }
+})
+
+Deno.test({
+    name: "belongsMicro" ,
+    fn: async () => {
+        let metaData = await belongsTo('afonso claudio', 'microregions')
+    }
+})
+
+Deno.test({
+    name: "belongsMiddle" ,
+    fn: async () => {
+        let metaData = await belongsTo('norte fluminense', 'middleregions')
+    }
+})
+
+Deno.test({
+    name: "belongsStates" ,
+    fn: async () => {
+        let metaData = await belongsTo('mato grosso', 'states')
+    }
+})
 
 Deno.test({
     name: "getOneCountryTest", 
@@ -207,7 +235,7 @@ Deno.test({
         } 
 })
 
-// DOUBLES ERROR TESTS >> Tem que corrigir com flat() a saida de todos eles.
+// ERROR Tests
 
 Deno.test({
     name: "getOneCityErrorTest", 
@@ -240,5 +268,3 @@ Deno.test({
         assertEquals(undefined, polygon)
     } 
 })
-
-// Faltam os testes de estados e macroregiões. 
