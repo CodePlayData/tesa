@@ -25,6 +25,10 @@ Uma das inovações do Deno é a possibilidade de fazer um binário para o sua l
 ``` 
 deno compile --output ./dist/bin/tesa(em caso de windowns adicionar .exe) mod.js
 ```
+
+>Nota nº1: Entre as divisões de estado e município existiram 2 modelos propostos pelo IBGE. O primeiro deles é de 1990 e agrupa os municípios em _microregiões_ e essas em _meso-regiões_, esse critério previa que os municípios com características sociais e econômicas semelhantes deveriam fazer parte de um mesmo grupo. Entretanto, esse conceito não se estabeleceu, uma vez que as próprias unidades administrativas se agruparam ao longo dos anos segundo os seus próprios critérios, assim em 2017 surge uma proposta que agrupa em regiões _imediatas_ e essas em regiões _intermediárias_ (com nomes muito próximos do que conhecemos popularmente). 
+
+>Nota nº2: A segunda classificação de 2017 ainda está sendo implementada, por exemplo: na API não contém a opção de dividir o Brasil, as macroregiões ou os estados em regiões imediatas ou intermediárias, isso significa que na opção `getManyPolygons`, não é possível fazer a economia de requisões; Ou seja, para usar essa classificação terá que fazer um _loop_ com a função `getOnePolygon` (**cuidado com o limite da API**).
 ___
 
 Copyright Pedro Paulo Teixeira dos Santos
