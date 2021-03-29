@@ -114,6 +114,9 @@ async function getOnePolygon (alias, type) {
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
             break
+        case "intermediary": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv"
+            break
         case "cities": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
             break

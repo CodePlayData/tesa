@@ -1,0 +1,134 @@
+Alias;Place;Link;Code
+PORTO VELHO;PORTO VELHO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1101?formato=application/vnd.geo+json&qualidade=maxima;1101
+JI-PARANA;JI-PARANA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1102?formato=application/vnd.geo+json&qualidade=maxima;1102
+RIO BRANCO;RIO BRANCO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1201?formato=application/vnd.geo+json&qualidade=maxima;1201
+CRUZEIRO DO SUL;CRUZEIRO DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1202?formato=application/vnd.geo+json&qualidade=maxima;1202
+MANAUS;MANAUS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1301?formato=application/vnd.geo+json&qualidade=maxima;1301
+TEFE;TEFE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1302?formato=application/vnd.geo+json&qualidade=maxima;1302
+LABREA;LABREA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1303?formato=application/vnd.geo+json&qualidade=maxima;1303
+PARINTINS;PARINTINS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1304?formato=application/vnd.geo+json&qualidade=maxima;1304
+BOA VISTA;BOA VISTA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1401?formato=application/vnd.geo+json&qualidade=maxima;1401
+RORAINOPOLIS - CARACARAI;RORAINOPOLIS - CARACARAI;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1402?formato=application/vnd.geo+json&qualidade=maxima;1402
+BELEM;BELEM;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1501?formato=application/vnd.geo+json&qualidade=maxima;1501
+CASTANHAL;CASTANHAL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1502?formato=application/vnd.geo+json&qualidade=maxima;1502
+MARABA;MARABA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1503?formato=application/vnd.geo+json&qualidade=maxima;1503
+REDENCAO;REDENCAO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1504?formato=application/vnd.geo+json&qualidade=maxima;1504
+SANTAREM;SANTAREM;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1505?formato=application/vnd.geo+json&qualidade=maxima;1505
+ALTAMIRA;ALTAMIRA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1506?formato=application/vnd.geo+json&qualidade=maxima;1506
+BREVES;BREVES;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1507?formato=application/vnd.geo+json&qualidade=maxima;1507
+MACAPA;MACAPA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1601?formato=application/vnd.geo+json&qualidade=maxima;1601
+OIAPOQUE - PORTO GRANDE;OIAPOQUE - PORTO GRANDE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1602?formato=application/vnd.geo+json&qualidade=maxima;1602
+PALMAS;PALMAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1701?formato=application/vnd.geo+json&qualidade=maxima;1701
+ARAGUAINA;ARAGUAINA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1702?formato=application/vnd.geo+json&qualidade=maxima;1702
+GURUPI;GURUPI;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/1703?formato=application/vnd.geo+json&qualidade=maxima;1703
+SAO LUIS;SAO LUIS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2101?formato=application/vnd.geo+json&qualidade=maxima;2101
+SANTA INES - BACABAL;SANTA INES - BACABAL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2102?formato=application/vnd.geo+json&qualidade=maxima;2102
+CAXIAS;CAXIAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2103?formato=application/vnd.geo+json&qualidade=maxima;2103
+PRESIDENTE DUTRA;PRESIDENTE DUTRA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2104?formato=application/vnd.geo+json&qualidade=maxima;2104
+IMPERATRIZ;IMPERATRIZ;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2105?formato=application/vnd.geo+json&qualidade=maxima;2105
+TERESINA;TERESINA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2201?formato=application/vnd.geo+json&qualidade=maxima;2201
+PARNAIBA;PARNAIBA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2202?formato=application/vnd.geo+json&qualidade=maxima;2202
+PICOS;PICOS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2203?formato=application/vnd.geo+json&qualidade=maxima;2203
+SAO RAIMUNDO NONATO;SAO RAIMUNDO NONATO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2204?formato=application/vnd.geo+json&qualidade=maxima;2204
+CORRENTE - BOM JESUS;CORRENTE - BOM JESUS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2205?formato=application/vnd.geo+json&qualidade=maxima;2205
+FLORIANO;FLORIANO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2206?formato=application/vnd.geo+json&qualidade=maxima;2206
+FORTALEZA;FORTALEZA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2301?formato=application/vnd.geo+json&qualidade=maxima;2301
+QUIXADA;QUIXADA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2302?formato=application/vnd.geo+json&qualidade=maxima;2302
+IGUATU;IGUATU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2303?formato=application/vnd.geo+json&qualidade=maxima;2303
+JUAZEIRO DO NORTE;JUAZEIRO DO NORTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2304?formato=application/vnd.geo+json&qualidade=maxima;2304
+CRATEUS;CRATEUS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2305?formato=application/vnd.geo+json&qualidade=maxima;2305
+SOBRAL;SOBRAL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2306?formato=application/vnd.geo+json&qualidade=maxima;2306
+NATAL;NATAL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2401?formato=application/vnd.geo+json&qualidade=maxima;2401
+CAICO;CAICO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2402?formato=application/vnd.geo+json&qualidade=maxima;2402
+MOSSORO;MOSSORO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2403?formato=application/vnd.geo+json&qualidade=maxima;2403
+JOAO PESSOA;JOAO PESSOA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2501?formato=application/vnd.geo+json&qualidade=maxima;2501
+CAMPINA GRANDE;CAMPINA GRANDE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2502?formato=application/vnd.geo+json&qualidade=maxima;2502
+PATOS;PATOS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2503?formato=application/vnd.geo+json&qualidade=maxima;2503
+SOUSA - CAJAZEIRAS;SOUSA - CAJAZEIRAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2504?formato=application/vnd.geo+json&qualidade=maxima;2504
+RECIFE;RECIFE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2601?formato=application/vnd.geo+json&qualidade=maxima;2601
+CARUARU;CARUARU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2602?formato=application/vnd.geo+json&qualidade=maxima;2602
+SERRA TALHADA;SERRA TALHADA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2603?formato=application/vnd.geo+json&qualidade=maxima;2603
+PETROLINA;PETROLINA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2604?formato=application/vnd.geo+json&qualidade=maxima;2604
+MACEIO;MACEIO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2701?formato=application/vnd.geo+json&qualidade=maxima;2701
+ARAPIRACA;ARAPIRACA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2702?formato=application/vnd.geo+json&qualidade=maxima;2702
+ARACAJU;ARACAJU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2801?formato=application/vnd.geo+json&qualidade=maxima;2801
+ITABAIANA;ITABAIANA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2802?formato=application/vnd.geo+json&qualidade=maxima;2802
+SALVADOR;SALVADOR;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2901?formato=application/vnd.geo+json&qualidade=maxima;2901
+SANTO ANTONIO DE JESUS;SANTO ANTONIO DE JESUS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2902?formato=application/vnd.geo+json&qualidade=maxima;2902
+ILHEUS - ITABUNA;ILHEUS - ITABUNA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2903?formato=application/vnd.geo+json&qualidade=maxima;2903
+VITORIA DA CONQUISTA;VITORIA DA CONQUISTA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2904?formato=application/vnd.geo+json&qualidade=maxima;2904
+GUANAMBI;GUANAMBI;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2905?formato=application/vnd.geo+json&qualidade=maxima;2905
+BARREIRAS;BARREIRAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2906?formato=application/vnd.geo+json&qualidade=maxima;2906
+IRECE;IRECE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2907?formato=application/vnd.geo+json&qualidade=maxima;2907
+JUAZEIRO;JUAZEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2908?formato=application/vnd.geo+json&qualidade=maxima;2908
+PAULO AFONSO;PAULO AFONSO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2909?formato=application/vnd.geo+json&qualidade=maxima;2909
+FEIRA DE SANTANA;FEIRA DE SANTANA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/2910?formato=application/vnd.geo+json&qualidade=maxima;2910
+BELO HORIZONTE;BELO HORIZONTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3101?formato=application/vnd.geo+json&qualidade=maxima;3101
+MONTES CLAROS;MONTES CLAROS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3102?formato=application/vnd.geo+json&qualidade=maxima;3102
+TEOFILO OTONI;TEOFILO OTONI;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3103?formato=application/vnd.geo+json&qualidade=maxima;3103
+GOVERNADOR VALADARES;GOVERNADOR VALADARES;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3104?formato=application/vnd.geo+json&qualidade=maxima;3104
+IPATINGA;IPATINGA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3105?formato=application/vnd.geo+json&qualidade=maxima;3105
+JUIZ DE FORA;JUIZ DE FORA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3106?formato=application/vnd.geo+json&qualidade=maxima;3106
+BARBACENA;BARBACENA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3107?formato=application/vnd.geo+json&qualidade=maxima;3107
+VARGINHA;VARGINHA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3108?formato=application/vnd.geo+json&qualidade=maxima;3108
+POUSO ALEGRE;POUSO ALEGRE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3109?formato=application/vnd.geo+json&qualidade=maxima;3109
+UBERABA;UBERABA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3110?formato=application/vnd.geo+json&qualidade=maxima;3110
+UBERLANDIA;UBERLANDIA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3111?formato=application/vnd.geo+json&qualidade=maxima;3111
+PATOS DE MINAS;PATOS DE MINAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3112?formato=application/vnd.geo+json&qualidade=maxima;3112
+DIVINOPOLIS;DIVINOPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3113?formato=application/vnd.geo+json&qualidade=maxima;3113
+VITORIA;VITORIA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3201?formato=application/vnd.geo+json&qualidade=maxima;3201
+SAO MATEUS;SAO MATEUS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3202?formato=application/vnd.geo+json&qualidade=maxima;3202
+COLATINA;COLATINA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3203?formato=application/vnd.geo+json&qualidade=maxima;3203
+CACHOEIRO DO ITAPEMIRIM;CACHOEIRO DO ITAPEMIRIM;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3204?formato=application/vnd.geo+json&qualidade=maxima;3204
+RIO DE JANEIRO;RIO DE JANEIRO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3301?formato=application/vnd.geo+json&qualidade=maxima;3301
+VOLTA REDONDA - BARRA MANSA;VOLTA REDONDA - BARRA MANSA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3302?formato=application/vnd.geo+json&qualidade=maxima;3302
+PETROPOLIS;PETROPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3303?formato=application/vnd.geo+json&qualidade=maxima;3303
+CAMPOS DOS GOYTACAZES;CAMPOS DOS GOYTACAZES;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3304?formato=application/vnd.geo+json&qualidade=maxima;3304
+MACAE - RIO DAS OSTRAS - CABO FRIO;MACAE - RIO DAS OSTRAS - CABO FRIO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3305?formato=application/vnd.geo+json&qualidade=maxima;3305
+SAO PAULO;SAO PAULO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3501?formato=application/vnd.geo+json&qualidade=maxima;3501
+SOROCABA;SOROCABA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3502?formato=application/vnd.geo+json&qualidade=maxima;3502
+BAURU;BAURU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3503?formato=application/vnd.geo+json&qualidade=maxima;3503
+MARILIA;MARILIA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3504?formato=application/vnd.geo+json&qualidade=maxima;3504
+PRESIDENTE PRUDENTE;PRESIDENTE PRUDENTE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3505?formato=application/vnd.geo+json&qualidade=maxima;3505
+ARACATUBA;ARACATUBA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3506?formato=application/vnd.geo+json&qualidade=maxima;3506
+SAO JOSE DO RIO PRETO;SAO JOSE DO RIO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3507?formato=application/vnd.geo+json&qualidade=maxima;3507
+RIBEIRAO PRETO;RIBEIRAO PRETO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3508?formato=application/vnd.geo+json&qualidade=maxima;3508
+ARARAQUARA;ARARAQUARA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3509?formato=application/vnd.geo+json&qualidade=maxima;3509
+CAMPINAS;CAMPINAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3510?formato=application/vnd.geo+json&qualidade=maxima;3510
+SAO JOSE DOS CAMPOS;SAO JOSE DOS CAMPOS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/3511?formato=application/vnd.geo+json&qualidade=maxima;3511
+CURITIBA;CURITIBA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4101?formato=application/vnd.geo+json&qualidade=maxima;4101
+GUARAPUAVA;GUARAPUAVA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4102?formato=application/vnd.geo+json&qualidade=maxima;4102
+CASCAVEL;CASCAVEL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4103?formato=application/vnd.geo+json&qualidade=maxima;4103
+MARINGA;MARINGA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4104?formato=application/vnd.geo+json&qualidade=maxima;4104
+LONDRINA;LONDRINA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4105?formato=application/vnd.geo+json&qualidade=maxima;4105
+PONTA GROSSA;PONTA GROSSA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4106?formato=application/vnd.geo+json&qualidade=maxima;4106
+FLORIANOPOLIS;FLORIANOPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4201?formato=application/vnd.geo+json&qualidade=maxima;4201
+CRICIUMA;CRICIUMA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4202?formato=application/vnd.geo+json&qualidade=maxima;4202
+LAGES;LAGES;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4203?formato=application/vnd.geo+json&qualidade=maxima;4203
+CHAPECO;CHAPECO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4204?formato=application/vnd.geo+json&qualidade=maxima;4204
+CACADOR;CACADOR;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4205?formato=application/vnd.geo+json&qualidade=maxima;4205
+JOINVILLE;JOINVILLE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4206?formato=application/vnd.geo+json&qualidade=maxima;4206
+BLUMENAU;BLUMENAU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4207?formato=application/vnd.geo+json&qualidade=maxima;4207
+PORTO ALEGRE;PORTO ALEGRE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4301?formato=application/vnd.geo+json&qualidade=maxima;4301
+PELOTAS;PELOTAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4302?formato=application/vnd.geo+json&qualidade=maxima;4302
+SANTA MARIA;SANTA MARIA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4303?formato=application/vnd.geo+json&qualidade=maxima;4303
+URUGUAIANA;URUGUAIANA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4304?formato=application/vnd.geo+json&qualidade=maxima;4304
+IJUI;IJUI;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4305?formato=application/vnd.geo+json&qualidade=maxima;4305
+PASSO FUNDO;PASSO FUNDO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4306?formato=application/vnd.geo+json&qualidade=maxima;4306
+CAXIAS DO SUL;CAXIAS DO SUL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4307?formato=application/vnd.geo+json&qualidade=maxima;4307
+SANTA CRUZ DO SUL - LAJEADO;SANTA CRUZ DO SUL - LAJEADO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/4308?formato=application/vnd.geo+json&qualidade=maxima;4308
+CAMPO GRANDE;CAMPO GRANDE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5001?formato=application/vnd.geo+json&qualidade=maxima;5001
+DOURADOS;DOURADOS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5002?formato=application/vnd.geo+json&qualidade=maxima;5002
+CORUMBA;CORUMBA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5003?formato=application/vnd.geo+json&qualidade=maxima;5003
+CUIABA;CUIABA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5101?formato=application/vnd.geo+json&qualidade=maxima;5101
+CACERES;CACERES;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5102?formato=application/vnd.geo+json&qualidade=maxima;5102
+SINOP;SINOP;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5103?formato=application/vnd.geo+json&qualidade=maxima;5103
+BARRA DO GARCAS;BARRA DO GARCAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5104?formato=application/vnd.geo+json&qualidade=maxima;5104
+RONDONOPOLIS;RONDONOPOLIS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5105?formato=application/vnd.geo+json&qualidade=maxima;5105
+GOIANIA;GOIANIA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5201?formato=application/vnd.geo+json&qualidade=maxima;5201
+ITUMBIARA;ITUMBIARA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5202?formato=application/vnd.geo+json&qualidade=maxima;5202
+RIO VERDE;RIO VERDE;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5203?formato=application/vnd.geo+json&qualidade=maxima;5203
+SAO LUIS DE MONTES BELOS - IPORA;SAO LUIS DE MONTES BELOS - IPORA;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5204?formato=application/vnd.geo+json&qualidade=maxima;5204
+PORANGATU - URUACU;PORANGATU - URUACU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5205?formato=application/vnd.geo+json&qualidade=maxima;5205
+LUZIANIA - AGUAS LINDAS DE GOIAS;LUZIANIA - AGUAS LINDAS DE GOIAS;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5206?formato=application/vnd.geo+json&qualidade=maxima;5206
+DISTRITO FEDERAL;DISTRITO FEDERAL;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-intermediarias/5301?formato=application/vnd.geo+json&qualidade=maxima;5301

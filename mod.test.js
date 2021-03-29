@@ -75,6 +75,14 @@ Deno.test({
 })
 
 Deno.test({
+    name: "getOneIntermadiaryTest", 
+    fn: async () => {
+        let polygon = await getOnePolygon('belem', 'intermediary')
+        assertEquals("1501", polygon.features[0].properties.codarea)
+    } 
+})
+
+Deno.test({
     name: "getOneCityTest", 
     fn: async () => {
         let polygon = await getOnePolygon('amparo(pb)', 'cities')
