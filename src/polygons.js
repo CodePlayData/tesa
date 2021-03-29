@@ -74,7 +74,7 @@ async function belongsTo (alias, type) {
             }      
     } */
     
-    console.log("pega o código do polígono que a pessoa quiser, parseia ele e retorna info de todos os outros níveis acima".)
+    console.log("pega o código do polígono que a pessoa quiser, parseia ele e retorna info de todos os outros níveis acima")
     
 } 
 
