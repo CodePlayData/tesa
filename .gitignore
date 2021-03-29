@@ -1,4 +1,6 @@
 .r
 .Rhistory
-/cache
-/dist
+cache/
+dist/
+.vscode
+.k8s
