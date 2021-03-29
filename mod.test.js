@@ -171,6 +171,51 @@ Deno.test({
 })
 
 Deno.test({
+    name: "getManyImmediateTest", 
+    fn: async () => {
+        let polygon = await getManyPolygons({ type: "immediate", aliases: ["CACOAL", "PARINTINS", "BRAGANCA", "CAPANEMA", "TUCURUI"] })
+        
+        assertObjectMatch( 
+            polygon[0],
+            { properties: {
+                codarea: "110005"
+                }
+            })
+            
+        assertObjectMatch( 
+            polygon[1],
+            { properties: {
+                codarea: "130010"
+                }
+            })
+            
+        assertObjectMatch( 
+            polygon[2],
+            { properties: {
+                codarea: "150005"
+                }
+            })
+        
+        assertObjectMatch( 
+            polygon[3],
+            { properties: {
+                codarea: "150006"
+                }
+            })
+            
+        assertObjectMatch( 
+            polygon[4],
+            { properties: {
+                codarea: "150011"
+                }
+            })
+        
+        } 
+})
+
+
+
+Deno.test({
     name: "getManyMiddlesTest", 
     fn: async () => {
         let polygon = await getManyPolygons({ type: "middleregions", aliases: ["BAURU", "BORBOREMA", "ITAPETININGA"] })
