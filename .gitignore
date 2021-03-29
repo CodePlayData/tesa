@@ -1,3 +1,4 @@
 .r
 .Rhistory
-cache/
+/cache
+/dist
