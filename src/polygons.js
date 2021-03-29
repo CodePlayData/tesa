@@ -91,7 +91,7 @@ async function getOnePolygon (alias, type) {
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
         case "immediate":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv"
             break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
@@ -198,7 +198,7 @@ async function getManyPolygons (request) {
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
         case "immediate":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv"
             break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
@@ -234,7 +234,7 @@ async function getManyPolygons (request) {
     
         try {  
             // check if there is any doubled names in microregions or cities
-            if (type === "microregions" || type === "cities") {
+            if (type === "microregions" || type === "cities" || type === "immediate") {
         
             const doubles_list = 
                 await parseCsv(
@@ -256,6 +256,7 @@ async function getManyPolygons (request) {
             if (doubles_results.length > 0) {
                 console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
                 doubles_results.flat().map(i => console.log(String(i)))   
+                console.log(doubles_results)
                 return      
             }     
         }

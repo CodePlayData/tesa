@@ -1,5 +1,6 @@
-import { getOnePolygon, getManyPolygons } from './src/polygons.js'
+import { getOnePolygon, getManyPolygons, belongsTo } from './src/polygons.js'
 export {
     getOnePolygon,
-    getManyPolygons
+    getManyPolygons,
+    belongsTo
 }
