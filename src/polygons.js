@@ -11,7 +11,6 @@ async function belongsTo (alias, type) {
     let url
     let doubles_url
     let polygon
-
     // defining the url that will get the double list
     switch (type) {
         case "microregions":
@@ -24,7 +23,6 @@ async function belongsTo (alias, type) {
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
     }
-
     // defining the url that will get the alias list
     switch(type) {
         case "country": 
@@ -49,7 +47,6 @@ async function belongsTo (alias, type) {
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
             break
     }
-
     // check if there is any doubled names in microregions or cities
     if (type === "microregions" || type === "cities" || type === "immediate") {
         
@@ -59,7 +56,6 @@ async function belongsTo (alias, type) {
                     await fetch(doubles_url))
                     .text(), { skipFirstRow: true, separator: ";" }
                     )
-
         const doubles= 
             doubles_list.filter(place => place.Alias === alias
                 .toUpperCase()
@@ -197,9 +193,6 @@ async function getManyPolygons (request) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
-        case "immediate":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv"
-            break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
@@ -220,9 +213,6 @@ async function getManyPolygons (request) {
         case "middleregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
             break
-        case "immediate": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
-            break
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
             break
@@ -234,7 +224,7 @@ async function getManyPolygons (request) {
     
         try {  
             // check if there is any doubled names in microregions or cities
-            if (type === "microregions" || type === "cities" || type === "immediate") {
+            if (type === "microregions" || type === "cities" ) {
         
             const doubles_list = 
                 await parseCsv(
@@ -261,7 +251,7 @@ async function getManyPolygons (request) {
         }
 
 
-            // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27, except for immediate and intermediary regions that will  download one by one.
+            // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27.
             if (type === "macroregion" || type === "states") {
                 switch(type) {
                     case "macroregion": 
@@ -289,16 +279,6 @@ async function getManyPolygons (request) {
             unique_codes = [...new Set(place_codes)]
             polygons = [...result.map(i => states_json.features.filter(o => o.properties.codarea === i) ).flat()]
             return (polygons)
-        } else if (type === "immediate"){
-            const list = 
-                await parseCsv(
-                    await (
-                        await fetch(url))
-                        .text(), { skipFirstRow: true, separator: ";" }
-                        )
-            
-            console.log(list)
-            
         } else {
     
         // get the alias list 
@@ -335,23 +315,20 @@ async function getManyPolygons (request) {
                     case "microregions": 
                         base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
                         break
-                    case "immediate": 
-                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao-imediata`
-                        break
                     case "cities": 
                         base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
                         break
                 }
             
                 
-                 return JSON.parse( await (await fetch(base_url)).text() )
+                return JSON.parse( await (await fetch(base_url)).text() )
                 
             })
         )
                       
         polygons = [...result.map(i => major_polygons.map(o=> o.features.filter(u => u.properties.codarea === i) )).flat().flat()]
         
-        console.log('found!')
+        console.log("found!")
         return(polygons)
     
       }

@@ -7,21 +7,18 @@ import { getOnePolygon, getManyPolygons, belongsTo } from './mod.js'
         let metaData = await belongsTo('amparo(pb)', 'cities')
     }
 })
-
 Deno.test({
     name: "belongsMicro" ,
     fn: async () => {
         let metaData = await belongsTo('afonso claudio', 'microregions')
     }
 })
-
 Deno.test({
     name: "belongsMiddle" ,
     fn: async () => {
         let metaData = await belongsTo('norte fluminense', 'middleregions')
     }
 })
-
 Deno.test({
     name: "belongsStates" ,
     fn: async () => {
@@ -283,17 +280,5 @@ Deno.test({
     fn: async () => {
         let polygon = await getManyPolygons({ type: "immediate", aliases: ["VALENCA"] })
         assertEquals(undefined, polygon)
-        } 
-})
-
-
-// the last test
-
-Deno.test({
-    name: "getManyImmediateTest", 
-    fn: async () => {
-        let polygon = await getManyPolygons({ type: "immediate", aliases: ["ITABAIANA(PB)", "ITABAIANA(SE)"] })
-        
-    
         } 
 })
