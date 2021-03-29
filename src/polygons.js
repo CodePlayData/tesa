@@ -7,6 +7,7 @@ import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
 
 async function belongsTo (alias, type) { 
+    /*
     let url
     let doubles_url
     let polygon
@@ -71,7 +72,7 @@ async function belongsTo (alias, type) {
                 doubles.flat().map(i => console.log(String(i)))   
                 return            
             }      
-    }
+    } */
     
     console.log("pega o código do polígono que a pessoa quiser, parseia ele e retorna info de todos os outros níveis acima".)
     
