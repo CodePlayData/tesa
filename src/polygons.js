@@ -261,7 +261,7 @@ async function getManyPolygons (request) {
         }
 
 
-            // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27.
+            // in case of macroregion or states the method GET will be called once. For all others the call could vary from 1 to 27, except for immediate and intermediary regions that will  download one by one.
             if (type === "macroregion" || type === "states") {
                 switch(type) {
                     case "macroregion": 
@@ -289,6 +289,16 @@ async function getManyPolygons (request) {
             unique_codes = [...new Set(place_codes)]
             polygons = [...result.map(i => states_json.features.filter(o => o.properties.codarea === i) ).flat()]
             return (polygons)
+        } else if (type === "immediate"){
+            const list = 
+                await parseCsv(
+                    await (
+                        await fetch(url))
+                        .text(), { skipFirstRow: true, separator: ";" }
+                        )
+            
+            console.log(list)
+            
         } else {
     
         // get the alias list 
@@ -334,15 +344,14 @@ async function getManyPolygons (request) {
                 }
             
                 
-                 console.log( url )
-                 return
+                 return JSON.parse( await (await fetch(base_url)).text() )
                 
             })
         )
                       
         polygons = [...result.map(i => major_polygons.map(o=> o.features.filter(u => u.properties.codarea === i) )).flat().flat()]
         
-        console.log(result)
+        console.log('found!')
         return(polygons)
     
       }

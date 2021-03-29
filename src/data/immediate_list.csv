@@ -1,8 +1,8 @@
 Alias;Place;Link;Code
-VALENCA(RJ);VALENCA(RJ);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/33006?formato=application/vnd.geo+json&qualidade=maxima;33006
-VALENCA(BA);VALENCA(BA);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/29005?formato=application/vnd.geo+json&qualidade=maxima;29005
-ITABAIANA(SE);ITABAIANA(SE);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/28004?formato=application/vnd.geo+json&qualidade=maxima,28004
-ITABAIANA(PB);ITABAIANA(PB);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/25004?formato=application/vnd.geo+json&qualidade=maxima,25004
+VALENCA(RJ);VALENCA(RJ);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/330006?formato=application/vnd.geo+json&qualidade=maxima;330006
+VALENCA(BA);VALENCA(BA);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/290005?formato=application/vnd.geo+json&qualidade=maxima;290005
+ITABAIANA(SE);ITABAIANA(SE);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/280004?formato=application/vnd.geo+json&qualidade=maxima;280004
+ITABAIANA(PB);ITABAIANA(PB);https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/250004?formato=application/vnd.geo+json&qualidade=maxima;250004
 PORTO VELHO;PORTO VELHO;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/110001?formato=application/vnd.geo+json&qualidade=maxima;110001
 ARIQUEMES;ARIQUEMES;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/110002?formato=application/vnd.geo+json&qualidade=maxima;110002
 JARU;JARU;https://servicodados.ibge.gov.br/api/v3/malhas/regioes-imediatas/110003?formato=application/vnd.geo+json&qualidade=maxima;110003
