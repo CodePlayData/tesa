@@ -16,7 +16,9 @@ async function belongsTo (alias, type) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
-    
+        case "immediate":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
@@ -36,6 +38,9 @@ async function belongsTo (alias, type) {
         case "middleregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
             break
+        case "immediate": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
             break
@@ -45,7 +50,7 @@ async function belongsTo (alias, type) {
     }
 
     // check if there is any doubled names in microregions or cities
-    if (type === "microregions" || type === "cities") {
+    if (type === "microregions" || type === "cities" || type === "immediate") {
         
         const doubles_list = 
             await parseCsv(
@@ -84,7 +89,9 @@ async function getOnePolygon (alias, type) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
-    
+        case "immediate":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
@@ -104,6 +111,9 @@ async function getOnePolygon (alias, type) {
         case "middleregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
             break
+        case "immediate": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
             break
@@ -112,31 +122,33 @@ async function getOnePolygon (alias, type) {
             break
     }
 
-    // check if there is any doubled names in microregions or cities
-    if (type === "microregions" || type === "cities") {
-        
-        const doubles_list = 
-            await parseCsv(
-                await (
-                    await fetch(doubles_url))
-                    .text(), { skipFirstRow: true, separator: ";" }
-                    )
-
-        const doubles= 
-            doubles_list.filter(place => place.Alias === alias
-                .toUpperCase()
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, ""))
-                .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5])
-            
-            if (doubles.length > 0) {
-                console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
-                doubles.flat().map(i => console.log(String(i)))   
-                return            
-            }      
-    }
 
     try {
+
+        // check if there is any doubled names in microregions or cities
+        if (type === "microregions" || type === "cities" || type === "immediate") {
+            
+            const doubles_list = 
+                await parseCsv(
+                    await (
+                        await fetch(doubles_url))
+                        .text(), { skipFirstRow: true, separator: ";" }
+                        )
+
+            const doubles= 
+                doubles_list.filter(place => place.Alias === alias
+                    .toUpperCase()
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, ""))
+                    .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5])
+                
+                if (doubles.length > 0) {
+                    console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
+                    doubles.flat().map(i => console.log(String(i)))   
+                    return            
+                }      
+        }
+
         const list = 
             await parseCsv(
                 await (
@@ -184,7 +196,9 @@ async function getManyPolygons (request) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
-    
+        case "immediate":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
@@ -204,6 +218,9 @@ async function getManyPolygons (request) {
             break
         case "middleregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            break
+        case "immediate": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
             break
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
@@ -306,6 +323,9 @@ async function getManyPolygons (request) {
                         break
                     case "microregions": 
                         base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
+                        break
+                    case "immediate": 
+                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao-imediata`
                         break
                     case "cities": 
                         base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`

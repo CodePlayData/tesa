@@ -1,7 +1,7 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
 import { getOnePolygon, getManyPolygons, belongsTo } from './mod.js'
 
-Deno.test({
+/* Deno.test({
     name: "belongsCity" ,
     fn: async () => {
         let metaData = await belongsTo('amparo(pb)', 'cities')
@@ -27,7 +27,7 @@ Deno.test({
     fn: async () => {
         let metaData = await belongsTo('mato grosso', 'states')
     }
-})
+}) */
 
 Deno.test({
     name: "getOneCountryTest", 
@@ -66,6 +66,14 @@ Deno.test({
     fn: async () => {
         let polygon = await getOnePolygon('afonso claudio', 'microregions')
         assertEquals("32007", polygon.features[0].properties.codarea)
+    } 
+})
+
+Deno.test({
+    name: "getOneImmediateTest", 
+    fn: async () => {
+        let polygon = await getOnePolygon('brasileia', 'immediate')
+        assertEquals("120002", polygon.features[0].properties.codarea)
     } 
 })
 
