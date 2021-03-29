@@ -75,7 +75,33 @@ async function belongsTo (alias, type) {
             }      
     }
 
-    console.log("pega o código do polígono que a pessoa quiser, parseia ele e retorna info de todos os outros níveis acima")
+    const list = 
+            await parseCsv(
+                await (
+                    await fetch(url))
+                    .text(), { skipFirstRow: true, separator: ";" }
+                    )
+    
+        const result = await fetch(...list.filter(place => place.Alias === alias.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ""))
+                .map(place =>{
+                               
+                    switch (type) {
+                        case "cities": return `https://servicodados.ibge.gov.br/api/v1/localidades/municipios/${place.Code}`
+                        case "microregions": return `https://servicodados.ibge.gov.br/api/v1/localidades/microrregioes/${place.Code}`
+                        case "intermediary": return `https://servicodados.ibge.gov.br/api/v1/localidades/regioes-intermediarias/${place.Code}`
+                        case "middleregions": return `https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes/${place.Code}`
+                        case "states": return `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${place.Code}`
+                        case "immediate": return `https://servicodados.ibge.gov.br/api/v1/localidades/regioes-imediatas/${place.Code}`
+                    }
+
+                } ))
+    
+  /*       polygon = 
+            await (
+                await result)
+                .json() */
+
+        return( await JSON.parse(await result.text()) )
     
 } 
 

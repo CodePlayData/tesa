@@ -1,30 +1,53 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
 import { getOnePolygon, getManyPolygons, belongsTo } from './mod.js'
 
-/* Deno.test({
+Deno.test({
     name: "belongsCity" ,
     fn: async () => {
         let metaData = await belongsTo('amparo(pb)', 'cities')
+        console.log(metaData)
     }
 })
+
 Deno.test({
     name: "belongsMicro" ,
     fn: async () => {
         let metaData = await belongsTo('afonso claudio', 'microregions')
+        console.log(metaData)
     }
 })
+
 Deno.test({
     name: "belongsMiddle" ,
     fn: async () => {
         let metaData = await belongsTo('norte fluminense', 'middleregions')
+        console.log(metaData)
     }
 })
+
 Deno.test({
     name: "belongsStates" ,
     fn: async () => {
         let metaData = await belongsTo('mato grosso', 'states')
+        console.log(metaData)
     }
-}) */
+})
+
+Deno.test({
+    name: "belongsIntermediary" ,
+    fn: async () => {
+        let metaData = await belongsTo('belem', 'intermediary')
+        console.log(metaData)
+    }
+})
+
+Deno.test({
+    name: "belongsImmediate" ,
+    fn: async () => {
+        let metaData = await belongsTo('brasileia', 'immediate')
+        console.log(metaData)
+    }
+})
 
 Deno.test({
     name: "getOneCountryTest", 
