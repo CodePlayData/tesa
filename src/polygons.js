@@ -1,8 +1,12 @@
+/* These funcions are the most atomics possible and can be used in High Order Functions, for example: if some one wants to perform a hierarchical geolocation, wich means, 
+to get all polygons that determined point belongs, they can parse the address in country (if necessary), macroregion, states, middleware and microregions and city, to perform a
+a download of all these polygons, put them in order and then insert the location of point as the lowest level. Of course to do that you have to known beforehand these locations.*/ 
+
+
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
 
-async function getOnePolygon (alias, type) {
-    
+async function belongsTo (alias, type) { 
     let url
     let doubles_url
     let polygon
@@ -12,7 +16,9 @@ async function getOnePolygon (alias, type) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
-    
+        case "immediate":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
@@ -32,6 +38,9 @@ async function getOnePolygon (alias, type) {
         case "middleregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
             break
+        case "immediate": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
             break
@@ -41,7 +50,7 @@ async function getOnePolygon (alias, type) {
     }
 
     // check if there is any doubled names in microregions or cities
-    if (type === "microregions" || type === "cities") {
+    if (type === "microregions" || type === "cities" || type === "immediate") {
         
         const doubles_list = 
             await parseCsv(
@@ -63,8 +72,83 @@ async function getOnePolygon (alias, type) {
                 return            
             }      
     }
+    
+    console.log("pega o código do polígono que a pessoa quiser, parseia ele e retorna info de todos os outros níveis acima".)
+    
+} 
+
+
+async function getOnePolygon (alias, type) {
+    
+    let url
+    let doubles_url
+    let polygon
+
+    // defining the url that will get the double list
+    switch (type) {
+        case "microregions":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            break
+        case "immediate":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
+        case "cities":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            break
+    }
+
+    // defining the url that will get the alias list
+    switch(type) {
+        case "country": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            break
+        case "macroregion": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            break
+        case "states": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            break
+        case "middleregions": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            break
+        case "immediate": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
+        case "microregions": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            break
+        case "cities": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            break
+    }
+
 
     try {
+
+        // check if there is any doubled names in microregions or cities
+        if (type === "microregions" || type === "cities" || type === "immediate") {
+            
+            const doubles_list = 
+                await parseCsv(
+                    await (
+                        await fetch(doubles_url))
+                        .text(), { skipFirstRow: true, separator: ";" }
+                        )
+
+            const doubles= 
+                doubles_list.filter(place => place.Alias === alias
+                    .toUpperCase()
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, ""))
+                    .map(place => [place.Opt1, place.Opt2, place.Opt3, place.Opt4, place.Opt5])
+                
+                if (doubles.length > 0) {
+                    console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
+                    doubles.flat().map(i => console.log(String(i)))   
+                    return            
+                }      
+        }
+
         const list = 
             await parseCsv(
                 await (
@@ -112,7 +196,9 @@ async function getManyPolygons (request) {
         case "microregions":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
             break
-    
+        case "immediate":
+            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            break
         case "cities":
             doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
             break
@@ -132,6 +218,9 @@ async function getManyPolygons (request) {
             break
         case "middleregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            break
+        case "immediate": 
+            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
             break
         case "microregions": 
             url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
@@ -235,6 +324,9 @@ async function getManyPolygons (request) {
                     case "microregions": 
                         base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
                         break
+                    case "immediate": 
+                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao-imediata`
+                        break
                     case "cities": 
                         base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
                         break
@@ -262,5 +354,6 @@ async function getManyPolygons (request) {
 
 export {
     getOnePolygon,
-    getManyPolygons
+    getManyPolygons,
+    belongsWith
 }
