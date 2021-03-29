@@ -356,5 +356,5 @@ async function getManyPolygons (request) {
 export {
     getOnePolygon,
     getManyPolygons,
-    belongsWith
+    belongsTo
 }
