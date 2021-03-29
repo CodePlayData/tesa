@@ -274,11 +274,3 @@ Deno.test({
         assertEquals(undefined, polygon)
     } 
 })
-
-Deno.test({
-    name: "getManyImmediateErrorTest", 
-    fn: async () => {
-        let polygon = await getManyPolygons({ type: "immediate", aliases: ["VALENCA"] })
-        assertEquals(undefined, polygon)
-        } 
-})
