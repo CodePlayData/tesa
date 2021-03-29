@@ -170,17 +170,6 @@ Deno.test({
         } 
 })
 
-Deno.test({
-    name: "getManyImmediateTest", 
-    fn: async () => {
-        let polygon = await getManyPolygons({ type: "immediate", aliases: ["VALENCA"] })
-        
-        console.log( polygon)
-        
-        } 
-})
-
-
 
 Deno.test({
     name: "getManyMiddlesTest", 
@@ -287,4 +276,24 @@ Deno.test({
         let polygon = await getManyPolygons({ type: "microregions", aliases: ["gurupi", "cascavel"] })
         assertEquals(undefined, polygon)
     } 
+})
+
+Deno.test({
+    name: "getManyImmediateErrorTest", 
+    fn: async () => {
+        let polygon = await getManyPolygons({ type: "immediate", aliases: ["VALENCA"] })
+        assertEquals(undefined, polygon)
+        } 
+})
+
+
+// the last test
+
+Deno.test({
+    name: "getManyImmediateTest", 
+    fn: async () => {
+        let polygon = await getManyPolygons({ type: "immediate", aliases: ["ITABAIANA(PB)", "ITABAIANA(SE)"] })
+        
+    
+        } 
 })

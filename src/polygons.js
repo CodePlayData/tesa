@@ -256,7 +256,6 @@ async function getManyPolygons (request) {
             if (doubles_results.length > 0) {
                 console.log("Existem nomes repetidos nessa categoria geográfica, experimente trocar para:\n")
                 doubles_results.flat().map(i => console.log(String(i)))   
-                console.log(doubles_results)
                 return      
             }     
         }
@@ -335,14 +334,15 @@ async function getManyPolygons (request) {
                 }
             
                 
-                 return JSON.parse( await (await fetch(base_url)).text() )
+                 console.log( url )
+                 return
                 
             })
         )
                       
         polygons = [...result.map(i => major_polygons.map(o=> o.features.filter(u => u.properties.codarea === i) )).flat().flat()]
         
-        console.log('found!')
+        console.log(result)
         return(polygons)
     
       }
