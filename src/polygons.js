@@ -1,6 +1,6 @@
 /* These funcions are the most atomics possible and can be used in High Order Functions, for example: if some one wants to perform a hierarchical geolocation, wich means, 
 to get all polygons that determined point belongs, they can parse the address in country (if necessary), macroregion, states, middleware and microregions and city, to perform a
-a download of all these polygons, put them in order and then insert the location of point as the lowest level. Of course to do that you have to known beforehand these locations.*/ 
+a download of all these polygons, put them in order and then insert the location of point as the lowest level. Of course to do that you have to known beforehand these locations, that's why the belongTo function exists.*/ 
 
 
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
@@ -10,7 +10,6 @@ async function belongsTo (alias, type) {
     
     let url
     let doubles_url
-    let polygon
 
     // defining the url that will get the double list
     switch (type) {
@@ -199,7 +198,6 @@ async function getOnePolygon (alias, type) {
                 await result)
                 .json()
 
-        console.log('found!')
         return(polygon)
 
     } catch (error) {
@@ -362,7 +360,6 @@ async function getManyPolygons (request) {
                       
         polygons = [...result.map(i => major_polygons.map(o=> o.features.filter(u => u.properties.codarea === i) )).flat().flat()]
         
-        console.log("found!")
         return(polygons)
     
       }
