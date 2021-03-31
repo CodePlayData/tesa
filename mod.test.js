@@ -1,5 +1,5 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
-import { getOnePolygon, getManyPolygons, belongsTo } from './mod.js'
+import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany } from './mod.js'
 
 Deno.test({
     name: "belongsCity" ,
@@ -77,6 +77,156 @@ Deno.test({
         )
 
     }
+})
+
+Deno.test({
+    name: "belongsManyMacro", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "macroregion", aliases: ["NORTE", "SUL"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 1 }
+        )
+
+        assertObjectMatch(
+            metaData[1],
+            { id: 4 }
+        )
+
+    } 
+})
+
+Deno.test({
+    name: "belongsManyState", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "states", aliases: ["RIO DE JANEIRO", "SAO PAULO"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 33 }
+        )
+        
+        assertObjectMatch(
+            metaData[1],
+            { id: 35 }
+        )
+
+    } 
+})
+
+Deno.test({
+    name: "belongsManyMiddle", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "middleregions", aliases: ["BAURU", "BORBOREMA", "ITAPETININGA"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 3504 }
+        )
+        
+        assertObjectMatch(
+            metaData[1],
+            { id: 2502 }
+        )
+        assertObjectMatch(
+            metaData[2],
+            { id: 3511 }
+        )
+
+    } 
+})
+
+Deno.test({
+    name: "belongsManyMicro", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "microregions", aliases: ["ALFENAS", "BANANAL", "CATU", "COLATINA", "CUIABA"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 31049 }
+        )  
+        assertObjectMatch(
+            metaData[1],
+            { id: 35052 }
+        )
+        assertObjectMatch(
+            metaData[2],
+            { id: 29019 }
+        )
+        assertObjectMatch(
+            metaData[3],
+            { id: 32003 }
+        )
+        assertObjectMatch(
+            metaData[4],
+            { id: 51017 }
+        )
+
+    } 
+})
+
+Deno.test({
+    name: "belongsManyInter", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "intermediary", aliases: ["CASTANHAL", "PARINTINS"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 1502 }
+        )  
+        assertObjectMatch(
+            metaData[1],
+            { id: 1304 }
+        )
+
+    } 
+})
+
+Deno.test({
+    name: "belongsManyImmediate", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "immediate", aliases: ["ARIQUEMES", "CACOAL"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 110002 }
+        )  
+        assertObjectMatch(
+            metaData[1],
+            { id: 110005 }
+        )
+
+    } 
+})
+
+Deno.test({
+    name: "belongsManyCities", 
+    fn: async () => {
+        let metaData = await belongsToMany({ type: "cities", aliases: ["ESTEIO", "ESTIVA", "ESTANCIA VELHA", "ESPINOSA", "FERREIROS"] })
+        
+        assertObjectMatch(
+            metaData[0],
+            { id: 4307708 }
+        )  
+        assertObjectMatch(
+            metaData[1],
+            { id: 3124500 }
+        )
+        assertObjectMatch(
+            metaData[2],
+            { id: 4307609 }
+        )
+        assertObjectMatch(
+            metaData[3],
+            { id: 3124302 }
+        )
+        assertObjectMatch(
+            metaData[4],
+            { id: 2605509 }
+        )
+
+    } 
 })
 
 Deno.test({
@@ -228,7 +378,6 @@ Deno.test({
         } 
 })
 
-
 Deno.test({
     name: "getManyMiddlesTest", 
     fn: async () => {
@@ -302,10 +451,12 @@ Deno.test({
         } 
 })
 
+
+
 // ERROR Tests
 
 Deno.test({
-    name: "getOneCityErrorTest", 
+    name: "errorTestGetOneCity", 
     fn: async () => {
         let polygon = await getOnePolygon('amparo', 'cities')
         assertEquals(undefined, polygon)
@@ -313,7 +464,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "getOneMicroErrorTest", 
+    name: "errorTestGetOneMicro", 
     fn: async () => {
         let polygon = await getOnePolygon('gurupi', 'microregions')
         assertEquals(undefined, polygon)
@@ -321,7 +472,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "getManyCityErrorTest", 
+    name: "errorTestGetManyCity", 
     fn: async () => {
         let polygon = await getManyPolygons({ type: "cities", aliases: ["amparo", "aparecida"] })
         assertEquals(undefined, polygon)
@@ -329,9 +480,49 @@ Deno.test({
 })
 
 Deno.test({
-    name: "getManyMicroErrorTest", 
+    name: "errorTestGetManyMicro", 
     fn: async () => {
         let polygon = await getManyPolygons({ type: "microregions", aliases: ["gurupi", "cascavel"] })
+        assertEquals(undefined, polygon)
+    } 
+})
+
+Deno.test({
+    name: "errorTestBelongsToCity", 
+    fn: async () => {
+        let polygon = await belongsTo('amparo', 'cities')
+        assertEquals(undefined, polygon)
+    } 
+})
+
+Deno.test({
+    name: "errorTestBelongsToMicro", 
+    fn: async () => {
+        let polygon = await belongsTo('gurupi', 'microregions')
+        assertEquals(undefined, polygon)
+    } 
+})
+
+Deno.test({
+    name: "errorTestBelongsManyCity" ,
+    fn: async () => {
+        let metaData = await belongsToMany( { type: "cities", aliases: ['amparo', 'atalaia']} )
+        assertEquals(undefined, metaData)
+    }
+})
+
+Deno.test({
+    name: "errorTestBelongsManyMicro", 
+    fn: async () => {
+        let polygon = await belongsToMany({ type: "microregions", aliases: ["gurupi", "cascavel"] })
+        assertEquals(undefined, polygon)
+    } 
+})
+
+Deno.test({
+    name: "errorTestBelongsManyImmediate", 
+    fn: async () => {
+        let polygon = await belongsToMany({ type: "immediate", aliases: ["ITABAIANA", "VALENCA"] })
         assertEquals(undefined, polygon)
     } 
 })
