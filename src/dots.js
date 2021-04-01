@@ -13,7 +13,10 @@ let config = {
 }
 
 let config_2 = {
-  request: [ "state", "city", "number", "address" ],
+  request: {
+    type: "structured",
+    layout: [ "state", "city", "number", "address" ]
+  },
   map_tiles: [
     {
       name: "Sudeste",
@@ -30,10 +33,10 @@ let config_2 = {
 
 */
 
-function forwardGeocoding ( config , location) {
+async function forwardGeocoding ( config , location) {
   
   if (Array.isArray(config.map_tiles)) {
-  
+    
     
     if (config.request === "unstructured") {
       
@@ -50,21 +53,22 @@ function forwardGeocoding ( config , location) {
     
   } else {
     
-
-    if (config.request === "unstructured") {
-      
-      console.log('unstructured')
+    let { request } = config
+    let { name, url } = config.map_tiles
+    let route = '/search?'
     
+    if (request === "unstructured") {  
+      console.log(`Requesting to ${ name }`)
+      return( await JSON.parse(await (await fetch ( `${ url }${ route }q=${ location }&format=geojson`)).text()))
     } else {
       
-      console.log('...')
-    
+      let { housenumber, street, city, state } = location
+      
+      console.log(`Requesting to ${ name }`)
+      return( await JSON.parse(await (await fetch ( `${ url }${ route }street=${housenumber} ${street}&city=${city}&state=${state}&country=Brazil&format=geojson`)).text()))
     }
     
-    console.log('not array')
-
   }
-
 
 }
 

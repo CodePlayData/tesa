@@ -2,19 +2,55 @@ import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/te
 import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany, forwardGeocoding } from './mod.js'
 
 Deno.test({
-    name: "forwardGeocoding",
-    fn: () => {
+    name: "forwardGeocoding - One Server - Structured",
+    fn: async () => {
+        let config = {
+            request: "structured", 
+            map_tiles: { 
+              name: "Nominatim/OpenStreetMap", 
+              url: "https://nominatim.openstreetmap.org" 
+            }
+          }
+        let location = {
+            housenumber: 640,
+            street: "Avenida Professor Plínio Bastos",
+            city: "Rio de Janeiro",
+            state: "Rio de Janeiro"
+        }
+        
+        let point = await forwardGeocoding(config, location)
+        
+        
+        assertObjectMatch(
+            point.features[0].geometry.coordinates,
+            {
+                "0": -43.2643487,
+                "1": -22.8374775,
+                length: 2,
+            }
+        )
+    }
+})
 
+Deno.test({
+    name: "forwardGeocoding - One Server - Unstructured",
+    fn: async () => {
         let config = {
             request: "unstructured", 
             map_tiles: { 
-              name: "aaa", 
-              url: "http://... " 
+              name: "Nominatim/OpenStreetMap", 
+              url: "https://nominatim.openstreetmap.org" 
             }
           }
-
-        forwardGeocoding(config, 'jdijdiei')
-    
+        let point = await forwardGeocoding(config, 'Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro')
+        assertObjectMatch(
+            point.features[0].geometry.coordinates,
+            {
+                "0": -43.2643487,
+                "1": -22.8374775,
+                length: 2,
+            }
+        )
     }
 })
 
