@@ -1,8 +1,25 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
-import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany } from './mod.js'
+import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany, forwardGeocoding } from './mod.js'
 
 Deno.test({
-    name: "belongsCity" ,
+    name: "forwardGeocoding",
+    fn: () => {
+
+        let config = {
+            request: "unstructured", 
+            map_tiles: { 
+              name: "aaa", 
+              url: "http://... " 
+            }
+          }
+
+        forwardGeocoding(config, 'jdijdiei')
+    
+    }
+})
+
+Deno.test({
+    name: "belongsCityTest" ,
     fn: async () => {
         let metaData = await belongsTo('amparo(pb)', 'cities')
         
@@ -15,7 +32,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsMicro" ,
+    name: "belongsMicroTest" ,
     fn: async () => {
         let metaData = await belongsTo('afonso claudio', 'microregions')
         
@@ -28,7 +45,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsMiddle" ,
+    name: "belongsMiddleTest" ,
     fn: async () => {
         let metaData = await belongsTo('norte fluminense', 'middleregions')
         
@@ -41,7 +58,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsStates" ,
+    name: "belongsStatesTest" ,
     fn: async () => {
         let metaData = await belongsTo('mato grosso', 'states')
         
@@ -54,7 +71,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsIntermediary" ,
+    name: "belongsIntermediaryTest" ,
     fn: async () => {
         let metaData = await belongsTo('belem', 'intermediary')
         
@@ -67,7 +84,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsImmediate" ,
+    name: "belongsImmediateTest" ,
     fn: async () => {
         let metaData = await belongsTo('brasileia', 'immediate')
         
@@ -80,7 +97,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyMacro", 
+    name: "belongsManyMacroTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "macroregion", aliases: ["NORTE", "SUL"] })
         
@@ -98,7 +115,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyState", 
+    name: "belongsManyStateTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "states", aliases: ["RIO DE JANEIRO", "SAO PAULO"] })
         
@@ -116,7 +133,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyMiddle", 
+    name: "belongsManyMiddleTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "middleregions", aliases: ["BAURU", "BORBOREMA", "ITAPETININGA"] })
         
@@ -138,7 +155,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyMicro", 
+    name: "belongsManyMicroTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "microregions", aliases: ["ALFENAS", "BANANAL", "CATU", "COLATINA", "CUIABA"] })
         
@@ -167,7 +184,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyInter", 
+    name: "belongsManyInterTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "intermediary", aliases: ["CASTANHAL", "PARINTINS"] })
         
@@ -184,7 +201,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyImmediate", 
+    name: "belongsManyImmediateTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "immediate", aliases: ["ARIQUEMES", "CACOAL"] })
         
@@ -201,7 +218,7 @@ Deno.test({
 })
 
 Deno.test({
-    name: "belongsManyCities", 
+    name: "belongsManyCitiesTest", 
     fn: async () => {
         let metaData = await belongsToMany({ type: "cities", aliases: ["ESTEIO", "ESTIVA", "ESTANCIA VELHA", "ESPINOSA", "FERREIROS"] })
         

@@ -4,6 +4,8 @@ These functions are made for Geolocation.
 
 It's most atomics possible and can be used in High Order Functions, for example: if some one wants to perform a hierarchical geolocation, witch means, to get all polygons that determined point belongs, they can parse the address in country (if necessary), macroregion, states, middleware and microregions and city, to perform a download of all these polygons, put them in order and then insert the location of point as the lowest level. Of course to do that you have to known beforehand these locations, that's why the belongTo function exists.
 
+ToDo: pass all non-package links as config.json file in root.
+
 */ 
 
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'

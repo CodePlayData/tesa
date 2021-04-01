@@ -30,12 +30,12 @@ let config_2 = {
 
 */
 
-function forwardGeocoding ({ config }, location) {
+function forwardGeocoding ( config , location) {
   
   if (Array.isArray(config.map_tiles)) {
   
     
-    if (congig.request === "unstructured") {
+    if (config.request === "unstructured") {
       
       console.log('unstructured')
     
@@ -51,7 +51,7 @@ function forwardGeocoding ({ config }, location) {
   } else {
     
 
-    if (congig.request === "unstructured") {
+    if (config.request === "unstructured") {
       
       console.log('unstructured')
     
@@ -69,3 +69,6 @@ function forwardGeocoding ({ config }, location) {
 }
 
 
+export {
+  forwardGeocoding
+}
