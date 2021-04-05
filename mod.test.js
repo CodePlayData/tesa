@@ -1,5 +1,31 @@
 import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/testing/asserts.ts"
-import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany, forwardGeocoding } from './mod.js'
+import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany, forwardGeocoding, reverseGeocoding } from './mod.js'
+
+Deno.test({
+    name: "reverseGeocoding - Private Server",
+    fn: async () => {
+        
+        let config = {
+            map_tiles: { 
+              name: "Nominatim/OpenStreetMap", 
+              url: "https://nominatim.openstreetmap.org" 
+            }
+          }
+
+        let location = {
+            lon: -43.2643487,
+            lat: -22.8374775
+        }
+
+        let point = await reverseGeocoding(config, location)
+        
+        assertObjectMatch(
+            point.features[0].properties,
+            { name: "Avenida Professor Plinio Bastos" }
+        )
+
+    }
+})
 
 Deno.test({
     name: "forwardGeocoding - Many Servers - Unstructured",
@@ -22,11 +48,19 @@ Deno.test({
             housenumber: 640,
             street: "Avenida Professor Plínio Bastos",
             city: "Rio de Janeiro",
-            state: "RIO DE JANEIRO"
+            state: "Rio de Janeiro"
             }
         
         let point = await forwardGeocoding(config, location)
-    
+        
+        assertObjectMatch(
+            point.features[0].geometry.coordinates,
+            {
+                "0": -43.2643487,
+                "1": -22.8374775,
+                length: 2,
+            }
+        )
     }
 })
 
@@ -67,11 +101,12 @@ Deno.test({
         let config = {
             request: "unstructured", 
             map_tiles: { 
-              name: "Nominatim/OpenStreetMap", 
-              url: "https://nominatim.openstreetmap.org" 
+              name: "Nominatim/OpenStreetMap"
             }
           }
+
         let point = await forwardGeocoding(config, 'Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro')
+        
         assertObjectMatch(
             point.features[0].geometry.coordinates,
             {
@@ -80,6 +115,7 @@ Deno.test({
                 length: 2,
             }
         )
+
     }
 })
 
