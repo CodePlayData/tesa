@@ -10,6 +10,36 @@ ToDo: pass all non-package links as config.json file in root.
 
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
+const config = {
+    lists: {
+        doubles: {
+            microregions: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv",
+            immediate: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv",
+            cities: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+        },
+        main: {
+            country: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv",
+            macroregion: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv",
+            states: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv",
+            middleregions: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv",
+            immediate: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv",
+            microregions: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv",
+            intermediary: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv",
+            cities: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+        }
+    },
+    api: {
+        localidades:{
+            cities: "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/",
+            microregions: "https://servicodados.ibge.gov.br/api/v1/localidades/microrregioes/",
+            intermediary: "https://servicodados.ibge.gov.br/api/v1/localidades/regioes-intermediarias/",
+            middleregions: "https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes/",
+            states: "https://servicodados.ibge.gov.br/api/v1/localidades/estados/",
+            immediate: "https://servicodados.ibge.gov.br/api/v1/localidades/regioes-imediatas/",
+            macroregion: "https://servicodados.ibge.gov.br/api/v1/localidades/regioes"
+        }
+    }
+}
 
 async function belongsTo (alias, type) { 
     
@@ -19,40 +49,40 @@ async function belongsTo (alias, type) {
     // defining the url that will get the double list
     switch (type) {
         case "microregions":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            doubles_url = config.lists.doubles.microregions
             break
         case "immediate":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv"
+            doubles_url = config.lists.doubles.immediate
             break
         case "cities":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            doubles_url = config.lists.doubles.cities
             break
     }
 
     switch(type) {
         case "country": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            url = config.lists.main.country
             break
         case "macroregion": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            url = config.lists.main.macroregion
             break
         case "states": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            url = config.lists.main.states
             break
         case "middleregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            url = config.lists.main.middleregions
             break
         case "immediate": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            url = config.lists.main.immediate
             break
         case "microregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            url = config.lists.main.microregions
             break
         case "intermediary": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv"
+            url = config.lists.main.intermediary
             break
         case "cities": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            url = config.lists.main.cities
             break
     }
 
@@ -90,20 +120,15 @@ async function belongsTo (alias, type) {
                 .map(place =>{
                                
                     switch (type) {
-                        case "cities": return `https://servicodados.ibge.gov.br/api/v1/localidades/municipios/${place.Code}`
-                        case "microregions": return `https://servicodados.ibge.gov.br/api/v1/localidades/microrregioes/${place.Code}`
-                        case "intermediary": return `https://servicodados.ibge.gov.br/api/v1/localidades/regioes-intermediarias/${place.Code}`
-                        case "middleregions": return `https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes/${place.Code}`
-                        case "states": return `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${place.Code}`
-                        case "immediate": return `https://servicodados.ibge.gov.br/api/v1/localidades/regioes-imediatas/${place.Code}`
+                        case "cities": return `${config.api.localidades.cities}${place.Code}`
+                        case "microregions": return `${config.api.localidades.microregions}${place.Code}`
+                        case "intermediary": return `${config.api.localidades.intermediary}${place.Code}`
+                        case "middleregions": return `${config.api.localidades.middleregions}${place.Code}`
+                        case "states": return `${config.api.localidades.states}${place.Code}`
+                        case "immediate": return `${config.api.localidades.immediate}${place.Code}`
                     }
 
                 } ))
-    
-  /*       polygon = 
-            await (
-                await result)
-                .json() */
 
         return( await JSON.parse(await result.text()) )
     
@@ -124,40 +149,40 @@ async function belongsToMany (request) {
     // defining the url that will get the double list
     switch (type) {
         case "microregions":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            doubles_url = config.lists.doubles.microregions
             break
         case "immediate":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv"
+            doubles_url = config.lists.doubles.immediate
             break
         case "cities":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            doubles_url = config.lists.doubles.cities
             break
     }
 
     switch(type) {
         case "country": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            url = config.lists.main.country
             break
         case "macroregion": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            url = config.lists.main.macroregion
             break
         case "states": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            url = config.lists.main.states
             break
         case "middleregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            url = config.lists.main.middleregions
             break
         case "immediate": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            url = config.lists.main.immediate
             break
         case "microregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            url = config.lists.main.microregions
             break
         case "intermediary": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv"
+            url = config.lists.main.intermediary
             break
         case "cities": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            url = config.lists.main.cities
             break
     }
 
@@ -193,10 +218,10 @@ async function belongsToMany (request) {
             
             switch(type) {
                 case "macroregion": 
-                    base_url = "https://servicodados.ibge.gov.br/api/v1/localidades/regioes"
+                    base_url = config.api.localidades.macroregion
                     break
                 case "states": 
-                    base_url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados"
+                    base_url = config.api.localidades.states
                     break
             
                 }
@@ -249,19 +274,19 @@ async function belongsToMany (request) {
                         // defining the url that will get the polygons
                         switch(type) {
                             case "middleregions": 
-                                base_url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${code}/mesorregioes`
+                                base_url = `${config.api.localidades.states}${code}/mesorregioes`
                                 break
                             case "intermediary":
-                                base_url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${code}/regioes-intermediarias`
+                                base_url = `${config.api.localidades.states}${code}/regioes-intermediarias`
                                 break
                             case "immediate":
-                                base_url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${code}/regioes-imediatas`
+                                base_url = `${config.api.localidades.states}${code}/regioes-imediatas`
                                 break
                             case "microregions": 
-                                base_url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${code}/microrregioes`
+                                base_url = `${config.api.localidades.states}${code}/microrregioes`
                                 break
                             case "cities": 
-                                base_url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${code}/municipios`
+                                base_url = `${config.api.localidades.states}${code}/municipios`
                                 break
                         }
                     

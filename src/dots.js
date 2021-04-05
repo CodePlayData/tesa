@@ -8,6 +8,8 @@ Make sure the name of the subsets server is the name of the MacroRegion.
 
 Obviously, the reverse geocoding map only works for the whole country since beforehand you don't know witch states belongs the lat and lon code. However, you can select the private server or lets the nominatim one. 
 
+ToDo: pass all non-package links as config.json file in root.
+
 */
 
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'

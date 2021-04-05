@@ -1,0 +1,7 @@
+{
+    "lists": {
+        "doubles": {
+            "microregions": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+        }
+    }
+}
