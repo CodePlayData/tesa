@@ -10,36 +10,8 @@ ToDo: pass all non-package links as config.json file in root.
 
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
-const config = {
-    lists: {
-        doubles: {
-            microregions: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv",
-            immediate: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv",
-            cities: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
-        },
-        main: {
-            country: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv",
-            macroregion: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv",
-            states: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv",
-            middleregions: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv",
-            immediate: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv",
-            microregions: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv",
-            intermediary: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv",
-            cities: "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
-        }
-    },
-    api: {
-        localidades:{
-            cities: "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/",
-            microregions: "https://servicodados.ibge.gov.br/api/v1/localidades/microrregioes/",
-            intermediary: "https://servicodados.ibge.gov.br/api/v1/localidades/regioes-intermediarias/",
-            middleregions: "https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes/",
-            states: "https://servicodados.ibge.gov.br/api/v1/localidades/estados/",
-            immediate: "https://servicodados.ibge.gov.br/api/v1/localidades/regioes-imediatas/",
-            macroregion: "https://servicodados.ibge.gov.br/api/v1/localidades/regioes"
-        }
-    }
-}
+const config = JSON.parse(await Deno.readTextFile('config.json'))
+
 
 async function belongsTo (alias, type) { 
     
@@ -312,41 +284,41 @@ async function getOnePolygon (alias, type) {
     // defining the url that will get the double list
     switch (type) {
         case "microregions":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            doubles_url = config.lists.doubles.microregions
             break
         case "immediate":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv"
+            doubles_url = config.lists.doubles.immediate
             break
         case "cities":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            doubles_url = config.lists.doubles.cities
             break
     }
 
     // defining the url that will get the alias list
     switch(type) {
         case "country": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            url = config.lists.main.country
             break
         case "macroregion": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            url = config.lists.main.macroregion
             break
         case "states": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            url = config.lists.main.states
             break
         case "middleregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            url = config.lists.main.middleregions
             break
         case "immediate": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv"
+            url = config.lists.main.immediate
             break
         case "microregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            url = config.lists.main.microregions
             break
         case "intermediary": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv"
+            url = config.lists.main.intermediary
             break
         case "cities": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            url = config.lists.main.cities
             break
     }
 
@@ -420,10 +392,10 @@ async function getManyPolygons (request) {
     // defining the url that will get the double list
     switch (type) {
         case "microregions":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            doubles_url = config.lists.doubles.microregions
             break
         case "cities":
-            doubles_url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+            doubles_url = config.lists.doubles.cities
             break
     }
 
@@ -431,22 +403,22 @@ async function getManyPolygons (request) {
     // defining the url that will get the alias list
     switch(type) {
         case "country": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv"
+            url = config.lists.main.country
             break
         case "macroregion": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv"
+            url = config.lists.main.macroregion
             break
         case "states": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv"
+            url = config.lists.main.states
             break
         case "middleregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv"
+            url = config.lists.main.middleregions
             break
         case "microregions": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv"
+            url = config.lists.main.microregions
             break
         case "cities": 
-            url = "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+            url = config.lists.main.cities
             break
     }
     
@@ -484,10 +456,10 @@ async function getManyPolygons (request) {
             if (type === "macroregion" || type === "states") {
                 switch(type) {
                     case "macroregion": 
-                        base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=regiao"
+                        base_url = `${config.api.malhas.country}&intrarregiao=regiao`
                         break
                     case "states": 
-                        base_url = "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=UF"
+                        base_url = `${config.api.malhas.country}&intrarregiao=UF`
                         break
                 }
         
@@ -539,13 +511,13 @@ async function getManyPolygons (request) {
                 // defining the url that will get the polygons
                 switch(type) {
                     case "middleregions": 
-                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=mesorregiao`
+                        base_url = `${config.api.malhas.states}${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=mesorregiao`
                         break
                     case "microregions": 
-                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
+                        base_url = `${config.api.malhas.states}${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=microrregiao`
                         break
                     case "cities": 
-                        base_url = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
+                        base_url = `${config.api.malhas.states}${code}?formato=application/vnd.geo+json&qualidade=maxima&intrarregiao=municipio`
                         break
                 }
             

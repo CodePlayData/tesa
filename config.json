@@ -1,7 +1,34 @@
 {
     "lists": {
         "doubles": {
-            "microregions": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv"
+            "microregions": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/micro_double_list.csv",
+            "immediate": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_doubles.csv",
+            "cities": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_double_list.csv"
+        },
+        "main": {
+            "country": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/country_list.csv",
+            "macroregion": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/macroregion_list.csv",
+            "states": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/states_list.csv",
+            "middleregions": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/middlewareregion_list.csv",
+            "immediate": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/immediate_list.csv",
+            "microregions": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/microregion_list.csv",
+            "intermediary": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/intermediary_list.csv",
+            "cities": "https://raw.githubusercontent.com/CodePlayData/tesa/main/src/data/cities_list.csv"
+        }
+    },
+    "api": {
+        "localidades": {
+            "cities": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/",
+            "microregions": "https://servicodados.ibge.gov.br/api/v1/localidades/microrregioes/",
+            "intermediary": "https://servicodados.ibge.gov.br/api/v1/localidades/regioes-intermediarias/",
+            "middleregions": "https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes/",
+            "states": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/",
+            "immediate": "https://servicodados.ibge.gov.br/api/v1/localidades/regioes-imediatas/",
+            "macroregion": "https://servicodados.ibge.gov.br/api/v1/localidades/regioes"
+        },
+        "malhas": {
+            "country": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=maxima",
+            "states": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/"
         }
     }
 }
