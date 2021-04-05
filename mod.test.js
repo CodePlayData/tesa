@@ -5,7 +5,7 @@ Deno.test({
     name: "reverseGeocoding - Private Server",
     fn: async () => {
         
-        let config = {
+        let layout = {
             map_tiles: { 
               name: "Nominatim/OpenStreetMap", 
               url: "https://nominatim.openstreetmap.org" 
@@ -17,7 +17,7 @@ Deno.test({
             lat: -22.8374775
         }
 
-        let point = await reverseGeocoding(config, location)
+        let point = await reverseGeocoding(layout, location)
         
         assertObjectMatch(
             point.features[0].properties,
@@ -31,7 +31,7 @@ Deno.test({
     name: "forwardGeocoding - Many Servers - Unstructured",
     fn: async () => {
 
-        let config = {
+        let layout = {
             map_tiles: [
                 {
                     name: "Sudeste",
@@ -51,7 +51,7 @@ Deno.test({
             state: "Rio de Janeiro"
             }
         
-        let point = await forwardGeocoding(config, location)
+        let point = await forwardGeocoding(layout, location)
         
         assertObjectMatch(
             point.features[0].geometry.coordinates,
@@ -67,7 +67,7 @@ Deno.test({
 Deno.test({
     name: "forwardGeocoding - One Server - Structured",
     fn: async () => {
-        let config = {
+        let layout = {
             request: "structured", 
             map_tiles: { 
               name: "Nominatim/OpenStreetMap", 
@@ -81,7 +81,7 @@ Deno.test({
             state: "Rio de Janeiro"
         }
         
-        let point = await forwardGeocoding(config, location)
+        let point = await forwardGeocoding(layout, location)
         
         
         assertObjectMatch(
@@ -98,14 +98,14 @@ Deno.test({
 Deno.test({
     name: "forwardGeocoding - One Server - Unstructured",
     fn: async () => {
-        let config = {
+        let layout = {
             request: "unstructured", 
             map_tiles: { 
               name: "Nominatim/OpenStreetMap"
             }
           }
 
-        let point = await forwardGeocoding(config, 'Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro')
+        let point = await forwardGeocoding(layout, 'Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro')
         
         assertObjectMatch(
             point.features[0].geometry.coordinates,
