@@ -2,6 +2,35 @@ import { assertEquals, assertObjectMatch } from "https://deno.land/std@0.90.0/te
 import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany, forwardGeocoding } from './mod.js'
 
 Deno.test({
+    name: "forwardGeocoding - Many Servers - Unstructured",
+    fn: async () => {
+
+        let config = {
+            map_tiles: [
+                {
+                    name: "Sudeste",
+                    url: "https://nominatim.openstreetmap.org"
+                },
+                {
+                    name: "Nordeste",
+                    url: "https://nominatim.openstreetmap.org"
+                }
+            ]            
+          }
+        
+        let location = {
+            housenumber: 640,
+            street: "Avenida Professor Plínio Bastos",
+            city: "Rio de Janeiro",
+            state: "RIO DE JANEIRO"
+            }
+        
+        let point = await forwardGeocoding(config, location)
+    
+    }
+})
+
+Deno.test({
     name: "forwardGeocoding - One Server - Structured",
     fn: async () => {
         let config = {
