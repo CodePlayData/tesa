@@ -20,14 +20,15 @@ const config = JSON.parse(await Deno.readTextFile('config.json'))
 async function forwardGeocoding ( layout , location ) {
   
     let map_tiles
+    let partial
 
     if(typeof layout !== "object") {
-        let partial = JSON.parse(layout)
+        partial = JSON.parse(layout)
         map_tiles = partial.map_tiles
     } else {
         map_tiles = layout
     }
-
+    
   if (Array.isArray(map_tiles)) {
    
     let list_url = config.lists.main.states
@@ -53,10 +54,10 @@ async function forwardGeocoding ( layout , location ) {
     
   } else {
     
-    let { request } = layout
+    let { request } = partial
     let { name } = map_tiles
     let url = map_tiles.url  || "https://nominatim.openstreetmap.org"
-
+    
     if (request === "unstructured") {  
       console.log(`Requesting to ${ name } a unstructured query...`)
       return( await JSON.parse(await (await fetch ( `${ url }/search?q=${ location }&format=geojson`)).text()))
