@@ -19,7 +19,14 @@ const config = JSON.parse(await Deno.readTextFile('config.json'))
 // implementar trycatch
 async function forwardGeocoding ( layout , location ) {
   
-  let { map_tiles } = layout
+    let map_tiles
+
+    if(typeof layout !== "object") {
+        let partial = JSON.parse(layout)
+        map_tiles = partial.map_tiles
+    } else {
+        map_tiles = layout
+    }
 
   if (Array.isArray(map_tiles)) {
    

@@ -21,7 +21,7 @@ Deno.test({
         
         assertObjectMatch(
             point.features[0].properties,
-            { name: "Avenida Professor Plinio Bastos" }
+            { name: "Rua Professor Luis Rondelli" }
         )
 
     }
@@ -414,7 +414,8 @@ Deno.test({
 Deno.test({
     name: "getManyCitiesTest", 
     fn: async () => {
-        let polygon = await getManyPolygons('{ type: "cities", aliases: ["ESTEIO", "ESTIVA", "ESTANCIA VELHA", "ESPINOSA", "FERREIROS"] }')
+        
+        let polygon = await getManyPolygons({type: "cities", aliases: ["ESTEIO", "ESTIVA", "ESTANCIA VELHA", "ESPINOSA", "FERREIROS"] })
         
         assertObjectMatch( 
             polygon[0],
