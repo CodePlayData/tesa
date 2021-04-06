@@ -243,6 +243,50 @@ async function tesa (args) {
             }
         }          
             break
+        case 'reverseGeocoding' : {
+        
+            let { layout, location } = params
+
+            if(!layout | !location ) throw 'some parameter was not fulfilled'
+            if(output !== "console" && output !== "file") throw 'You must choose some type of output (options: console or file)'
+            
+            hash.update(`forward${ location }`)
+            let hashInHex = hash.toString()
+            
+
+            switch (output) {
+                case "file": {
+                    if(!cached) {
+                        Deno.chdir(Deno.cwd())
+                        Deno.mkdir('./.cache')
+                        Deno.writeTextFile(`./.cache/${ hashInHex }.json`, JSON.stringify(await forwardGeocoding(layout, location)))
+                    } else {
+                        let result = cachedFiles.filter(file => file === `${hashInHex}.json`)
+                        if(result.length>0) {
+                            console.log(`\nYour file already exists in: ./.cache/${ result }`)
+                        } else {
+                            Deno.chdir(Deno.cwd())
+                            Deno.writeTextFile(`./.cache/${ hashInHex }.json`, JSON.stringify(await forwardGeocoding(layout, location)))
+                        }
+                    }
+                }
+                break
+                case "console": {
+                    if(!cached) {
+                        console.log(JSON.stringify(await forwardGeocoding(layout, location)))
+                    } else {
+                        let result = cachedFiles.filter(file => file === `${hashInHex}.json`)
+                        if(result.length>0) {
+                            console.log(await Deno.readTextFile(`./.cache/${result}`))
+                        } else {
+                            console.log(JSON.stringify(await forwardGeocoding(layout, location)))
+                        }
+                    }
+                }
+                break
+            }
+        }          
+            break
         default: throw 'The Call is required as first parameter.'
     }
 
@@ -256,8 +300,6 @@ deno run -A to_bin.js getManyPolygons --request "{\"type\": \"macroregion\", \"a
 deno run -A to_bin.js belongsTo --type 'cities' --alias 'amparo(pb)' --output console
 deno run -A to_bin.js belongsToMany --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
 deno run -A to_bin.js forwardGeocoding --layout "{\"request\": \"unstructured\", \"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location '"Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro"' --output console
-
-https://nominatim.openstreetmap.org/search?q='"Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro"'&format=geojson
 
 */
 
