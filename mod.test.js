@@ -414,7 +414,7 @@ Deno.test({
 Deno.test({
     name: "getManyCitiesTest", 
     fn: async () => {
-        let polygon = await getManyPolygons({ type: "cities", aliases: ["ESTEIO", "ESTIVA", "ESTANCIA VELHA", "ESPINOSA", "FERREIROS"] })
+        let polygon = await getManyPolygons('{ type: "cities", aliases: ["ESTEIO", "ESTIVA", "ESTANCIA VELHA", "ESPINOSA", "FERREIROS"] }')
         
         assertObjectMatch( 
             polygon[0],

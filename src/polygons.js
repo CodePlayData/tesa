@@ -381,10 +381,14 @@ async function getOnePolygon (alias, type) {
 
 async function getManyPolygons (request) {
 
-    if(!request) throw 'the request was not fulfilled'
-    //if( typeof(request.type)!=="string"  | typeof(request.aliases)!=="array" ) throw 'the alias parameters must be a string and the aliases must be a array'
+    return console.log(request)
     
-    let { type, aliases } = request
+    let { type, aliases } = JSON.parse(request)
+
+    if(!request) throw 'the request was not fulfilled'
+    if( typeof(type)!=="string"  | typeof(aliases)!=="array" ) throw 'the type parameters must be a string'
+    if( typeof(aliases)!=="array" ) throw 'the aliases must be a array'
+
     let url
     let code
     let doubles_url
