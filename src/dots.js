@@ -16,7 +16,7 @@ import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
 const config = JSON.parse(await Deno.readTextFile('config.json'))
 
-
+// implementar trycatch
 async function forwardGeocoding ( layout , location ) {
   
   let { map_tiles } = layout
@@ -65,7 +65,7 @@ async function forwardGeocoding ( layout , location ) {
   }
 
 }
-
+// implementar trycatch
 async function reverseGeocoding ( layout, location ) {
   
   let url = layout.map_tiles.url  || "https://nominatim.openstreetmap.org"

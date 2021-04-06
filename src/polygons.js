@@ -12,7 +12,7 @@ import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
 const config = JSON.parse(await Deno.readTextFile('config.json'))
 
-
+// implementar trycatch
 async function belongsTo (alias, type) { 
     
     let url
@@ -105,7 +105,7 @@ async function belongsTo (alias, type) {
         return( await JSON.parse(await result.text()) )
     
 } 
-
+// implementar trycatch
 async function belongsToMany (request) {
 
     let { type, aliases } = request
@@ -158,7 +158,7 @@ async function belongsToMany (request) {
             break
     }
 
-         if (type === "microregions" || type === "cities" || type === "immediate") {
+    if (type === "microregions" || type === "cities" || type === "immediate") {
             
         const doubles_list = 
                 await parseCsv(
@@ -277,6 +277,9 @@ async function belongsToMany (request) {
 
 async function getOnePolygon (alias, type) {
     
+    if(!alias | !type) throw 'some parameters was not fulfilled'
+    if( typeof(alias)!=="string"  | typeof(type)!=="string" ) throw 'the parameters must be string'
+
     let url
     let doubles_url
     let polygon
@@ -378,6 +381,9 @@ async function getOnePolygon (alias, type) {
 
 async function getManyPolygons (request) {
 
+    if(!request) throw 'the request was not fulfilled'
+    //if( typeof(request.type)!=="string"  | typeof(request.aliases)!=="array" ) throw 'the alias parameters must be a string and the aliases must be a array'
+    
     let { type, aliases } = request
     let url
     let code
