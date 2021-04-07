@@ -21,7 +21,7 @@ Deno.test({
         
         assertObjectMatch(
             point.features[0].properties,
-            { name: "Rua Professor Luis Rondelli" }
+            { name: "Avenida Professor Plinio Bastos" }
         )
 
     }
