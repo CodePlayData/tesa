@@ -259,27 +259,27 @@ async function tesa (args) {
                     if(!cached) {
                         Deno.chdir(Deno.cwd())
                         Deno.mkdir('./.cache')
-                        Deno.writeTextFile(`./.cache/${ hashInHex }.json`, JSON.stringify(await forwardGeocoding(layout, location)))
+                        Deno.writeTextFile(`./.cache/${ hashInHex }.json`, JSON.stringify(await reverseGeocoding(layout, location)))
                     } else {
                         let result = cachedFiles.filter(file => file === `${hashInHex}.json`)
                         if(result.length>0) {
                             console.log(`\nYour file already exists in: ./.cache/${ result }`)
                         } else {
                             Deno.chdir(Deno.cwd())
-                            Deno.writeTextFile(`./.cache/${ hashInHex }.json`, JSON.stringify(await forwardGeocoding(layout, location)))
+                            Deno.writeTextFile(`./.cache/${ hashInHex }.json`, JSON.stringify(await reverseGeocoding(layout, location)))
                         }
                     }
                 }
                 break
                 case "console": {
                     if(!cached) {
-                        console.log(JSON.stringify(await forwardGeocoding(layout, location)))
+                        console.log(JSON.stringify(await reverseGeocoding(layout, location)))
                     } else {
                         let result = cachedFiles.filter(file => file === `${hashInHex}.json`)
                         if(result.length>0) {
                             console.log(await Deno.readTextFile(`./.cache/${result}`))
                         } else {
-                            console.log(JSON.stringify(await forwardGeocoding(layout, location)))
+                            console.log(JSON.stringify(await reverseGeocoding(layout, location)))
                         }
                     }
                 }
@@ -300,6 +300,7 @@ deno run -A to_bin.js getManyPolygons --request "{\"type\": \"macroregion\", \"a
 deno run -A to_bin.js belongsTo --type 'cities' --alias 'amparo(pb)' --output console
 deno run -A to_bin.js belongsToMany --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
 deno run -A to_bin.js forwardGeocoding --layout "{\"request\": \"unstructured\", \"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location '"Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro"' --output console
+deno run -A to_bin.js reverseGeocoding --layout "{\"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location "{ \"lon\": -43.2643487, \"lat\": -22.8374775 }" --output console
 
 */
 

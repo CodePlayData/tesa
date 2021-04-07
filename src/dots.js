@@ -8,8 +8,6 @@ Make sure the name of the subsets server is the name of the MacroRegion.
 
 Obviously, the reverse geocoding map only works for the whole country since beforehand you don't know witch states belongs the lat and lon code. However, you can select the private server or lets the nominatim one. 
 
-ToDo: pass all non-package links as layout.json file in root.
-
 */
 
 import { parse as parseCsv } from 'https://deno.land/std@0.82.0/encoding/csv.ts'
@@ -21,12 +19,13 @@ async function forwardGeocoding ( layout , location ) {
   
     let map_tiles
     let partial
+    let request
 
     if(typeof layout !== "object") {
         partial = JSON.parse(layout)
         map_tiles = partial.map_tiles
     } else {
-        map_tiles = layout
+        map_tiles = layout.map_tiles
     }
     
   if (Array.isArray(map_tiles)) {
@@ -54,7 +53,12 @@ async function forwardGeocoding ( layout , location ) {
     
   } else {
     
-    let { request } = partial
+    if(typeof layout !== "object") {
+      request = partial.request
+    } else {
+      request = layout.request
+      }
+
     let { name } = map_tiles
     let url = map_tiles.url  || "https://nominatim.openstreetmap.org"
     
@@ -76,8 +80,25 @@ async function forwardGeocoding ( layout , location ) {
 // implementar trycatch
 async function reverseGeocoding ( layout, location ) {
   
-  let url = layout.map_tiles.url  || "https://nominatim.openstreetmap.org"
-  let { lat, lon } = location
+  let lat
+  let lon
+  let map_tiles
+  let partial
+  let partial2
+
+  if(typeof layout !== "object") {
+    partial = JSON.parse(layout)
+    partial2 = JSON.parse(location)
+    map_tiles = partial.map_tiles
+    lat = partial2.lat
+    lon = partial2.lon
+  } else {
+    map_tiles = layout.map_tiles
+    lat = location.lat
+    lon = location.lon
+  }
+
+  let url = map_tiles.url  || "https://nominatim.openstreetmap.org"
 
   return( await JSON.parse(await (await fetch ( `${ url }/reverse?format=geojson&lat=${ lat }&lon=${ lon }`)).text()) )
 
