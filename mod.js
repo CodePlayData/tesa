@@ -1,11 +1,16 @@
-import { getOnePolygon, getManyPolygons, belongsTo, belongsToMany } from './src/polygons.js'
-import { forwardGeocoding, reverseGeocoding } from './src/dots.js'
+import {
+  belongsTo,
+  belongsToMany,
+  getManyPolygons,
+  getOnePolygon,
+} from "./src/polygons.js";
+import { forwardGeocoding, reverseGeocoding } from "./src/dots.js";
 
 export {
-    getOnePolygon,
-    getManyPolygons,
-    belongsTo,
-    belongsToMany,
-    forwardGeocoding,
-    reverseGeocoding
-}
+  belongsTo,
+  belongsToMany,
+  forwardGeocoding,
+  getManyPolygons,
+  getOnePolygon,
+  reverseGeocoding,
+};
