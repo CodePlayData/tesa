@@ -61,16 +61,16 @@ Copyright Pedro Paulo Teixeira dos Santos
 ToDo
 
 ## Geocodificação e Busca
-A Geocodificação é o processo de converter referencias de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude¹. 
+A Geocodificação é o processo de converter referências de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude¹. 
 
 Esse é um método já normalizado nos hábitos atuais quando buscamos corridas de aplicativos de carros, novos endereços ou buscamos a distância entre dois pontos para calcularmos o frete de uma entrega².
 
 Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview). Muito do sucesso se deve a rotineira busca ativa (mapeamento) dos endereços feito pela empresa com veículos especiais. 
 
-Todavia, atualmente existem opções comunitárias para o mesmo tipo de serviço, como é o caso do [Nominatim](https://nominatim.org/) ("motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps, exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto com o Nominatim em usos diversos.
+Todavia, atualmente existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto no Nominatim em diversos usos.
 
 ### Problematização
-A Busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). 
+A busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). 
 
 Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade de um set de Data Science, pois estes podem consumir facilmente 500MB a 1GB de aplicação, como nos casos de Jupyter notebooks (Phyton ou R) ou infras como KubeFlow. 
 
@@ -81,11 +81,11 @@ O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos 
 
 
 ### Soluções
-Sendo assim, para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem de e Deno.js como framework de desenvolvimento. 
+Sendo assim, para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem e Deno.js como framework de desenvolvimento. 
 No _front-end_ será possível utilizar as funções como módulo do HTML5 ou integradas como pacotes Deno. 
 No _back-end_ o Deno fornece a possibilidade de compilar em binário.
 
-Quanto a limitação dos polígonos, o Instituto Brasileiro de Geografia e Estatística (IBGE) fornece em API as malhas geográficas (polígonos) de todas as divisões geográficas brasileiras, sendo necessário apenas fazer um wrapper das chamadas para essa API.
+Quanto a limitação dos polígonos, o Instituto Brasileiro de Geografia e Estatística (IBGE) fornece em API as malhas geográficas (polígonos) de todas as divisões geográficas brasileiras, sendo necessário apenas fazer um _wrapper_ das chamadas para essa API.
 
 #### Especificações
 
