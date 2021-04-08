@@ -443,11 +443,11 @@ async function tesa(args) {
 tesa(Deno.args);
 
 /*
-deno run -A to_bin.js getOnePolygon --type 'cities' --alias 'amparo(pb)' --output console
-deno run -A to_bin.js getManyPolygons --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
-deno run -A to_bin.js belongsTo --type 'cities' --alias 'amparo(pb)' --output console
-deno run -A to_bin.js belongsToMany --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
-deno run -A to_bin.js forwardGeocoding --layout "{\"request\": \"unstructured\", \"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location '"Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro"' --output console
-deno run -A to_bin.js reverseGeocoding --layout "{\"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location "{ \"lon\": -43.2643487, \"lat\": -22.8374775 }" --output console
+tesa getOnePolygon --type 'cities' --alias 'amparo(pb)' --output console
+./dist/tesa getManyPolygons --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
+./dist/tesa belongsTo --type 'cities' --alias 'amparo(pb)' --output console
+./dist/tesa belongsToMany --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
+./dist/tesa forwardGeocoding --layout "{\"request\": \"unstructured\", \"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location '"Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro"' --output console
+./dist/tesa reverseGeocoding --layout "{\"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location "{ \"lon\": -43.2643487, \"lat\": -22.8374775 }" --output console
 
 */
