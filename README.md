@@ -110,6 +110,8 @@ Após o repositório clonado, para transformar o pacote em um módulo html5 bast
 deno bundle mod.js ./dist/tesa.js
 ```
 **Lembre-se que o a dependencia config.json deve estar junto com o módulo na pasta root**
+> No front-end faca* uso de processamento paralelo com service-workers para nao* comprometer o event loop com requisicoes* pesadas. Aproveite e utilize a Cache API nativa da maioria dos navegadores disponiveis* para os arquivos estaticos*, como o config.json e para requisicoes* na API.
+
 <br>
 
 Por se tratar de uma lib do Deno é possível simular um processo uma "instalação", nesse caso o Deno cria um Bash script no root com o call do Deno na frente para que seja possível chamar as funções, classes e etc... diretamente. Para isso basta:
