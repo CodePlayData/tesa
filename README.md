@@ -19,8 +19,8 @@ Se quiser conhecer mais acompanhe nossas redes sociais:
 **Público**: Esse repositório é destinado a todos os Cientistas de Dados, desenvolvedores e afins, no Brasil.
 
 **Objetivo**: Reduzir a complexidade de processos nos três pilares das análises espaciais:
-- Geolocalização e Mapas
 - Geocodificação e Busca
+- Geolocalização e Mapas
 - Geoprocessamento e Modelos
 
 **Integrações**: [API do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3) e [Nominatim](https://nominatim.org/).
@@ -64,9 +64,6 @@ Copyright Pedro Paulo Teixeira dos Santos
 
 
 <br>
-
-## Geolocalização 
-ToDo
 
 ## Geocodificação e Busca
 A Geocodificação é o processo de converter referências de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude¹. 
@@ -166,4 +163,5 @@ ToDos:
 
 ToDo
 
-
+## Geolocalização 
+ToDo
