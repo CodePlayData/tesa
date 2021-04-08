@@ -8,24 +8,26 @@ A `CodePlayData` nasce de um projeto criado com a missão de simplificar os proc
 
 Acreditamos que nos próximos anos possamos contribuir de forma significativa por meio de produtos e serviços que reduzam a complexidade de determinados métodos aplicados na área de dados, como por exemplo, tornar acessível a análise de dados espaciais, facilitar a aplicação de técnicas de modelagem estruturais e extração de _latente features_, possibilitar aplicações para _feture store_ e versionamento de _fetures_ e/ou reduzir a complexidade da didática em programação.  
 
-Prezamos pela simplicidade dos processos, satisfação do usuário e clareza nas relações. 
+Prezamos pela simplicidade dos processos, satisfação do usuário e clareza nas relações.
+Nosso modelo prioritário de negócio é por meio de **APIs públicas**, **FaaS** e **PWAs**. Sempre que possível iremos optar por soluções _open-source_.
 Se quiser conhecer mais acompanhe nossas redes sociais:
 
 - [Twitter](https://https://twitter.com/CodePlayData)
 
 ## Sobre esse repositório
 
-Esse repositório basicamente é estruturado em três pilares das Análises Espaciais:
-- Geolocalização
-- Geocodificação
-- Geoprocessamento
+**Público**: Esse repositório é destinado a todos os Cientistas de Dados, desenvolvedores e afins, no Brasil.
+**Objetivo**: Reduzir a complexidade de processos nos três pilares das análises espaciais:
+- Geolocalização e Mapas
+- Geocodificação e Busca
+- Geoprocessamento e Modelos
 
-Inicialmente será desenvolvido apenas para uso no Brasil e as integrações serão com softwares OpenSource, como: [API do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3), Nominatim e R/Phyton/Tensorflow.
+**Integrações**: [API do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3) e [Nominatim](https://nominatim.org/).
 
 <br>
 
 **Status**: Em desenvolvimento.
-
+**Linguagem**: Javascript.
 **Framework**: Deno.
 
 <br>
