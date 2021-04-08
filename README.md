@@ -70,20 +70,56 @@ Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geoc
 Todavia, atualmente existem opções comunitárias para o mesmo tipo de serviço, como é o caso do [Nominatim](https://nominatim.org/) ("motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps, exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto com o Nominatim em usos diversos.
 
 ### Problematização
-A Busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade, idealmente, de um set de Data Science. 
+A Busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). 
+
+Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade de um set de Data Science, pois estes podem consumir facilmente 500MB a 1GB de aplicação, como nos casos de Jupyter notebooks (Phyton ou R) ou infras como KubeFlow. 
 
 ---
 
 O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos são parte essencial do processo de Geolocalização (vide acima) e a busca por esses na API do Google é complexa enquanto que no Nominatim computacionalmente custosa, uma vez que será necessário para um dos polígonos consultar no banco a existência dessa referência.
 
----
+
 
 ### Soluções
-No Brasil a instituição responsável pelo registro do território é o Instituto Brasileiro de Geografia e Estatística (IBGE). Recentemente eles disponibilizaram em API as malhas geográficas (polígonos) de todas as divisões geográficas brasileiras. 
+Sendo assim, para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem de e Deno.js como framework de desenvolvimento. 
+No _front-end_ será possível utilizar as funções como módulo do HTML5 ou integradas como pacotes Deno. 
+No _back-end_ o Deno fornece a possibilidade de compilar em binário.
 
+Quanto a limitação dos polígonos, o Instituto Brasileiro de Geografia e Estatística (IBGE) fornece em API as malhas geográficas (polígonos) de todas as divisões geográficas brasileiras, sendo necessário apenas fazer um wrapper das chamadas para essa API.
 
+#### Especificações
 
+Os arquivos principais (módulo ou compilado) possuem como única dependência o arquivo config.json, que obrigatoriamente deve estar no mesmo diretório. Esse arquivo contém 
+**todos os links externos para as chamadas da API, o que possibilita a troca dos links para servidores privados sem necessidade de mexer no código.**
+Por _default_ o servidor no `config.json` é o OpenStreetMaps, **tenha cuidado com o limite de requisições!!!** Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure como variável de ambiente.
+O arquivo compilado é vínculado a pasta em que está inserido pois em caso de necessitar de cache (boa prática!) a pasta será criada no mesmo diretório. 
+Para o alias do arquivo no .bashrc opte por utilizar o caminho absoluto.
+
+Após o repositório clonado, para transformar o pacote em um módulo html5 basta:
+
+```
+deno bundle mod.js ./dist/tesa.js
+```
+**Lembre-se que o a dependencia config.json deve estar junto com o módulo na pasta root**
+<br>
+
+Por se tratar de uma lib do Deno é possível simular um processo uma "instalação", nesse caso o Deno cria um Bash script no root com o call do Deno na frente para que seja possível chamar as funções, classes e etc... diretamente. Para isso basta:
+
+```
+deno install --allow-net mod.js
+```
+<br>
+
+Uma das inovações do Deno é a possibilidade de fazer um binário da lib. Para isso basta:
+
+``` 
+deno compile --output ./dist/bin/tesa(em caso de windowns adicionar .exe) mod.js
+```
+Repare que ainda não existe compilação para multiarquiteturas, sendo assim, será necessário repetir o processo em cada uma das que se deseja utilizar. 
+
+#### Referências
 ¹Zandbergen, P.A. Influence of geocoding quality on environmental exposure assessment of children living near high traffic roads. BMC Public Health 7, 37 (2007). https://doi.org/10.1186/1471-2458-7-37.
+
 ²Dapeng Li. Geocoding and Reverse Geocoding. Comprehensive Geographic Information Systems, Elsevier, 2018, p. 95-109, ISBN 9780128047934.
 
 ## Geoprocessamento
@@ -99,27 +135,6 @@ No Brasil a instituição responsável pelo registro do território é o Institu
 
 ### **Bundle**
 
-Para transformar o pacote em um módulo html5 basta:
-
-```
-deno bundle mod.js ./dist/tesa.js
-```
-<br>
-
-### **Instalação**
-Por se tratar de uma lib do Deno é possível simular um processo uma "instalação", nesse caso o Deno cria um Bash script no root com o call do Deno na frente para que seja possível chamar as funções, classes e etc... diretamente. Para isso basta:
-
-```
-deno install --allow-net mod.js
-```
-<br>
-
-### **Binário**
-Uma das inovações do Deno é a possibilidade de fazer um binário da lib. Para isso basta:
-
-``` 
-deno compile --output ./dist/bin/tesa(em caso de windowns adicionar .exe) mod.js
-```
 
 <br>
 
