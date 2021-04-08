@@ -72,7 +72,7 @@ Esse é um método já normalizado nos hábitos atuais quando buscamos corridas 
 
 Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview). Muito do sucesso se deve a rotineira busca ativa (mapeamento) dos endereços feito pela empresa com veículos especiais. 
 
-Todavia, atualmente existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto no Nominatim em diversos usos.
+Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto no Nominatim em diversos usos. Especificamenete no caso de mapas brasileiros existem estudos que validaram a viabilidade de uso³ e até implementaram soluções para aumentar a precisão e estimular a contribuição da comunidade¹¹.
 
 ### Problematização
 A busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). 
@@ -156,6 +156,11 @@ ToDos:
 ¹Zandbergen, P.A. Influence of geocoding quality on environmental exposure assessment of children living near high traffic roads. BMC Public Health 7, 37 (2007). https://doi.org/10.1186/1471-2458-7-37.
 
 ²Dapeng Li. Geocoding and Reverse Geocoding. Comprehensive Geographic Information Systems, Elsevier, 2018, p. 95-109, ISBN 9780128047934.
+
+³ELIAS, Elias Nasr Naim; FERNANDES, Vivian de Oliveira; ALIXANDRINI JUNIOR, Mauro José  and  SCHMIDT, Marcio Augusto Reolon. The quality of OpenStreetMap in a large metropolis in northeast Brazil: Preliminary assessment of geospatial data for road axes. Bol. Ciênc. Geod. [online]. 2020, vol.26, n.3 [cited  2021-04-08], e2020012. Available from: <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1982-21702020000300201&lng=en&nrm=iso>.  Epub Sep 21, 2020. ISSN 1982-2170.  https://doi.org/10.1590/s1982-21702020000300012.
+
+¹¹John E. Vargas Muñoz, Devis Tuia & Alexandre X. Falcão (2020) Deploying machine learning to assist digital humanitarians: making image annotation in OpenStreetMap more efficient, International Journal of Geographical Information Science, DOI: 10.1080/13658816.2020.1814303.
+
 
 <br>
 
