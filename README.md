@@ -51,14 +51,30 @@ Copyright Pedro Paulo Teixeira dos Santos
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
 ---
+
 
 <br>
 
 ## Geolocalização 
 ToDo
-## Geocodificação
-ToDo
+
+## Geocodificação e Busca
+A Geocodificação é o processo de converter referencias de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude¹. 
+
+Esse é um método já normalizado nos hábitos atuais quando buscamos corridas de aplicativos de carros, novos endereços ou buscamos a distância entre dois pontos para calcularmos o frete de uma entrega².
+
+Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview). Muito do sucesso se deve a rotineira busca ativa (mapeamento) dos endereços feito pela empresa com veículos especiais. 
+
+Todavia, atualmente existem opções comunitárias para o mesmo tipo de serviço, como é o caso do [Nominatim](https://nominatim.org/) ("motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps, exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto com o Nominatim em usos diversos.
+
+
+
+
+¹Zandbergen, P.A. Influence of geocoding quality on environmental exposure assessment of children living near high traffic roads. BMC Public Health 7, 37 (2007). https://doi.org/10.1186/1471-2458-7-37.
+²Dapeng Li. Geocoding and Reverse Geocoding. Comprehensive Geographic Information Systems, Elsevier, 2018, p. 95-109, ISBN 9780128047934.
+
 ## Geoprocessamento
 
 <br>
