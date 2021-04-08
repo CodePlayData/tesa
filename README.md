@@ -91,9 +91,13 @@ Quanto a limitação dos polígonos, o Instituto Brasileiro de Geografia e Estat
 
 Os arquivos principais (módulo ou compilado) possuem como única dependência o arquivo config.json, que obrigatoriamente deve estar no mesmo diretório. Esse arquivo contém 
 **todos os links externos para as chamadas da API, o que possibilita a troca dos links para servidores privados sem necessidade de mexer no código.**
-Por _default_ o servidor no `config.json` é o OpenStreetMaps, **tenha cuidado com o limite de requisições!!!** Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure como variável de ambiente.
-O arquivo compilado é vínculado a pasta em que está inserido pois em caso de necessitar de cache (boa prática!) a pasta será criada no mesmo diretório. 
-Para o alias do arquivo no .bashrc opte por utilizar o caminho absoluto.
+Por _default_ o servidor no `config.json` é o OpenStreetMaps, **tenha cuidado com o limite de requisições!!!**
+
+Em caso de múltiplos servidores privados o nome de cada um deles deve ser correspondente ao nome da macroregião em questão, por exemplo, caso o servidor seja apenas da região Sudeste, esse deve ser o nome.
+
+Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure como variável de ambiente.
+O arquivo compilado é vínculado à pasta em que está inserido pois em caso de necessitar de cache (boa prática!) a pasta será criada no mesmo diretório. 
+Para o alias do arquivo no `~/.bashrc` opte por utilizar o caminho absoluto.
 
 Após o repositório clonado, para transformar o pacote em um módulo html5 basta:
 
@@ -113,9 +117,27 @@ deno install --allow-net mod.js
 Uma das inovações do Deno é a possibilidade de fazer um binário da lib. Para isso basta:
 
 ``` 
-deno compile --output ./dist/bin/tesa(em caso de windowns adicionar .exe) mod.js
+deno compile --unstable --allow-read --allow-write --allow-net --output ./dist/bin/tesa(em caso de windowns adicionar .exe) to_bin.js
 ```
-Repare que ainda não existe compilação para multiarquiteturas, sendo assim, será necessário repetir o processo em cada uma das que se deseja utilizar. 
+Repare que ainda não existe compilação para multiarquiteturas, sendo assim, será necessário repetir o processo em cada uma das que se deseja utilizar.
+
+Os testes unitários estão no arquivo mod.test.js e podem ser executados com:
+```
+deno test -A mod.test.js
+```
+A seguir aprentam-se os resumos das funções:
+
+- **getOnePolygon**: Busca por nome de um polígono de um tipo de divisão geográfica brasileira. 
+- **getManyPolygons**: Busca por nomes de um array de polígonos de um tipo de divisão geográfica brasileira.
+- **belongsTo**: Busca por nome da hierarquia geográfica a qual o objeto pertence.
+- **belongsToMany**: Busca por nomes de um array das hierarquias geográficas de cada objeto do array.
+- **fowardGeocoding**: Busca por identificadores geográficos, estruturados ou não, da localização de um local.
+- **reverseGeoding**: Busca do endereço segundo dados de localização. 
+
+ToDos:
+- **hierarchicalOrdering**: Separa todos o dataset em objetos aninhados segundo suas hierarquias geográficas. 
+ 
+
 
 #### Referências
 ¹Zandbergen, P.A. Influence of geocoding quality on environmental exposure assessment of children living near high traffic roads. BMC Public Health 7, 37 (2007). https://doi.org/10.1186/1471-2458-7-37.
