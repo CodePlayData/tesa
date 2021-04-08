@@ -1,6 +1,11 @@
+![CodePlayData_pt_en](https://user-images.githubusercontent.com/52466957/111396185-5345c180-869d-11eb-987e-94689a2614ae.gif)
+
 # Tools for Easy Spatial Analysis (tesa)
 
-## Sobre
+## Sobre a empresa
+
+
+## Sobre esse repositório
 
 Esse repositório basicamente é estruturado em três pilares das Análises Espaciais:
 - Geolocalização
