@@ -17,6 +17,7 @@ Se quiser conhecer mais acompanhe nossas redes sociais:
 ## Sobre esse repositório
 
 **Público**: Esse repositório é destinado a todos os Cientistas de Dados, desenvolvedores e afins, no Brasil.
+
 **Objetivo**: Reduzir a complexidade de processos nos três pilares das análises espaciais:
 - Geolocalização e Mapas
 - Geocodificação e Busca
