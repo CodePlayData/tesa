@@ -19,4 +19,4 @@ jobs:
           deno-version: ${{ matrix.deno }}
       - run: |
           deno --version
-          deno test --allow-net mod.test.js
+          deno test -A mod.test.js
