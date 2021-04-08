@@ -4,6 +4,14 @@
 
 ## Sobre a empresa
 
+A `CodePlayData` nasce de um projeto criado com a missão de simplificar os processos de gerência, tratamento e consumo de dados em aplicações e softwares de alguns setores da sociedade.
+
+Acreditamos que nos próximos anos possamos contribuir de forma significativa por meio de produtos e serviços que reduzam a complexidade de determinados métodos aplicados na área de dados, como por exemplo, tornar acessível a análise de dados espaciais, facilitar a aplicação de técnicas de modelagem estruturais e extração de _latente features_, possibilitar aplicações para _feture store_ e versionamento de _fetures_ e/ou reduzir a complexidade da didática em programação.  
+
+Prezamos pela simplicidade dos processos, satisfação do usuário e clareza nas relações. 
+Se quiser conhecer mais acompanhe nossas redes sociais:
+
+- [Twitter](https://https://twitter.com/CodePlayData)
 
 ## Sobre esse repositório
 
