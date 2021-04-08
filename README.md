@@ -32,6 +32,11 @@ Se quiser conhecer mais acompanhe nossas redes sociais:
 
 <br>
 
+### Estrutura de pastas
+- .vscode: arquivo de configuração do pacote de extensão do vscode para o Deno.
+- .k8s: Imagem do _container_ do binário do tesa em uma base Ubuntu (145MB).
+- src: o código fonte.
+
 ___
 
 
