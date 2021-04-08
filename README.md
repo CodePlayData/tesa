@@ -69,6 +69,17 @@ Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geoc
 
 Todavia, atualmente existem opções comunitárias para o mesmo tipo de serviço, como é o caso do [Nominatim](https://nominatim.org/) ("motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps, exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto com o Nominatim em usos diversos.
 
+### Problematização
+A Busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade, idealmente, de um set de Data Science. 
+
+---
+
+O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos são parte essencial do processo de Geolocalização (vide acima) e a busca por esses na API do Google é complexa enquanto que no Nominatim computacionalmente custosa, uma vez que será necessário para um dos polígonos consultar no banco a existência dessa referência.
+
+---
+
+### Soluções
+No Brasil a instituição responsável pelo registro do território é o Instituto Brasileiro de Geografia e Estatística (IBGE). Recentemente eles disponibilizaram em API as malhas geográficas (polígonos) de todas as divisões geográficas brasileiras. 
 
 
 
