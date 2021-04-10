@@ -72,18 +72,12 @@ Esse é um método já normalizado nos hábitos atuais quando buscamos corridas 
 
 Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview). Muito do sucesso se deve a rotineira busca ativa (mapeamento) dos endereços feito pela empresa com veículos especiais. 
 
-Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade no OpenSteetMaps e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas junto no Nominatim em diversos usos. Especificamenete no caso de mapas brasileiros existem estudos que validaram a viabilidade de uso³ e até implementaram soluções para aumentar a precisão e estimular a contribuição da comunidade¹¹.
+Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas no Nominatim em diversos usos. Especificamenete no caso de mapas brasileiros existem estudos que validaram a viabilidade de uso³ e até implementaram soluções para aumentar a precisão e estimular a contribuição da comunidade¹¹.
 
 ### Problematização
-A busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). 
+1.  A busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade de um set de Data Science, pois estes podem consumir facilmente 500MB a 1GB de aplicação, como nos casos de Jupyter notebooks (Phyton ou R) ou infras como KubeFlow. 
 
-Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade de um set de Data Science, pois estes podem consumir facilmente 500MB a 1GB de aplicação, como nos casos de Jupyter notebooks (Phyton ou R) ou infras como KubeFlow. 
-
----
-
-O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos são parte essencial do processo de Geolocalização (vide acima) e a busca por esses na API do Google é complexa enquanto que no Nominatim computacionalmente custosa, uma vez que será necessário para um dos polígonos consultar no banco a existência dessa referência.
-
-
+2. O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos são parte essencial do processo de Geolocalização e a busca por esses na API do Google é complexa enquanto que no Nominatim computacionalmente custosa.
 
 ### Soluções
 Sendo assim, para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem e Deno.js como framework de desenvolvimento. 
@@ -96,18 +90,22 @@ Quanto a limitação dos polígonos, o Instituto Brasileiro de Geografia e Estat
 
 Os arquivos principais (módulo ou compilado) possuem como única dependência o arquivo config.json, que obrigatoriamente deve estar no mesmo diretório. Esse arquivo contém 
 **todos os links externos para as chamadas da API, o que possibilita a troca dos links para servidores privados sem necessidade de mexer no código.**
-Por _default_ o servidor no `config.json` é o OpenStreetMaps, **tenha cuidado com o limite de requisições!!!**
+Por _default_ o servidor no `config.json` é o OpenStreetMaps.
+
+
+**Tenha cuidado com o limite de requisições!!!**
+
 
 Em caso de múltiplos servidores privados o nome de cada um deles deve ser correspondente ao nome da macroregião em questão, por exemplo, caso o servidor seja apenas da região Sudeste, esse deve ser o nome.
 
-Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure como variável de ambiente.
+Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure-a como variável de ambiente.
 O arquivo compilado é vínculado à pasta em que está inserido pois em caso de necessitar de cache (boa prática!) a pasta será criada no mesmo diretório. 
 Para o alias do arquivo no `~/.bashrc` opte por utilizar o caminho absoluto.
 
 Após o repositório clonado, para transformar o pacote em um módulo html5 basta:
 
 ```
-deno bundle mod.js ./dist/tesa.js
+deno bundle --allow-read --allow-write --allow-net mod.js ./dist/tesa.js
 ```
 **Lembre-se que o a dependencia config.json deve estar junto com o módulo na pasta root**
 > No front-end faca* uso de processamento paralelo com service-workers para nao* comprometer o event loop com requisicoes* pesadas. Aproveite e utilize a Cache API nativa da maioria dos navegadores disponiveis* para os arquivos estaticos*, como o config.json e para requisicoes* na API.
@@ -117,7 +115,7 @@ deno bundle mod.js ./dist/tesa.js
 Por se tratar de uma lib do Deno é possível simular um processo uma "instalação", nesse caso o Deno cria um Bash script no root com o call do Deno na frente para que seja possível chamar as funções, classes e etc... diretamente. Para isso basta:
 
 ```
-deno install --allow-net mod.js
+deno install --allow-read --allow-write --allow-net mod.js
 ```
 <br>
 
@@ -133,17 +131,19 @@ Os testes unitários estão no arquivo mod.test.js e podem ser executados com:
 deno test -A mod.test.js
 ```
 A seguir aprentam-se os resumos das funções:
-
-- **getOnePolygon**: Busca por nome de um polígono de um tipo de divisão geográfica brasileira. 
-- **getManyPolygons**: Busca por nomes de um array de polígonos de um tipo de divisão geográfica brasileira.
-- **belongsTo**: Busca por nome da hierarquia geográfica a qual o objeto pertence.
-- **belongsToMany**: Busca por nomes de um array das hierarquias geográficas de cada objeto do array.
-- **fowardGeocoding**: Busca por identificadores geográficos, estruturados ou não, da localização de um local.
-- **reverseGeoding**: Busca do endereço segundo dados de localização. 
+| Nome | Descrição | Parametros |
+|:-----|:----------|:-----------|
+| **getOnePolygon** | Busca por nome de um polígono de um tipo de divisão geográfica brasileira. |  | 
+| **getManyPolygons** | Busca por nomes de um array de polígonos de um tipo de divisão geográfica brasileira. |  |
+| **belongsTo** | Busca por nome da hierarquia geográfica a qual o objeto pertence. |  |
+| **belongsToMany** | Busca por nomes de um array das hierarquias geográficas de cada objeto do array. |  |
+| **fowardGeocoding** | Busca por identificadores geográficos, estruturados ou não, da localização de um local.  |  |
+| **reverseGeoding** | Busca do endereço segundo dados de localização. |  | 
 
 ToDos:
-- **hierarchicalOrdering**: Separa todos o dataset em objetos aninhados segundo suas hierarquias geográficas. 
- 
+
+- **hierarchicalOrdering**: Separa todo o dataset em objetos aninhados segundo suas hierarquias geográficas. 
+
 <br>
 
 >Nota nº1: Entre as divisões de estado e município existiram 2 modelos propostos pelo IBGE. O primeiro deles é de 1990 e agrupa os municípios em _microregiões_ e essas em _meso-regiões_, esse critério previa que os municípios com características sociais e econômicas semelhantes deveriam fazer parte de um mesmo grupo. Entretanto, esse conceito não se estabeleceu, uma vez que as próprias unidades administrativas se agruparam ao longo dos anos segundo os seus próprios critérios, assim em 2017 surge uma proposta que agrupa em regiões _imediatas_ e essas em regiões _intermediárias_ (com nomes muito próximos do que conhecemos popularmente). 
