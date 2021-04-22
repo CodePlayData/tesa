@@ -85,7 +85,9 @@ Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o
 
 - [ ] Para que não ocorra transferência de dados em excesso é comum que se precise de estratégia de caches para gerenciamento dos dados. Será necessário implementar estratégias de caches em todos os ambientes que a Tesa se propõe a atuar.
 
-- [ ] A Tesa deve agir também em situações onde não existam servidores de mapas e sua função seja criar um, para isso serão necessárias funções Builders, que possam levantar os containers/pod e a rede necessária para encaminhas as requisições. Admite-se que essa seja apenas uma tarefa da CLI.
+- [ ] A Tesa deve agir também em situações onde não existam servidores de mapas e sua função seja criar um, para isso serão necessárias funções Builders, que possam levantar os containers/pod e a rede necessária para encaminhaR as requisições. Admite-se que essa seja apenas uma tarefa da CLI.
+
+- [ ] Uma limitação do uso de json como parametros em CLI é a necessidade de escapar os caracteres. Uma alternativa a ser implementada é a opção de fornecer o path para ler o arquivo .json.
 
 
 ### Soluções
