@@ -90,14 +90,7 @@ Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o
 - [ ] Uma limitação do uso de json como parametros em CLI é a necessidade de escapar os caracteres. Uma alternativa a ser implementada é a opção de fornecer o path para ler o arquivo .json.
 
 
-### Soluções
-Para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem e Deno.js como framework de desenvolvimento. 
-No _front-end_ será possível utilizar as funções como módulo do HTML5 ou integradas como pacotes Deno. 
-No _back-end_ o Deno fornece a possibilidade de compilar em binário.
-
-Quanto a limitação dos polígonos, o Instituto Brasileiro de Geografia e Estatística (IBGE) fornece em API as malhas geográficas (polígonos) de todas as divisões geográficas brasileiras, sendo necessário apenas fazer um _wrapper_ das chamadas para essa API.
-
-#### Especificações
+### Especificações
 
 Os arquivos principais (módulo ou compilado) possuem como única dependência o arquivo config.json, que obrigatoriamente deve estar no mesmo diretório. Esse arquivo contém 
 **todos os links externos para as chamadas da API, o que possibilita a troca dos links para servidores privados sem necessidade de mexer no código.**
