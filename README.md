@@ -106,7 +106,7 @@ Após o repositório clonado, para transformar o pacote em um módulo html5 bast
 ```
 deno bundle --allow-read --allow-write --allow-net mod.js ./dist/tesa.js
 ```
-**Lembre-se que o a dependencia config.json deve estar junto com o módulo na pasta root**
+**Lembre-se que o arquivo de dependencia config.json deve estar junto com o módulo na pasta root**
 > No front-end faca* uso de processamento paralelo com service-workers para nao* comprometer o event loop com requisicoes* pesadas. Aproveite e utilize a Cache API nativa da maioria dos navegadores disponiveis* para os arquivos estaticos*, como o config.json e para requisicoes* na API.
 
 <br>
