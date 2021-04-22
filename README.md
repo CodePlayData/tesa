@@ -66,13 +66,13 @@ Copyright Pedro Paulo Teixeira dos Santos
 <br>
 
 ## Geocodificação e Busca
-A Geocodificação é o processo de converter referências de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude[^1]. 
+A Geocodificação é o processo de converter referências de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude<sup>1</sup>. 
 
-Esse é um método já normalizado nos hábitos atuais quando buscamos corridas de aplicativos de carros, novos endereços ou buscamos a distância entre dois pontos para calcularmos o frete de uma entrega².
+Esse é um método já normalizado nos hábitos atuais quando buscamos corridas de aplicativos de carros, novos endereços ou buscamos a distância entre dois pontos para calcularmos o frete de uma entrega<sup>2</sup>.
 
 Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview). Muito do sucesso se deve a rotineira busca ativa (mapeamento) dos endereços feito pela empresa com veículos especiais. 
 
-Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas no Nominatim em diversos usos. Especificamenete no caso de mapas brasileiros existem estudos que validaram a viabilidade de uso³ e até implementaram soluções para aumentar a precisão e estimular a contribuição da comunidade¹¹.
+Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas no Nominatim em diversos usos. Especificamenete no caso de mapas brasileiros existem estudos que validaram a viabilidade de uso<sup>3</sup> e até implementaram soluções para aumentar a precisão e estimular a contribuição da comunidade<sup>4</sup>.
 
 ### Problematização
 - [ ]  A busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem pelo menos dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade de um set de Data Science, pois estes podem consumir facilmente 500MB a 1GB de aplicação, como nos casos de Jupyter notebooks (Phyton ou R) ou infras como KubeFlow. 
@@ -155,13 +155,13 @@ ToDos:
 <br>
 
 #### Referências
-¹Zandbergen, P.A. Influence of geocoding quality on environmental exposure assessment of children living near high traffic roads. BMC Public Health 7, 37 (2007). https://doi.org/10.1186/1471-2458-7-37.
+<sup>1</sup>Zandbergen, P.A. Influence of geocoding quality on environmental exposure assessment of children living near high traffic roads. BMC Public Health 7, 37 (2007). https://doi.org/10.1186/1471-2458-7-37.
 
-²Dapeng Li. Geocoding and Reverse Geocoding. Comprehensive Geographic Information Systems, Elsevier, 2018, p. 95-109, ISBN 9780128047934.
+<sup>2</sup>Dapeng Li. Geocoding and Reverse Geocoding. Comprehensive Geographic Information Systems, Elsevier, 2018, p. 95-109, ISBN 9780128047934.
 
-³ELIAS, Elias Nasr Naim; FERNANDES, Vivian de Oliveira; ALIXANDRINI JUNIOR, Mauro José  and  SCHMIDT, Marcio Augusto Reolon. The quality of OpenStreetMap in a large metropolis in northeast Brazil: Preliminary assessment of geospatial data for road axes. Bol. Ciênc. Geod. [online]. 2020, vol.26, n.3 [cited  2021-04-08], e2020012. Available from: <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1982-21702020000300201&lng=en&nrm=iso>.  Epub Sep 21, 2020. ISSN 1982-2170.  https://doi.org/10.1590/s1982-21702020000300012.
+<sup>3</sup>ELIAS, Elias Nasr Naim; FERNANDES, Vivian de Oliveira; ALIXANDRINI JUNIOR, Mauro José  and  SCHMIDT, Marcio Augusto Reolon. The quality of OpenStreetMap in a large metropolis in northeast Brazil: Preliminary assessment of geospatial data for road axes. Bol. Ciênc. Geod. [online]. 2020, vol.26, n.3 [cited  2021-04-08], e2020012. Available from: <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1982-21702020000300201&lng=en&nrm=iso>.  Epub Sep 21, 2020. ISSN 1982-2170.  https://doi.org/10.1590/s1982-21702020000300012.
 
-¹¹John E. Vargas Muñoz, Devis Tuia & Alexandre X. Falcão (2020) Deploying machine learning to assist digital humanitarians: making image annotation in OpenStreetMap more efficient, International Journal of Geographical Information Science, DOI: 10.1080/13658816.2020.1814303.
+<sup>4</sup>John E. Vargas Muñoz, Devis Tuia & Alexandre X. Falcão (2020) Deploying machine learning to assist digital humanitarians: making image annotation in OpenStreetMap more efficient, International Journal of Geographical Information Science, DOI: 10.1080/13658816.2020.1814303.
 
 
 <br>
