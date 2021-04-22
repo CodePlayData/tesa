@@ -80,7 +80,7 @@ Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o
 - [ ] O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos são parte essencial do processo de Geolocalização e a busca por esses na API do Google é complexa enquanto que no Nominatim computacionalmente custosa.
 
 ### Soluções
-Sendo assim, para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem e Deno.js como framework de desenvolvimento. 
+Para resolver a questão de disponibilidade e escalibilidade, optou-se por utilizar Javascript como linguagem e Deno.js como framework de desenvolvimento. 
 No _front-end_ será possível utilizar as funções como módulo do HTML5 ou integradas como pacotes Deno. 
 No _back-end_ o Deno fornece a possibilidade de compilar em binário.
 
