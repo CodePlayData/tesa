@@ -137,16 +137,18 @@ deno test -A mod.test.js
 A seguir aprentam-se os resumos das funções:
 | Nome | Descrição | Parametros |
 |:-----|:----------|:-----------|
-| **getOnePolygon** | Busca por nome de um polígono de um tipo de divisão geográfica brasileira. |  | 
-| **getManyPolygons** | Busca por nomes de um array de polígonos de um tipo de divisão geográfica brasileira. |  |
-| **belongsTo** | Busca por nome da hierarquia geográfica a qual o objeto pertence. |  |
-| **belongsToMany** | Busca por nomes de um array das hierarquias geográficas de cada objeto do array. |  |
-| **fowardGeocoding** | Busca por identificadores geográficos, estruturados ou não, da localização de um local.  |  |
-| **reverseGeoding** | Busca do endereço segundo dados de localização. |  | 
+| **getOnePolygon** | Busca por nome um polígono de um tipo de divisão geográfica brasileira. |  | 
+| **getManyPolygons** | Busca por nomes um array de polígonos de um tipo de divisão geográfica brasileira. |  |
+| **belongsTo** | Busca por nome a hierarquia geográfica a qual o objeto pertence. |  |
+| **belongsToMany** | Busca por nomes um array de hierarquias geográficas de cada objeto do array. |  |
+| **fowardGeocoding** | Busca por identificadores geográficos, estruturados ou não, a localização de um ponto.  |  |
+| **reverseGeoding** | Busca do endereço segundo dados de localização, latitude e longitude. |  | 
 
 ToDos:
 
-- **hierarchicalOrdering**: Separa todo o dataset em objetos aninhados segundo suas hierarquias geográficas. 
+- **hierarchicalOrdering**: Separa todo o dataset em objetos aninhados segundo suas hierarquias geográficas.
+- **builder checkCRI**: Verifica se o host possui um Container Runtime Interface.
+- **builder setRegions**: Define as regiões que terão seus servers e faz o download do arquivo .osm.pbf para a pasta data.
 
 <br>
 
