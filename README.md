@@ -66,7 +66,7 @@ Copyright Pedro Paulo Teixeira dos Santos
 <br>
 
 ## Geocodificação e Busca
-A Geocodificação é o processo de converter referências de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude¹. 
+A Geocodificação é o processo de converter referências de localização, como endereços, CEP ou nomes de divisões geográficas como municípios ou estados, em dados referenciados geograficamente para os sistemas de informações geográficas (GIS), utilizando vetores (em casos de dados pontuais) ou _arrays_ (em caso de polígonos) de valores de latitude e longitude[^1]. 
 
 Esse é um método já normalizado nos hábitos atuais quando buscamos corridas de aplicativos de carros, novos endereços ou buscamos a distância entre dois pontos para calcularmos o frete de uma entrega².
 
