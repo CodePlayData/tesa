@@ -149,6 +149,9 @@ ToDos:
 - **hierarchicalOrdering**: Separa todo o dataset em objetos aninhados segundo suas hierarquias geográficas.
 - **builder checkCRI**: Verifica se o host possui um Container Runtime Interface.
 - **builder setRegions**: Define as regiões que terão seus servers e faz o download do arquivo .osm.pbf para a pasta data.
+- **builder osmToPGD**: Transforma os arquivos .osm.pbf em postgresdata.
+- **builder osmToPolyLines**: Transforma os aquivos .osm.pbf para polylines. 
+
 
 <br>
 
