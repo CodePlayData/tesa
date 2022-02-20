@@ -4,7 +4,7 @@
 
 ## Sobre a empresa
 
-A `CodePlayData` nasce de um projeto criado com a missão de simplificar os processos de gerência, tratamento e consumo de dados em aplicações e softwares de alguns setores da sociedade.
+A `CodePlayData` é um projeto criado com a missão de simplificar os processos de gerência, tratamento e consumo de dados em aplicações e softwares de alguns setores da sociedade.
 
 Acreditamos que nos próximos anos possamos contribuir de forma significativa por meio de produtos e serviços que reduzam a complexidade de determinados métodos aplicados na área de dados, como por exemplo, tornar acessível a análise de dados espaciais, facilitar a aplicação de técnicas de modelagem estruturais e extração de _latent features_, possibilitar aplicações de _feature store_ e versionamento de _fetures_ e/ou reduzir a complexidade da didática em programação.  
 
@@ -16,7 +16,7 @@ Se quiser conhecer mais acompanhe nossas redes sociais:
 
 ## Sobre esse repositório
 
-**Público**: Esse repositório é destinado a todos os Cientistas de Dados, desenvolvedores e afins, no Brasil.
+**Público**: Esse repositório é destinado a cientistas de dados, desenvolvedores e afins, no Brasil.
 
 **Objetivo**: Reduzir a complexidade de processos nos três pilares das análises espaciais:
 - Geocodificação e Busca
@@ -34,8 +34,8 @@ Se quiser conhecer mais acompanhe nossas redes sociais:
 <br>
 
 ### Estrutura de pastas
-- .k8s: Imagem do _container_ do binário do tesa em uma base Ubuntu (145MB).
-- src: o código fonte.
+- **.k8s**: Imagem do _container_ do binário do tesa em uma base Ubuntu (145MB).
+- **src**: o código fonte.
 
 <br>
 
@@ -73,46 +73,26 @@ Atualmente a pioneira no fornecimento desse serviço é a Google com a sua [Geoc
 
 Todavia, existem opções comunitárias para o mesmo tipo de serviço, como é o [Nominatim](https://nominatim.org/) (o "motor" de busca do OpenStreetMaps). Os dados são atualizados pela comunidade e exportados por empresas como a [Geofabrik](https://www.geofabrik.de/) em bases de dados de mapas (tiles) para serem utilizadas no Nominatim em diversos usos. Especificamenete no caso de mapas brasileiros existem estudos que validaram a viabilidade de uso<sup>3</sup> e até implementaram soluções para aumentar a precisão e estimular a contribuição da comunidade<sup>4</sup>.
 
-### Problematização
-
-- [X]  A busca por endereços na API do Google não é difícil, a principal limitação é o custo, que pode subir consideravelmente dependendo do número de requests que serão feitas. Para usar o Nominatim existem pelo menos dois tutoriais disponíveis em português: [Geocodificação— sem Google maps API — Parte I](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-i-f4e9e32c386) e [Geocodificação — sem Google maps API— Parte II](https://medium.com/data-hackers/geocodifica%C3%A7%C3%A3o-sem-google-maps-api-parte-ii-82722f62628). Um ponto de melhoria desse processo é a disponibilidade de métodos de consumo dessas API que possam ser implementados em escala, seja no front-end ou no back-end, sem necessidade de um set de Data Science, pois estes podem consumir facilmente 500MB a 1GB de aplicação, como nos casos de Jupyter notebooks (Phyton ou R) ou infras como KubeFlow. 
-   
-   - **145MB de CLI (sem estar lean) OU 1 bundle.js+1config.json para o front**
-
-- [x] O padrão de pontos é apenas uma parte de uma análise espacial. Os polígonos são parte essencial do processo de Geolocalização e a busca por esses na API do Google é complexa enquanto que no Nominatim computacionalmente custosa. O IBGE fornece uma API justamente para essa função, existindo apenas a necessidade de gerenciar da melhor maneira possível as requisições para esse serviço. 
-   
-   - **O wrapper é simples e economiza chamadas por subir uma categoria geográfica e nela filtrar apenas os polígonos solicitados**
-
-- [ ] Para que não ocorra transferência de dados em excesso é comum que se precise de estratégia de caches para gerenciamento dos dados. Será necessário implementar estratégias de caches em todos os ambientes que a Tesa se propõe a atuar.
-
-- [ ] A Tesa deve agir também em situações onde não existam servidores de mapas e sua função seja criar um, para isso serão necessárias funções Builders, que possam levantar os containers/pod e a rede necessária para encaminhaR as requisições. Admite-se que essa seja apenas uma tarefa da CLI.
-
-- [ ] Uma limitação do uso de json como parametros em CLI é a necessidade de escapar os caracteres. Uma alternativa a ser implementada é a opção de fornecer o path para ler o arquivo .json.
-
-
 ### Especificações
 
-Os arquivos principais (módulo ou compilado) possuem como única dependência o arquivo config.json, que obrigatoriamente deve estar no mesmo diretório. Esse arquivo contém 
+A única dependência do módulo é o arquivo `config.json`, que obrigatoriamente deve estar na **root**. Esse arquivo contém 
 **todos os links externos para as chamadas da API, o que possibilita a troca dos links para servidores privados sem necessidade de mexer no código.**
 Por _default_ o servidor no `config.json` é o OpenStreetMaps.
 
 
 **Tenha cuidado com o limite de requisições!!!**
 
-
 Em caso de múltiplos servidores privados o nome de cada um deles deve ser correspondente ao nome da macroregião em questão, por exemplo, caso o servidor seja apenas da região Sudeste, esse deve ser o nome.
 
-Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure-a como variável de ambiente.
-O arquivo compilado é vínculado à pasta em que está inserido pois em caso de necessitar de cache (boa prática!) a pasta será criada no mesmo diretório. 
-Para o alias do arquivo no `~/.bashrc` opte por utilizar o caminho absoluto.
+Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`. No caso de servidores pagos que necessitem de API_key configure-a como variável de ambiente e insira na URL.
 
 Após o repositório clonado, para transformar o pacote em um módulo html5 basta:
 
 ```
 deno bundle --allow-read --allow-write --allow-net mod.js ./dist/tesa.js
 ```
-**Lembre-se que o arquivo de dependencia config.json deve estar junto com o módulo na pasta root**
-> No front-end faca* uso de processamento paralelo com service-workers para nao* comprometer o event loop com requisicoes* pesadas. Aproveite e utilize a Cache API nativa da maioria dos navegadores disponiveis* para os arquivos estaticos*, como o config.json e para requisicoes* na API.
+**Lembre-se que o arquivo de dependência config.json deve estar junto com o módulo na pasta root**
+> No front-end faça uso de processamento paralelo com service-workers para não comprometer o event loop com requisições pesadas. Aproveite e utilize a Cache API para os arquivos estáticos, como o config.json, a pasta src/data ou para requisições na API.
 
 <br>
 
@@ -123,35 +103,21 @@ deno install --allow-read --allow-write --allow-net mod.js
 ```
 <br>
 
-Uma das inovações do Deno é a possibilidade de fazer um binário da lib. Para isso basta:
-
-``` 
-deno compile --unstable --allow-read --allow-write --allow-net --output ./dist/bin/tesa(em caso de windowns adicionar .exe) to_bin.js
-```
-Repare que ainda não existe compilação para multiarquiteturas, sendo assim, será necessário repetir o processo em cada uma das que se deseja utilizar.
-
 Os testes unitários estão no arquivo mod.test.js e podem ser executados com:
 ```
-deno test -A mod.test.js
+deno test -A
 ```
 A seguir aprentam-se os resumos das funções:
-| Nome | Descrição | Parametros |
-|:-----|:----------|:-----------|
-| **getOnePolygon** | Busca por nome um polígono de um tipo de divisão geográfica brasileira. |  | 
-| **getManyPolygons** | Busca por nomes um array de polígonos de um tipo de divisão geográfica brasileira. |  |
-| **belongsTo** | Busca por nome a hierarquia geográfica a qual o objeto pertence. |  |
-| **belongsToMany** | Busca por nomes um array de hierarquias geográficas de cada objeto do array. |  |
-| **fowardGeocoding** | Busca por identificadores geográficos, estruturados ou não, a localização de um ponto.  |  |
-| **reverseGeoding** | Busca do endereço segundo dados de localização, latitude e longitude. |  | 
-
-ToDos:
-
-- **hierarchicalOrdering**: Separa todo o dataset em objetos aninhados segundo suas hierarquias geográficas.
-- **builder checkCRI**: Verifica se o host possui um Container Runtime Interface.
-- **builder setRegions**: Define as regiões que terão seus servers e faz o download do arquivo .osm.pbf para a pasta data.
-- **builder osmToPGD**: Transforma os arquivos .osm.pbf em postgresdata.
-- **builder osmToPolyLines**: Transforma os aquivos .osm.pbf para polylines. 
-
+|        Nome         |                                            Descrição                                         |                       Parâmetros                       |
+|:--------------------|:---------------------------------------------------------------------------------------------|:-------------------------------------------------------|
+| **getOnePolygon**        | Busca por nome um polígono de um tipo de divisão geográfica brasileira.                 |                NOME, CATEGORIA GEOGRÁFICA              | 
+| **getManyPolygons**      | Busca por nomes um array de polígonos de um tipo de divisão geográfica brasileira.      |   { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] }     |
+| **belongsTo**            | Busca por nome a hierarquia geográfica a qual o objeto pertence.                        |               NOME, CATEGORIA GEOGRÁFICA               |
+| **belongsToMany**        | Busca por nomes um array de hierarquias geográficas de cada objeto do array.            |    { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] }    | 
+| **fowardGeocoding**      | Busca por identificadores geográficos, estruturados ou não, a localização de um ponto.  | { request: ESTRUTURA¹, map_tiles: { name: NOME } } <br> { housenumber: NUMERO, street: ENDEREÇO, city: CIDADE, state: ESTADO} |
+| **reverseGeoding**       | Busca do endereço segundo dados de localização, latitude e longitude.                   |  { map_tiles: { name: NOME } } <br> { lon: LONGITUDE, lat: LATITUDE } | 
+| **hierarchicalOrdering** | Busca toda a ordem hierárquica a qual o ponto pertence e armazena os polígonos          |  { street: ENDEREÇO, number: NUMERO, city: CIDADE, geometry: [ LATITUDE, LONGITUDE ] } | 
+¹Tipo de Request ao servidor de mapas, se ela será do tipo estruturada ou não estruturada (endereço de livre escrita).
 
 <br>
 
