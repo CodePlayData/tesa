@@ -12,7 +12,7 @@ import { belongsTo, getOnePolygon, belongsToMany, getManyPolygons } from './poly
 
 async function hierarchicalOrdering(request) {
 
-    const getByArray = async () => {
+    async function getByArray() {
         let cities = request.map(i => i.city)
         let order = await belongsToMany(
             {
@@ -101,9 +101,9 @@ async function hierarchicalOrdering(request) {
             ] 
         }
         return map
-    }
+    };
 
-    const getByObject = async () => {
+    async function getByObject() {
         let order = await belongsTo(request.city, 'cities')
         let city = await (await getOnePolygon(order.nome, 'cities')).features[0].geometry
         let microregion = await (await getOnePolygon(order.microrregiao.nome, 'microregions')).features[0].geometry
@@ -151,7 +151,7 @@ async function hierarchicalOrdering(request) {
             ] 
         }
         return map
-    }
+    };
 
     if(Array.isArray(request)) {
         return await getByArray()

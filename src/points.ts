@@ -12,7 +12,7 @@ import type {
 
 /**
  * The geocoding process is highly dependent to the Map Tiles server. We can use the World Map in Nominatim/OpenStreetMap, setup a private
- * server for a whole country or a server for each geographic region; we could also request the location based in the raw string or in a structured objet. 
+ * server for a whole country or a server for each geographic region; we could also request the location based in the raw string or in a structured objet.
  * The params of this function deal with all these options.
  *
  * @param layout defines if the request will be raw string (unstructured) or an object that will store address information, labels and urls of the private servers.

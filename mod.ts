@@ -5,38 +5,33 @@ import {
   getOnePolygon,
 } from "./src/polygons.ts";
 
-import { 
-  forwardGeocoding,
-  reverseGeocoding
-} from "./src/points.ts";
+import { forwardGeocoding, reverseGeocoding } from "./src/points.ts";
 
-import { 
-  hierarchicalOrdering 
-} from './src/ordering.js';
+import { hierarchicalOrdering } from "./src/ordering.js";
 
-import { 
+import {
   downloadFile,
-  untarFile,
-  runCmd,
-  getOsmExtractTools,
-  getCityPbf,
   extractNeighboorhodFromPbf,
-  readNeighborhoodGeojsonFromDir
-} from './src/utils.ts'
+  getCityPbf,
+  getOsmExtractTools,
+  readNeighborhoodGeojsonFromDir,
+  runCmd,
+  untarFile,
+} from "./src/utils.ts";
 
 export {
   belongsTo,
   belongsToMany,
+  downloadFile,
+  extractNeighboorhodFromPbf,
   forwardGeocoding,
+  getCityPbf,
   getManyPolygons,
   getOnePolygon,
-  reverseGeocoding,
-  hierarchicalOrdering,
-  downloadFile,
-  untarFile,
-  runCmd,
   getOsmExtractTools,
-  getCityPbf,
-  extractNeighboorhodFromPbf,
-  readNeighborhoodGeojsonFromDir
+  hierarchicalOrdering,
+  readNeighborhoodGeojsonFromDir,
+  reverseGeocoding,
+  runCmd,
+  untarFile,
 };
