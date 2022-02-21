@@ -7,7 +7,7 @@ import {
 
 import { forwardGeocoding, reverseGeocoding } from "./src/points.ts";
 
-import { hierarchicalOrdering } from "./src/ordering.js";
+import { hierarchicalOrdering } from "./src/ordering.ts";
 
 import {
   downloadFile,

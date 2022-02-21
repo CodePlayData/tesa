@@ -115,7 +115,7 @@ export interface DoubledItem {
 }
 
 export interface LocationInfo {
-  [key: string]: string | number | Record<string, number>;
+  [key: string]: string | number | Record<string, number> | any | any[];
 }
 
 export interface GeoJsonObject {
