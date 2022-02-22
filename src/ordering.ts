@@ -15,7 +15,7 @@ import {
   getOnePolygon,
 } from "./polygons.ts";
 
-async function hierarchicalOrdering(request:any) {
+async function hierarchicalOrdering(request: any) {
   async function getByArray(request: any[]) {
     let cities = request.map((i) => i.city);
     let order = await belongsToMany(
@@ -24,14 +24,13 @@ async function hierarchicalOrdering(request:any) {
         aliases: [...new Set(cities)],
       },
     );
-    
     let city = (await getManyPolygons(
       {
         type: "cities",
         aliases: [...new Set(cities)],
       },
     ))?.map((i) => i?.geometry);
-    
+
     let microregion = (await getManyPolygons(
       {
         type: "microregions",
@@ -45,17 +44,18 @@ async function hierarchicalOrdering(request:any) {
         aliases: order?.map((i) => i.microrregiao.mesorregiao.nome) as string[],
       },
     ))?.map((i) => i?.geometry);
-    
+
     let state = (await getManyPolygons(
       {
         type: "states",
-        aliases: order?.map((i) => i.microrregiao.mesorregiao.UF.nome) as string[],
+        aliases: order?.map((i) =>
+          i.microrregiao.mesorregiao.UF.nome
+        ) as string[],
       },
     ))?.map((i) => i?.geometry);
-    
-    
+
     let location = request.map((i) => i.geometry);
-    
+
     let map = {
       type: "FeatureCollection",
       features: [
@@ -63,10 +63,14 @@ async function hierarchicalOrdering(request:any) {
           type: "Feature",
           properties: {
             polygon: {
-              state: order?.map((i) => i.microrregiao.mesorregiao.UF.name) as string[],
-              midleregion: order?.map((i) => i.microrregiao.mesorregiao.name) as string[],
-              microregion: order?.map((i) => i.microrregiao.name) as string[],
-              city: order?.map((i) => i.name) as string[],
+              state: order?.map((i) =>
+                i.microrregiao.mesorregiao.UF.nome
+              ) as string[],
+              midleregion: order?.map((i) =>
+                i.microrregiao.mesorregiao.nome
+              ) as string[],
+              microregion: order?.map((i) => i.microrregiao.nome) as string[],
+              city: order?.map((i) => i.nome) as string[],
             },
             point: [...request.map((i) => {
               return {
@@ -106,16 +110,27 @@ async function hierarchicalOrdering(request:any) {
       ],
     };
 
-    return map     
+    return map;
   }
 
   async function getByObject(request: any) {
-    let order = await belongsTo(request.city, "cities");    
-    let city = await (await getOnePolygon(order?.nome, "cities"))?.features[0].geometry; 
-    let microregion = await (await getOnePolygon(order?.microrregiao.nome, "microregions"))?.features[0].geometry;    
-    let middleregion = await (await getOnePolygon(order?.microrregiao.mesorregiao.nome,"middleregions"))?.features[0]?.geometry;
-    
-    let state = await (await getOnePolygon(order?.microrregiao.mesorregiao.UF.nome, "states"))?.features[0]?.geometry;
+    let order = await belongsTo(request.city, "cities");
+    let city = await (await getOnePolygon(order?.nome, "cities"))?.features[0]
+      .geometry;
+    let microregion =
+      await (await getOnePolygon(order?.microrregiao.nome, "microregions"))
+        ?.features[0].geometry;
+    let middleregion =
+      await (await getOnePolygon(
+        order?.microrregiao.mesorregiao.nome,
+        "middleregions",
+      ))?.features[0]?.geometry;
+
+    let state =
+      await (await getOnePolygon(
+        order?.microrregiao.mesorregiao.UF.nome,
+        "states",
+      ))?.features[0]?.geometry;
     let location = {
       type: "Point",
       coordinates: [
@@ -123,7 +138,7 @@ async function hierarchicalOrdering(request:any) {
         request.geometry[1],
       ],
     };
-    
+
     let map = {
       type: "FeatureCollection",
       features: [
@@ -160,7 +175,6 @@ async function hierarchicalOrdering(request:any) {
     };
     return map;
   }
- 
 
   if (Array.isArray(request)) {
     return await getByArray(request);
@@ -168,16 +182,5 @@ async function hierarchicalOrdering(request:any) {
     return await getByObject(request);
   }
 }
-
-
-let request = {
-    street: "Praça Roberto Gomes Pedrosa",
-    number: "1",
-    city: "São Paulo",
-    geometry: [
-      -23.6000888,
-      -46.7222789,
-    ],
-  };
 
 export { hierarchicalOrdering };

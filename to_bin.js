@@ -8,7 +8,7 @@ import {
   getManyPolygons,
   getOnePolygon,
   reverseGeocoding,
-} from "./mod.js";
+} from "./mod.ts";
 
 async function tesa(args) {
   let params = parse(args);
@@ -443,8 +443,8 @@ async function tesa(args) {
 tesa(Deno.args);
 
 /*
-tesa getOnePolygon --type 'cities' --alias 'amparo(pb)' --output console
-./dist/tesa getManyPolygons --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
+./src/bin/tesa getOnePolygon --type 'cities' --alias 'amparo(pb)' --output console
+./src/bin/tesa getManyPolygons --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
 ./dist/tesa belongsTo --type 'cities' --alias 'amparo(pb)' --output console
 ./dist/tesa belongsToMany --request "{\"type\": \"macroregion\", \"aliases\": [\"NORTE\", \"SUL\"]}" --output console
 ./dist/tesa forwardGeocoding --layout "{\"request\": \"unstructured\", \"map_tiles\": { \"name\": \"Nominatim/OpenStreetMap\"}}" --location '"Avenida Professor Plínio Bastos, 640, Olaria, Rio de Janeiro"' --output console

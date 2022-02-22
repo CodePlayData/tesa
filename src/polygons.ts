@@ -707,7 +707,4 @@ async function getNeighborhoodsFromCity(city: string) {
   }
 }
 
-//await getNeighborhoodsFromCity('rio de janeiro')
-//await extractNeighboorhodFromPbf(`riodejaneiro.pbf`)
-
 export { belongsTo, belongsToMany, getManyPolygons, getOnePolygon };
