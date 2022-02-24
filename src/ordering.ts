@@ -120,17 +120,15 @@ async function hierarchicalOrdering(request: any) {
     let microregion =
       await (await getOnePolygon(order?.microrregiao.nome, "microregions"))
         ?.features[0].geometry;
-    let middleregion =
-      await (await getOnePolygon(
-        order?.microrregiao.mesorregiao.nome,
-        "middleregions",
-      ))?.features[0]?.geometry;
+    let middleregion = await (await getOnePolygon(
+      order?.microrregiao.mesorregiao.nome,
+      "middleregions",
+    ))?.features[0]?.geometry;
 
-    let state =
-      await (await getOnePolygon(
-        order?.microrregiao.mesorregiao.UF.nome,
-        "states",
-      ))?.features[0]?.geometry;
+    let state = await (await getOnePolygon(
+      order?.microrregiao.mesorregiao.UF.nome,
+      "states",
+    ))?.features[0]?.geometry;
     let location = {
       type: "Point",
       coordinates: [
