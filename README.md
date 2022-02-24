@@ -6,9 +6,7 @@
 
 A `CodePlayData` é um projeto criado com a missão de simplificar os processos de
 gerência, tratamento e consumo de dados em aplicações e softwares de alguns
-setores da sociedade.
-
-Acreditamos que nos próximos anos possamos contribuir de forma significativa por
+setores da sociedade. Acreditamos que possamos contribuir de forma significativa por
 meio de produtos e serviços que reduzam a complexidade de determinados métodos
 aplicados na área de dados, como por exemplo, tornar acessível a análise de
 dados espaciais, facilitar a aplicação de técnicas de modelagem estruturais e
@@ -31,43 +29,33 @@ e afins, no Brasil.
 **Objetivo**: Reduzir a complexidade de processos nos três pilares das análises
 espaciais:
 
-- Geocodificação e Busca
-- Geolocalização e Mapas
-- Geoprocessamento e Modelos
+- Geocodificação e Busca (back-end);
+- Geolocalização e Mapas (front-end);
+- Geoprocessamento e Modelos (data-science);
 
 **Integrações**:
-[API do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3) e
-[Nominatim](https://nominatim.org/).
+[API do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3),
+[Nominatim](https://nominatim.org/) e [Geofabrik](https://download.geofabrik.de/).
 
 <br>
 
-**Status**: Em desenvolvimento. **Linguagem**: Javascript. **Framework**: Deno.
+**Status**: Em desenvolvimento. **Linguagens**: Javascript. **Frameworks**: Deno e Vue3.
 
 <br>
 
 ### Estrutura de pastas
 
-- **.k8s**: Imagem do _container_ do binário do tesa em uma base Ubuntu (145MB).
 - **src**: o código fonte.
+- **test**: pasta que contém todos os testes disponíveis.
+- **bin**: pasta que contém os binários do osmium-tool, usado para criar aquivos .pbf, e do osm_extract_polygon, usado para extrair objetos de arquivos osm. As duas ferramentas são utilizadas para o processo de extração dos polígonos do bairros (e serão usados para extração das ruas e outras coisas).
+- **data**: todos os arquivos necessários para converter nomes: string em códigos do IBGE que equivalem ao polígono solicitado. Os arquivos _double são os nomes duplicados, triplicados, quadruplicados ou quintuplicados das divisões geográficas do Brasil.
+- **neighborhoods_includes**: Pasta que contém polígonos dos bairros corrigidos por municípios.
 
 <br>
 
----
+> Os bairros estão sendo coletados diretamente dos objetos OpenStreetMap (.osm), que de certa forma é uma contribuição coletiva, entretanto, no Brasil a divisão dos bairros é de prerrogativa dos municípios isso faz com que as divisões sejam alteradas com maior frequência do que as divisões acima. Sendo assim, na `neigborhood_list.csv` existe uma lista de bairros que serão considerados "errados" para serem removidos e link dos bairros considerados "corrigidos" para serem incluidos pela função antes de entregar o objeto geojson.
 
 <br>
-
-Copyright Pedro Paulo Teixeira dos Santos
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied. See the License for the
-specific language governing permissions and limitations under the License.
 
 ---
 
@@ -99,33 +87,19 @@ mapas brasileiros existem estudos que validaram a viabilidade de uso<sup>3</sup>
 e até implementaram soluções para aumentar a precisão e estimular a contribuição
 da comunidade<sup>4</sup>.
 
+<br>
+
 ### Especificações
 
-A única dependência do módulo é o arquivo `config.json`, que obrigatoriamente
-deve estar na **root**. Esse arquivo contém **todos os links externos para as
-chamadas da API, o que possibilita a troca dos links para servidores privados
-sem necessidade de mexer no código.** Por _default_ o servidor no `config.json`
-é o OpenStreetMaps.
+A princípio, todas as funções estão autônomas, não necessitando de depedências além das que já estão na pasta `./src/`. Porém, caso o exista um `config.json` (existe um exemplo na pasta root), ao alterar as urls, é possível utilizar as funções para buscar os polígonos em API privadas. Por default, serão utilizados o OpenStretMaps para localizar os pontos e o IBGE para buscar os polígonos. Entretanto, no OSM **tenha cuidado com o limite de requisições!!!**
 
-**Tenha cuidado com o limite de requisições!!!**
-
-Em caso de múltiplos servidores privados o nome de cada um deles deve ser
+> Caso sejam utilizados múltiplos servidores privados o nome de cada um deles deve ser
 correspondente ao nome da macroregião em questão, por exemplo, caso o servidor
 seja apenas da região Sudeste, esse deve ser o nome.
 
-Caso queira utilizar um servidor próprio basta alterar o arquivo `config.json`.
-No caso de servidores pagos que necessitem de API_key configure-a como variável
-de ambiente e insira na URL.
+---
 
-Após o repositório clonado, para transformar o pacote em um módulo html5 basta:
-
-```
-deno bundle --allow-read --allow-write --allow-net mod.js ./dist/tesa.js
-```
-
-**Lembre-se que o arquivo de dependência config.json deve estar junto com o
-módulo na pasta root**
-
+### Hint
 > No front-end faça uso de processamento paralelo com service-workers para não
 > comprometer o event loop com requisições pesadas. Aproveite e utilize a Cache
 > API para os arquivos estáticos, como o config.json, a pasta src/data ou para
@@ -144,32 +118,31 @@ deno install --allow-read --allow-write --allow-net mod.js
 
 <br>
 
-Os testes unitários estão no arquivo mod.test.js e podem ser executados com:
+Os testes unitários estão no arquivo unit.test.ts e podem ser executados com:
 
 ```
 deno test -A
 ```
 
-A seguir aprentam-se os resumos das funções: | Nome | Descrição | Parâmetros |
-|:--------------------|:---------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| **getOnePolygon** | Busca por nome um polígono de um tipo de divisão
-geográfica brasileira. | NOME, CATEGORIA GEOGRÁFICA | | **getManyPolygons** |
-Busca por nomes um array de polígonos de um tipo de divisão geográfica
-brasileira. | { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] } | | **belongsTo**
-| Busca por nome a hierarquia geográfica a qual o objeto pertence. | NOME,
-CATEGORIA GEOGRÁFICA | | **belongsToMany** | Busca por nomes um array de
-hierarquias geográficas de cada objeto do array. | { type: CATEGORIA GEOGRÁFICA,
-aliases: [NOMES] } | | **fowardGeocoding** | Busca por identificadores
-geográficos, estruturados ou não, a localização de um ponto. | { request:
-ESTRUTURA¹, map_tiles: { name: NOME } } <br> { housenumber: NUMERO, street:
-ENDEREÇO, city: CIDADE, state: ESTADO} | | **reverseGeoding** | Busca do
-endereço segundo dados de localização, latitude e longitude. | { map_tiles: {
-name: NOME } } <br> { lon: LONGITUDE, lat: LATITUDE } | |
-**hierarchicalOrdering** | Busca toda a ordem hierárquica a qual o ponto
-pertence e armazena os polígonos | { street: ENDEREÇO, number: NUMERO, city:
-CIDADE, geometry: [ LATITUDE, LONGITUDE ] } | ¹Tipo de Request ao servidor de
-mapas, se ela será do tipo estruturada ou não estruturada (endereço de livre
-escrita).
+A seguir aprentam-se os resumos das funções: 
+| Nome | Descrição | Parâmetros |
+|:--------|:-----------------|:--------|
+| **getOnePolygon** | Busca por nome um polígono de um tipo de divisão geográfica brasileira. | NOME, CATEGORIA GEOGRÁFICA | 
+| **getManyPolygons** | Busca por nomes um array de polígonos de um tipo de divisão geográfica brasileira. | { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] } | 
+| **belongsTo** | Busca por nome a hierarquia geográfica a qual o objeto pertence. | NOME, CATEGORIA GEOGRÁFICA | 
+| **belongsToMany** | Busca por nomes um array de hierarquias geográficas de cada objeto do array. | { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] } |
+| **fowardGeocoding** | Busca por identificadores geográficos, estruturados ou não, a localização de um ponto. | { request: ESTRUTURA¹, map_tiles: { name: NOME } } <br> { housenumber: NUMERO, street: ENDEREÇO, city: CIDADE, state: ESTADO} |
+| **reverseGeoding** | Busca do endereço segundo dados de localização, latitude e longitude. | { map_tiles: { name: NOME } } <br> { lon: LONGITUDE, lat: LATITUDE } | 
+|**hierarchicalOrdering** | Busca toda a ordem hierárquica a qual o ponto pertence e armazena os polígonos | { street: ENDEREÇO, number: NUMERO, city: CIDADE, geometry: [ LATITUDE, LONGITUDE ] } |
+| **downloadFile** | Faz o download de um arquivo a partir de uma URL | URL, path |
+| **extractNeighboorhodFromPbf** | Extrai de arquivos .osm todos os objetos da categoria 10 classificados como bairros | path |
+| **getCityPbf** | Obtém o arquivo .osm de uma determinada cidade | NOME DA CIDADE |
+| **getOsmExtractTools** | Função que faz o download e instalação da ferramenta de extração de polígonos, lembrando que o repositório já possui os binários necessários para isso. | null |
+| **readNeighborhoodGeojsonFromDir** | Lê todos os arquivos .geojson dos bairros e sintetiza em um único. | path |
+| **runCmd** | Função que executa comandos shell por meio de um child proccess. | Comando: string, print: boolean, que define se vai ser impresso no STDOUT |
+| **untarFile** | Untar o file | path, destfile |
+¹Tipo de Request ao servidor de mapas, se ela será do tipo estruturada ou não estruturada (endereço de livre escrita).
+
 
 <br>
 
@@ -226,3 +199,22 @@ ToDo
 ## Geolocalização
 
 ToDo
+
+## LICENÇA
+
+<br>
+
+Copyright Pedro Paulo Teixeira dos Santos
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+---
