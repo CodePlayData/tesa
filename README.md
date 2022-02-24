@@ -146,36 +146,23 @@ Os testes unitários estão no arquivo unit.test.ts e podem ser executados com:
 deno test -A
 ```
 
-A seguir aprentam-se os resumos das funções: | Nome | Descrição | Parâmetros |
-|:--------|:-----------------|:--------| | **getOnePolygon** | Busca por nome um
-polígono de um tipo de divisão geográfica brasileira. | NOME, CATEGORIA
-GEOGRÁFICA | | **getManyPolygons** | Busca por nomes um array de polígonos de um
-tipo de divisão geográfica brasileira. | { type: CATEGORIA GEOGRÁFICA, aliases:
-[NOMES] } | | **belongsTo** | Busca por nome a hierarquia geográfica a qual o
-objeto pertence. | NOME, CATEGORIA GEOGRÁFICA | | **belongsToMany** | Busca por
-nomes um array de hierarquias geográficas de cada objeto do array. | { type:
-CATEGORIA GEOGRÁFICA, aliases: [NOMES] } | | **fowardGeocoding** | Busca por
-identificadores geográficos, estruturados ou não, a localização de um ponto. | {
-request: ESTRUTURA¹, map_tiles: { name: NOME } } <br> { housenumber: NUMERO,
-street: ENDEREÇO, city: CIDADE, state: ESTADO} | | **reverseGeoding** | Busca do
-endereço segundo dados de localização, latitude e longitude. | { map_tiles: {
-name: NOME } } <br> { lon: LONGITUDE, lat: LATITUDE } |
-|**hierarchicalOrdering** | Busca toda a ordem hierárquica a qual o ponto
-pertence e armazena os polígonos | { street: ENDEREÇO, number: NUMERO, city:
-CIDADE, geometry: [ LATITUDE, LONGITUDE ] } | | **downloadFile** | Faz o
-download de um arquivo a partir de uma URL | URL, path | |
-**extractNeighboorhodFromPbf** | Extrai de arquivos .osm todos os objetos da
-categoria 10 classificados como bairros | path | | **getCityPbf** | Obtém o
-arquivo .osm de uma determinada cidade | NOME DA CIDADE | |
-**getOsmExtractTools** | Função que faz o download e instalação da ferramenta de
-extração de polígonos, lembrando que o repositório já possui os binários
-necessários para isso. | null | | **readNeighborhoodGeojsonFromDir** | Lê todos
-os arquivos .geojson dos bairros e sintetiza em um único. | path | | **runCmd**
-| Função que executa comandos shell por meio de um child proccess. | Comando:
-string, print: boolean, que define se vai ser impresso no STDOUT | |
-**untarFile** | Untar o file | path, destfile | ¹Tipo de Request ao servidor de
-mapas, se ela será do tipo estruturada ou não estruturada (endereço de livre
-escrita).
+A seguir aprentam-se os resumos das funções: 
+
+| Nome | Descrição | Parâmetros |
+|:--------|:-----------------|:--------|  
+| **getOnePolygon** | Busca por nome um polígono de um tipo de divisão geográfica brasileira. | NOME, CATEGORIA GEOGRÁFICA | 
+| **getManyPolygons** | Busca por nomes um array de polígonos de um tipo de divisão geográfica brasileira. | { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] } | 
+| **belongsTo** | Busca por nome a hierarquia geográfica a qual o objeto pertence. | NOME, CATEGORIA GEOGRÁFICA | | **belongsToMany** | Busca por nomes um array de hierarquias geográficas de cada objeto do array. | { type: CATEGORIA GEOGRÁFICA, aliases: [NOMES] } | 
+| **fowardGeocoding** | Busca por identificadores geográficos, estruturados ou não, a localização de um ponto. | { request: ESTRUTURA¹, map_tiles: { name: NOME } } <br> { housenumber: NUMERO, street: ENDEREÇO, city: CIDADE, state: ESTADO} | 
+| **reverseGeoding** | Busca do endereço segundo dados de localização, latitude e longitude. | { map_tiles: { name: NOME } } <br> { lon: LONGITUDE, lat: LATITUDE } |
+|**hierarchicalOrdering** | Busca toda a ordem hierárquica a qual o ponto pertence e armazena os polígonos | { street: ENDEREÇO, number: NUMERO, city: CIDADE, geometry: [ LATITUDE, LONGITUDE ] } | | **downloadFile** | Faz o download de um arquivo a partir de uma URL | URL, path | 
+|**extractNeighboorhodFromPbf** | Extrai de arquivos .osm todos os objetos da categoria 10 classificados como bairros | path | 
+| **getCityPbf** | Obtém o arquivo .osm de uma determinada cidade | NOME DA CIDADE | 
+|**getOsmExtractTools** | Função que faz o download e instalação da ferramenta de extração de polígonos, lembrando que o repositório já possui os binários necessários para isso. | null | 
+| **readNeighborhoodGeojsonFromDir** | Lê todos os arquivos .geojson dos bairros e sintetiza em um único. | path | 
+| **runCmd** | Função que executa comandos shell por meio de um child proccess. | Comando: string, print: boolean, que define se vai ser impresso no STDOUT | 
+|**untarFile** | Untar o file | path, destfile | 
+¹Tipo de Request ao servidor de mapas, se ela será do tipo estruturada ou não estruturada (endereço de livre escrita).
 
 <br>
 

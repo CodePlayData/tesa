@@ -4,17 +4,17 @@ import { createHash } from "https://deno.land/std@0.92.0/hash/mod.ts";
 import {
   belongsTo,
   belongsToMany,
+  extractNeighboorhodFromPbf,
   forwardGeocoding,
+  getCityPbf,
   getManyPolygons,
   getOnePolygon,
-  reverseGeocoding,
   hierarchicalOrdering,
-  getCityPbf,
-  extractNeighboorhodFromPbf,
-  readNeighborhoodGeojsonFromDir
+  readNeighborhoodGeojsonFromDir,
+  reverseGeocoding,
 } from "./mod.ts";
 
-async function tesa(args:string[]) {
+async function tesa(args: string[]) {
   let params = parse(args);
   let call = params._[0];
   let { output } = params;
@@ -442,7 +442,7 @@ async function tesa(args:string[]) {
     case "hierarchicalOrdering":
       {
         let { request } = params;
-        let hashInHex:string;
+        let hashInHex: string;
         if (!request) throw "some parameter was not fulfilled";
         if (
           output !== "console" && output !== "file"
@@ -450,15 +450,19 @@ async function tesa(args:string[]) {
           throw "You must choose some type of output (options: console or file)";
         }
 
-        if(!Array.isArray(request)) {
-          hash.update(`forward${request.street}${request.number}${request.city}`);
+        if (!Array.isArray(request)) {
+          hash.update(
+            `forward${request.street}${request.number}${request.city}`,
+          );
           hashInHex = hash.toString();
         } else {
-          let streets = request.map((i)=> i.street)
-          let numbers = request.map((i)=> i.number)
-          let cities = request.map((i)=> i.city)
+          let streets = request.map((i) => i.street);
+          let numbers = request.map((i) => i.number);
+          let cities = request.map((i) => i.city);
 
-          hash.update(`forward${streets.toString()}${numbers.toString()}${cities.toString()}`);
+          hash.update(
+            `forward${streets.toString()}${numbers.toString()}${cities.toString()}`,
+          );
           hashInHex = hash.toString();
         }
 
@@ -517,14 +521,14 @@ async function tesa(args:string[]) {
       {
         let { city } = params;
         if (!city) throw "some parameter was not fulfilled";
-        await getCityPbf(city)
+        await getCityPbf(city);
       }
       break;
     case "extractNeighboorhodFromPbf":
       {
         let { path } = params;
         if (!path) throw "some parameter was not fulfilled";
-        await extractNeighboorhodFromPbf(path)
+        await extractNeighboorhodFromPbf(path);
       }
       break;
     case "readNeighborhoodGeojsonFromDir":
@@ -593,7 +597,7 @@ async function tesa(args:string[]) {
       }
       break;
     default:
-    throw "The Call is required as first parameter.";
+      throw "The Call is required as first parameter.";
   }
 }
 
