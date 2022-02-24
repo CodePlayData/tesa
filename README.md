@@ -192,6 +192,12 @@ Geographical Information Science, DOI: 10.1080/13658816.2020.1814303.
 
 <br>
 
+### ToDo
+
+>Implementar a correção dos polígonos dos bairros.
+
+<br>
+
 ## Geoprocessamento
 
 ToDo
