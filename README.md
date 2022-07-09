@@ -6,20 +6,20 @@
 
 A `CodePlayData` é um projeto criado com a missão de simplificar os processos de
 gerência, tratamento e consumo de dados em aplicações e softwares de alguns
-setores da sociedade. Acreditamos que possamos contribuir de forma significativa
+setores da sociedade. Acreditamos na contribuição de forma significativa
 por meio de produtos e serviços que reduzam a complexidade de determinados
-métodos aplicados na área de dados, como por exemplo, tornar acessível a análise
-de dados espaciais, facilitar a aplicação de técnicas de modelagem estruturais e
+métodos aplicados na manipulação de dados, como por exemplo, tornar acessível a análise
+de dados espaciais (esse repositório), facilitar a aplicação de técnicas de modelagem estruturais e
 extração de _latent features_, possibilitar aplicações de _feature store_ e
-versionamento de _fetures_ e/ou reduzir a complexidade da didática em
-programação.
+versionamento de _fetures_, reduzir a complexidade da didática em
+programação e muitos outros.
 
 Prezamos pela simplicidade dos processos, satisfação do usuário e clareza nas
 relações. Nosso modelo prioritário de negócio é por meio de **APIs públicas**,
 **FaaS** e **PWAs**. Sempre que possível iremos optar por soluções
 _open-source_. Se quiser conhecer mais acompanhe nossas redes sociais:
 
-- [Twitter](https://https://twitter.com/CodePlayData)
+- [Twitter](https://twitter.com/CodePlayData)
 
 ## Sobre esse repositório
 
@@ -40,7 +40,7 @@ espaciais:
 
 <br>
 
-**Status**: Em desenvolvimento. **Linguagens**: Javascript. **Frameworks**: Deno
+**Status**: Em desenvolvimento. **Linguagens**: Typescript. **Frameworks**: Deno
 e Vue3.
 
 <br>
@@ -48,17 +48,28 @@ e Vue3.
 ### Estrutura de pastas
 
 - **src**: o código fonte.
-- **test**: pasta que contém todos os testes disponíveis.
+- **test**: pasta que contém todos os testes unitários disponíveis.
 - **bin**: pasta que contém os binários do osmium-tool, usado para criar aquivos
   .pbf, e do osm_extract_polygon, usado para extrair objetos de arquivos osm. As
   duas ferramentas são utilizadas para o processo de extração dos polígonos do
-  bairros (e serão usados para extração das ruas e outras coisas).
+  bairros (e serão usados para extração das ruas e outras coisas) e suas respectivas licenças
+  estão copiadas no local.
 - **data**: todos os arquivos necessários para converter nomes: string em
   códigos do IBGE que equivalem ao polígono solicitado. Os arquivos _double são
   os nomes duplicados, triplicados, quadruplicados ou quintuplicados das
   divisões geográficas do Brasil.
 - **neighborhoods_includes**: Pasta que contém polígonos dos bairros corrigidos
-  por municípios.
+  por municípios. Considerando que a divisão geográfica de bairro dos municípios
+  brasileiros podem variar em precisão e acurácia, por exemplo, podem ter surgido
+  bairros num curto espaço de tempo que não estão registrados em bases públicas,
+  é necessário um mecanismo de correção, que nesse caso funciona da seguinte forma:
+
+  1. Primeiro se corta exatamente a divisão do município que se deseja obter os bairros;
+  2. Utiliza o osm_extract para buscar os polígonos que estão marcados como divisão bairros;
+  3. Verifica se existe no repositório uma pasta com o nome do município em questão indicando 
+  que ou existem bairros a serem incluidos, ou caso existam polígonos com o nome de bairros
+  já extraídos ele troca o polígono para que está presente na pasta do repositório.
+
 
 <br>
 
