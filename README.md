@@ -41,7 +41,7 @@ espaciais:
 <br>
 
 **Status**: Em desenvolvimento. **Linguagens**: Typescript. **Frameworks**: Deno
-e Vue3.
+e Fresh.
 
 <br>
 
