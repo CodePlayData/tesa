@@ -1,6 +1,15 @@
-![CodePlayData_pt_en](https://user-images.githubusercontent.com/52466957/111396185-5345c180-869d-11eb-987e-94689a2614ae.gif)
+<div align="center">
 
 # Tools for Easy Spatial Analysis (tesa)
+
+![tesa_logo](./assets/tesa_avatar_white.png)
+
+_Data sem atrito_
+
+<br> 
+
+</div>
+
 
 ## Sobre a empresa
 
