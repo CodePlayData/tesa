@@ -1,4 +1,4 @@
-//@filename: Macroregion.ts
+// @filename: Place.ts
 
 /*
  * Copyright 2023 Pedro Paulo Teixeira dos Santos
@@ -17,13 +17,10 @@
 
 */
 
-type Macroregion = |
-    { name: 'Norte', code: 'N' }    |
-    { name: 'Norte', code: '1' }    |
-    { name: 'Sul', code: 'S' }      |
-    { name: 'Sul', code: '4' }      |
-    { name: 'Nordeste', code: 'NE'}
+class Place {
+
+}
 
 export {
-    Macroregion
+  Place
 }

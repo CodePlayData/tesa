@@ -1,4 +1,4 @@
-// @filename: Point.ts
+// @filename: Locate.test.ts
 
 /*
  * Copyright 2023 Pedro Paulo Teixeira dos Santos
@@ -17,9 +17,14 @@
 
 */
 
-type Country = |
-    { name: 'Brasil', code: 'BR' }
+import { describe, it } from "node:test";
+import { throws, deepEqual } from "node:assert";
 
-export {
-    Country
-}
+describe('Teste de integração do usecase Locate com...', () => {
+    //TODO
+    it.todo('uma Position..', () => {});
+    //TODO
+    it.todo('um Place.', () => {});
+    //TODO
+    it.todo('um Address.', () => {});
+});

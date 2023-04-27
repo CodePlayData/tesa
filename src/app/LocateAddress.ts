@@ -1,4 +1,4 @@
-//@filename: Address.ts
+//@filename: Locate.ts
 
 /*
  * Copyright 2023 Pedro Paulo Teixeira dos Santos
@@ -17,23 +17,19 @@
 
 */
 
-type AddressInput = {
-    street: string,
-    number: number,
-    complement?: string,
-    city: string,
-    district?: string,
-    state: string,
-    postalCode?: string
-} | {
-    text: string
-}
+import { Address } from "../domain/Address.js";
+import { Place } from "../domain/Place.js";
+import { Position } from "../domain/Position.js";
 
-class Address {
-    constructor(input: AddressInput) {}
+class LocateAddress {
+
+    constructor(readonly geocoder: Geocoder) {
+    }
+
+    exec(input: Address) {
+    }
 }
 
 export {
-  Address,
-  AddressInput
+    LocateAddress
 }

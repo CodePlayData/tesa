@@ -1,4 +1,4 @@
-//@filename: Address.ts
+//@filename: Position.ts
 
 /*
  * Copyright 2023 Pedro Paulo Teixeira dos Santos
@@ -17,23 +17,22 @@
 
 */
 
-type AddressInput = {
-    street: string,
-    number: number,
-    complement?: string,
-    city: string,
-    district?: string,
-    state: string,
-    postalCode?: string
-} | {
-    text: string
-}
+type PositionInput = {
+    readonly latitude: number,
+    readonly longitude: number,
+    readonly altitude?: number
+} |
+`${string},${string}` |
+`${string},${string},${string}`
 
-class Address {
-    constructor(input: AddressInput) {}
+class Position {
+    constructor(
+        readonly latitude: number,
+        readonly longitude: number,
+        readonly altitude?: number
+    ){}
 }
 
 export {
-  Address,
-  AddressInput
+    Position
 }
